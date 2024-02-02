@@ -14,13 +14,14 @@ export default {
             fontFamily: {
                 heading: ['Libre Baskerville', ...defaultTheme.fontFamily.serif],
                 body: ['Josefin Sans', ...defaultTheme.fontFamily.sans],
+                sans: ['Josefin Sans', ...defaultTheme.fontFamily.sans]
             },
             colors: {
                 'creator-green': '#023F3A',
                 'creator-green-light': '#075953',
-                'creator-orange': '#C13512',
+                'creator-orange': '#F97316',
                 'creator-dark': '#222222',
-                'creator-light': '#F2EEE9',
+                'creator-light': '#F2EEE9'
             }
         },
     },
