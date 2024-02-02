@@ -22,6 +22,9 @@ export default {
                 'creator-orange': '#F97316',
                 'creator-dark': '#222222',
                 'creator-light': '#F2EEE9'
+            },
+            screens: {
+                xl: '1500px'
             }
         },
     },
