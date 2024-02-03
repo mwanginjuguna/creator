@@ -1,13 +1,16 @@
 <x-guest-layout>
-    <div class="w-full min-h-screen p-3 lg:pb-8 bg-creator-green text-white grid content-center">
-        <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 content-center lg:p-8">
-            <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/profileImg.jpg?raw=true"
+    <div class="w-full min-h-screen p-3 lg:pb-8 bg-white text-creator-dark grid content-center">
+        <div class="max-w-7xl mx-auto grid sm:grid-cols-2 gap-x-4 content-center lg:p-8">
+            <!--<img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/profileImg.jpg?raw=true"
                  class="rounded-full place-self-center"
-                 alt="Mwangi Kanothe profile image">
+                 alt="Mwangi Kanothe profile image">-->
+            <video src="https://github.com/mwanginjuguna/public-image-assets/raw/main/creator/creator-hero-landing-page.mp4" autoplay loop muted
+                   class="rounded-lg place-self-center sm:min-h-[50%] lg:min-h-[75%] object-center object-cover"
+            ></video>
 
-            <div class="lg:col-span-2 flex flex-col gap-y-3 justify-center lg:px-8">
-                <h1 class="py-2 lg:pb-5 text-2xl lg:text-5xl font-bold">
-                    Transform Ideas into Reality <span class="block pt-2 text-creator-orange text-lg lg:text-3xl">with code and words.</span>
+            <div class="flex flex-col gap-y-3 justify-center lg:px-8">
+                <h1 class="py-2 lg:pb-5 text-2xl lg:text-5xl text-creator-primary font-bold">
+                    Transform Ideas into Reality <span class="text-creator-dark text-lg lg:text-3xl">with code and words.</span>
                 </h1>
 
                 <h3 class="text-lg font-semibold">
@@ -22,23 +25,19 @@
                     <p class="font-medium">I build:</p>
                     <ul class="text-sm xl:text-base pl-3 lg:pl-5 space-y-3">
                         <li class="flex flex-wrap gap-x-3">
-                            <svg width="24px" height="24px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M511.891456 928.549888c229.548032 0 415.634432-186.0864 415.634432-415.634432C927.525888 283.3664 741.439488 97.28 511.890432 97.28 282.343424 97.28 96.258048 283.3664 96.258048 512.915456c0 229.548032 186.084352 415.634432 415.634432 415.634432" fill="#F97316"></path><path d="M436.571136 707.376128l330.3936-330.3936c5.506048-5.507072 8.571904-12.803072 8.633344-20.544512 0.060416-7.85408-2.961408-15.235072-8.511488-20.784128 0.001024-0.012288-0.001024-0.002048-0.001024-0.002048l-0.001024-0.001024c-5.410816-5.409792-12.978176-8.489984-20.687872-8.460288-7.810048 0.032768-15.13984 3.081216-20.640768 8.58112l-309.11488 309.116928-94.99648-94.998528c-5.501952-5.501952-12.833792-8.5504-20.642816-8.58112h-0.115712c-7.69536 0-15.186944 3.08224-20.569088 8.465408-11.360256 11.36128-11.307008 29.899776 0.118784 41.325568l109.924352 109.924352a29.017088 29.017088 0 0 0 4.883456 6.474752c5.658624 5.6576 13.095936 8.482816 20.550656 8.481792a29.31712 29.31712 0 0 0 20.77696-8.604672M511.891456 97.28C282.3424 97.28 96.256 283.3664 96.256 512.915456s186.0864 415.634432 415.635456 415.634432c229.548032 0 415.634432-186.085376 415.634432-415.634432C927.525888 283.365376 741.439488 97.28 511.891456 97.28m0 40.96c50.597888 0 99.661824 9.901056 145.82784 29.427712 44.61056 18.868224 84.683776 45.889536 119.10656 80.31232 34.422784 34.422784 61.444096 74.496 80.313344 119.107584 19.525632 46.164992 29.426688 95.228928 29.426688 145.82784s-9.901056 99.662848-29.426688 145.82784c-18.869248 44.61056-45.89056 84.6848-80.313344 119.107584s-74.496 61.443072-119.10656 80.31232c-46.166016 19.526656-95.229952 29.426688-145.82784 29.426688-50.598912 0-99.662848-9.900032-145.828864-29.426688-44.61056-18.869248-84.683776-45.889536-119.10656-80.31232-34.422784-34.422784-61.444096-74.497024-80.313344-119.107584C147.117056 612.57728 137.216 563.514368 137.216 512.915456s9.901056-99.662848 29.426688-145.82784c18.869248-44.611584 45.89056-84.6848 80.313344-119.107584s74.496-61.444096 119.10656-80.31232C412.228608 148.140032 461.292544 138.24 511.891456 138.24" fill="#F2EEE9"></path></g></svg>
+                            <x-svgs.tick />
                             Web and Mobile Applications,
                         </li>
                         <li class="flex flex-wrap gap-x-3">
-                            <svg width="24px" height="24px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M511.891456 928.549888c229.548032 0 415.634432-186.0864 415.634432-415.634432C927.525888 283.3664 741.439488 97.28 511.890432 97.28 282.343424 97.28 96.258048 283.3664 96.258048 512.915456c0 229.548032 186.084352 415.634432 415.634432 415.634432" fill="#F97316"></path><path d="M436.571136 707.376128l330.3936-330.3936c5.506048-5.507072 8.571904-12.803072 8.633344-20.544512 0.060416-7.85408-2.961408-15.235072-8.511488-20.784128 0.001024-0.012288-0.001024-0.002048-0.001024-0.002048l-0.001024-0.001024c-5.410816-5.409792-12.978176-8.489984-20.687872-8.460288-7.810048 0.032768-15.13984 3.081216-20.640768 8.58112l-309.11488 309.116928-94.99648-94.998528c-5.501952-5.501952-12.833792-8.5504-20.642816-8.58112h-0.115712c-7.69536 0-15.186944 3.08224-20.569088 8.465408-11.360256 11.36128-11.307008 29.899776 0.118784 41.325568l109.924352 109.924352a29.017088 29.017088 0 0 0 4.883456 6.474752c5.658624 5.6576 13.095936 8.482816 20.550656 8.481792a29.31712 29.31712 0 0 0 20.77696-8.604672M511.891456 97.28C282.3424 97.28 96.256 283.3664 96.256 512.915456s186.0864 415.634432 415.635456 415.634432c229.548032 0 415.634432-186.085376 415.634432-415.634432C927.525888 283.365376 741.439488 97.28 511.891456 97.28m0 40.96c50.597888 0 99.661824 9.901056 145.82784 29.427712 44.61056 18.868224 84.683776 45.889536 119.10656 80.31232 34.422784 34.422784 61.444096 74.496 80.313344 119.107584 19.525632 46.164992 29.426688 95.228928 29.426688 145.82784s-9.901056 99.662848-29.426688 145.82784c-18.869248 44.61056-45.89056 84.6848-80.313344 119.107584s-74.496 61.443072-119.10656 80.31232c-46.166016 19.526656-95.229952 29.426688-145.82784 29.426688-50.598912 0-99.662848-9.900032-145.828864-29.426688-44.61056-18.869248-84.683776-45.889536-119.10656-80.31232-34.422784-34.422784-61.444096-74.497024-80.313344-119.107584C147.117056 612.57728 137.216 563.514368 137.216 512.915456s9.901056-99.662848 29.426688-145.82784c18.869248-44.611584 45.89056-84.6848 80.313344-119.107584s74.496-61.444096 119.10656-80.31232C412.228608 148.140032 461.292544 138.24 511.891456 138.24" fill="#F2EEE9"></path></g></svg>
+                            <x-svgs.tick />
                             cloud-first applications,
                         </li>
                         <li class="flex flex-wrap gap-x-3">
-                            <svg width="24px" height="24px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M511.891456 928.549888c229.548032 0 415.634432-186.0864 415.634432-415.634432C927.525888 283.3664 741.439488 97.28 511.890432 97.28 282.343424 97.28 96.258048 283.3664 96.258048 512.915456c0 229.548032 186.084352 415.634432 415.634432 415.634432" fill="#F97316"></path><path d="M436.571136 707.376128l330.3936-330.3936c5.506048-5.507072 8.571904-12.803072 8.633344-20.544512 0.060416-7.85408-2.961408-15.235072-8.511488-20.784128 0.001024-0.012288-0.001024-0.002048-0.001024-0.002048l-0.001024-0.001024c-5.410816-5.409792-12.978176-8.489984-20.687872-8.460288-7.810048 0.032768-15.13984 3.081216-20.640768 8.58112l-309.11488 309.116928-94.99648-94.998528c-5.501952-5.501952-12.833792-8.5504-20.642816-8.58112h-0.115712c-7.69536 0-15.186944 3.08224-20.569088 8.465408-11.360256 11.36128-11.307008 29.899776 0.118784 41.325568l109.924352 109.924352a29.017088 29.017088 0 0 0 4.883456 6.474752c5.658624 5.6576 13.095936 8.482816 20.550656 8.481792a29.31712 29.31712 0 0 0 20.77696-8.604672M511.891456 97.28C282.3424 97.28 96.256 283.3664 96.256 512.915456s186.0864 415.634432 415.635456 415.634432c229.548032 0 415.634432-186.085376 415.634432-415.634432C927.525888 283.365376 741.439488 97.28 511.891456 97.28m0 40.96c50.597888 0 99.661824 9.901056 145.82784 29.427712 44.61056 18.868224 84.683776 45.889536 119.10656 80.31232 34.422784 34.422784 61.444096 74.496 80.313344 119.107584 19.525632 46.164992 29.426688 95.228928 29.426688 145.82784s-9.901056 99.662848-29.426688 145.82784c-18.869248 44.61056-45.89056 84.6848-80.313344 119.107584s-74.496 61.443072-119.10656 80.31232c-46.166016 19.526656-95.229952 29.426688-145.82784 29.426688-50.598912 0-99.662848-9.900032-145.828864-29.426688-44.61056-18.869248-84.683776-45.889536-119.10656-80.31232-34.422784-34.422784-61.444096-74.497024-80.313344-119.107584C147.117056 612.57728 137.216 563.514368 137.216 512.915456s9.901056-99.662848 29.426688-145.82784c18.869248-44.611584 45.89056-84.6848 80.313344-119.107584s74.496-61.444096 119.10656-80.31232C412.228608 148.140032 461.292544 138.24 511.891456 138.24" fill="#F2EEE9"></path></g></svg>
+                            <x-svgs.tick />
                             Landing Pages, and
                         </li>
                         <li class="flex flex-wrap gap-x-3">
-                            <svg width="24px" height="24px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M511.891456 928.549888c229.548032 0 415.634432-186.0864 415.634432-415.634432C927.525888 283.3664 741.439488 97.28 511.890432 97.28 282.343424 97.28 96.258048 283.3664 96.258048 512.915456c0 229.548032 186.084352 415.634432 415.634432 415.634432" fill="#F97316"></path><path d="M436.571136 707.376128l330.3936-330.3936c5.506048-5.507072 8.571904-12.803072 8.633344-20.544512 0.060416-7.85408-2.961408-15.235072-8.511488-20.784128 0.001024-0.012288-0.001024-0.002048-0.001024-0.002048l-0.001024-0.001024c-5.410816-5.409792-12.978176-8.489984-20.687872-8.460288-7.810048 0.032768-15.13984 3.081216-20.640768 8.58112l-309.11488 309.116928-94.99648-94.998528c-5.501952-5.501952-12.833792-8.5504-20.642816-8.58112h-0.115712c-7.69536 0-15.186944 3.08224-20.569088 8.465408-11.360256 11.36128-11.307008 29.899776 0.118784 41.325568l109.924352 109.924352a29.017088 29.017088 0 0 0 4.883456 6.474752c5.658624 5.6576 13.095936 8.482816 20.550656 8.481792a29.31712 29.31712 0 0 0 20.77696-8.604672M511.891456 97.28C282.3424 97.28 96.256 283.3664 96.256 512.915456s186.0864 415.634432 415.635456 415.634432c229.548032 0 415.634432-186.085376 415.634432-415.634432C927.525888 283.365376 741.439488 97.28 511.891456 97.28m0 40.96c50.597888 0 99.661824 9.901056 145.82784 29.427712 44.61056 18.868224 84.683776 45.889536 119.10656 80.31232 34.422784 34.422784 61.444096 74.496 80.313344 119.107584 19.525632 46.164992 29.426688 95.228928 29.426688 145.82784s-9.901056 99.662848-29.426688 145.82784c-18.869248 44.61056-45.89056 84.6848-80.313344 119.107584s-74.496 61.443072-119.10656 80.31232c-46.166016 19.526656-95.229952 29.426688-145.82784 29.426688-50.598912 0-99.662848-9.900032-145.828864-29.426688-44.61056-18.869248-84.683776-45.889536-119.10656-80.31232-34.422784-34.422784-61.444096-74.497024-80.313344-119.107584C147.117056 612.57728 137.216 563.514368 137.216 512.915456s9.901056-99.662848 29.426688-145.82784c18.869248-44.611584 45.89056-84.6848 80.313344-119.107584s74.496-61.444096 119.10656-80.31232C412.228608 148.140032 461.292544 138.24 511.891456 138.24" fill="#F2EEE9"></path></g></svg>
+                            <x-svgs.tick />
                             deploy software to cloud platforms(AWS, GCP, Azure, Digital-Ocean).
                         </li>
                     </ul>
@@ -50,15 +49,49 @@
                         Let's create, innovate, and grow together.
                     </h4>
 
-                    <a class="w-fit p-2 px-3 lg:px-4 font-heading font-semibold bg-creator-orange hover:bg-creator-light hover:text-creator-green rounded-md hover:underline underline-offset-2 hover:border-2 border-creator-orange transition-all ease-in-out duration-300" href="#contact">
-                        Get In Touch
-                    </a>
+                    <x-cta.cta-btn>Get In Touch</x-cta.cta-btn>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="max-w-6xl xl:max-w-7xl mx-auto mt-10 lg:mt-20">
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 pb-10 lg:pb-20">
+            <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-bold">With tech and curated words, Let's <span class="block pt-2 text-creator-primary">connect your ideas to the world.</span></h2>
+
+            <div class="p-4 w-full grid bg-creator-secondary rounded-lg text-black hover:bg-white border-2 border-creator-secondary hover:border-creator-primary transition-all ease-in-out duration-300 group">
+                <p class="py-2 text-white group-hover:uppercase group-hover:text-creator-primary transition-all ease-in-out duration-700">Writer</p>
+
+                <x-svgs.write-gold class="h-24 w-24 px-1 justify-self-end rounded-lg md:group-hover:mr-8 transition-all ease-in-out duration-700 bg-white md:group-hover:bg-creator-secondary" />
+
+                <h4 class="py-2 mt-4 font-medium lg:text-lg">Let's create <span class="text-creator-primary font-bold" >Compelling Narratives</span> for your Solutions.</h4>
+
+                <p class="py-1 text-sm xl:text-base">Curated words leading customers to products.</p>
+            </div>
+
+            <div class="p-4 w-full grid bg-creator-light rounded-lg text-black hover:bg-white border-2 border-creator-light hover:border-creator-primary transition-all ease-in-out duration-300 group">
+                <p class="py-2 text-gray-500 group-hover:uppercase group-hover:text-creator-primary transition-all ease-in-out duration-700">Software Engineer</p>
+
+                <x-svgs.ideas-img class="h-24 w-24 justify-self-end rounded-lg md:group-hover:mr-8 transition-all ease-in-out duration-700" />
+
+                <h4 class="py-2 mt-4 font-medium lg:text-lg"><span class="text-creator-primary font-bold" >Bridge the Gap</span> ~ with Innovative Software!</h4>
+
+                <p class="py-1 text-sm xl:text-base">Responsive, user-friendly Apps and Solutions for businesses and creators.</p>
+            </div>
+
+            <div class="p-4 w-full grid bg-creator-tertiary rounded-lg text-black hover:bg-white border-2 border-creator-tertiary hover:border-creator-primary transition-all ease-in-out duration-300 group">
+                <p class="py-2 text-yellow-600 group-hover:uppercase group-hover:text-creator-primary transition-all ease-in-out duration-700">Cloud and ML Expert</p>
+
+                <x-svgs.ai-img class="h-24 w-24 justify-self-end rounded-lg md:group-hover:mr-8 transition-all ease-in-out duration-700" />
+
+                <h4 class="py-2 mt-4 font-medium lg:text-lg">Connecting Products to <span class="text-creator-primary font-bold">The New World Order!</span></h4>
+
+                <p class="py-1 text-sm xl:text-base">Let's ensure Your NOT LEFT BEHIND. The world is changing. AI is here and software must be Cloud-first.</p>
+            </div>
+
+        </div>
+
         <div class="flex flex-col gap-y-4 pb-3 lg:pb-8">
             <h2 class="text-xl lg:text-4xl font-bold">Portfolio</h2>
             <p>Explore my work.</p>
@@ -136,6 +169,14 @@
         <h4 class="mt-4 pt-6 lg:pt-14 text-lg font-medium italic text-creator-green-light underline underline-offset-8 decoration-dashed decoration-creator-orange border-t border-green-200">
             Writing Samples
         </h4>
+        <ul class="pl-3 py-3 space-y-1 text-sm xl:text-base list-[square] list-inside">
+            <li>Blogs and Website content</li>
+            <li>Product description</li>
+            <li>Software & API Documentation</li>
+            <li>How-to & quickstart</li>
+            <li>Explainers and Tutorials</li>
+            <li>Custom Writing</li>
+        </ul>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 pb-6 lg:pb-10">
             <div class="w-full rounded-md bg-white shadow-sm rounded-md">
@@ -207,11 +248,12 @@
             <p>World-class services and products <span class="text-creator-green">- One Click Away</span>.</p>
 
             <div class="mt-6 py-6 grid md:grid-cols-2 gap-4 lg:gap-8">
-                <div class="flex flex-col gap-y-3">
+                <div class="flex flex-col gap-y-3 w-max p-4 bg-creator-green text-creator-light rounded-lg">
                     <h2 class="py-2 font-semibold text-lg xl:text-xl">High converting Landing Page</h2>
                     <p class="font-medium italic">Key features:</p>
-                    <ul class="pl-3 text-sm xl:text-lg">
-                        <li>Value proposition headline, CTA, and product/service visual</li>
+                    <ul class="pl-3 text-sm xl:text-lg space-y-2">
+                        <li>Value proposition headline</li>
+                        <li>CTA, and product/service visual</li>
                         <li>Statistics and Metrics</li>
                         <li>Features and Benefits</li>
                         <li>Social proof with testimonials</li>
@@ -219,7 +261,33 @@
                         <li>Last Call to Action</li>
                         <li>Footer - optional</li>
                     </ul>
-                    <p>$99</p>
+                    <div class="flex justify-between place-items-center text-creator-green hover:text-white">
+                        <p class="text-lg lg:text-xl font-medium font-heading">$99</p>
+
+                        <x-cta.cta-btn>Order Now</x-cta.cta-btn>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col gap-y-3 w-max p-4 bg-creator-orange text-creator-light rounded-lg">
+                    <h2 class="py-2 font-semibold text-lg xl:text-xl">High converting Landing Page</h2>
+                    <p class="font-medium italic">Key features:</p>
+                    <ul class="pl-3 text-sm xl:text-lg space-y-2">
+                        <li>Value proposition headline</li>
+                        <li>CTA, and product/service visual</li>
+                        <li>Statistics and Metrics</li>
+                        <li>Features and Benefits</li>
+                        <li>Social proof with testimonials</li>
+                        <li>FAQs to handle objection</li>
+                        <li>Last Call to Action</li>
+                        <li>Footer - optional</li>
+                    </ul>
+                    <div class="flex justify-between place-items-center text-creator-green hover:text-white">
+                        <p class="text-lg lg:text-xl font-medium font-heading">$99</p>
+
+                        <x-cta.cta-btn>Order Now</x-cta.cta-btn>
+                    </div>
+
                 </div>
 
                 <div class="flex flex-col gap-y-3">

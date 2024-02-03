@@ -17,13 +17,14 @@ export default {
                 sans: ['Josefin Sans', ...defaultTheme.fontFamily.sans]
             },
             colors: {
-                'creator-green': '#023F3A',
-                'creator-green-light': '#075953',
-                'creator-orange': '#F97316',
+                'creator-primary': '#5c59c3',
+                'creator-secondary': '#9ad3cc',
+                'creator-tertiary': '#e8caa2',
                 'creator-dark': '#222222',
-                'creator-light': '#F2EEE9'
+                'creator-light': '#EEEDEA'
             },
             screens: {
+                lg: '1050px',
                 xl: '1500px'
             }
         },
