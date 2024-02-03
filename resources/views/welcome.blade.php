@@ -55,7 +55,7 @@
         </div>
     </div>
 
-    <div class="max-w-6xl xl:max-w-7xl mx-auto mt-10 lg:mt-20">
+    <div class="max-w-6xl xl:max-w-7xl mx-auto mt-10 lg:mt-20 px-3">
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 pb-10 lg:pb-20">
             <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-bold">With tech and curated words, Let's <span class="block pt-2 text-creator-primary">connect your ideas to the world.</span></h2>
