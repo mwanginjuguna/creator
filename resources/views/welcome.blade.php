@@ -57,6 +57,7 @@
 
     <div class="max-w-6xl xl:max-w-7xl mx-auto mt-10 lg:mt-20 px-3">
 
+        <!--skill-set value proposition-->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 pb-10 lg:pb-20">
             <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-bold">With tech and curated words, Let's <span class="block pt-2 text-creator-primary">connect your ideas to the world.</span></h2>
 
@@ -92,157 +93,289 @@
 
         </div>
 
-        <div class="flex flex-col gap-y-4 pb-3 lg:pb-8">
-            <h2 class="text-xl lg:text-4xl font-bold">Portfolio</h2>
-            <p>Explore my work.</p>
+        <!--landing page sale proposition-->
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-10 mt-10 lg:mt-20 pb-10 lg:pb-20">
+            <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-semibold">
+                Boost Your Business Visibility <span class="block pt-2 text-creator-primary font-bold text-2xl lg:text-5xl">~ A Landing Page unlocks Online Presence!</span>
+            </h2>
+
+            <div class="mt-4 lg:mt-10 py-3 lg:py-8 place-self-center">
+                <h4 class="py-2 text-lg font-medium text-black">
+                    Reach Your Local Audience - <span class="font-bold text-orange-500">97% of users search online for local businesses.</span>
+                </h4>
+
+                <ul class="grid gap-y-2 pl-3 pb-3 lg:pb-8 mt-3 text-sm xl:text-base">
+                    <li class="flex flex-row gap-x-1 place-items-center">
+                        <x-svgs.tick/>
+                        Build your online storefront effortlessly.
+                    </li>
+                    <li class="flex flex-row gap-x-1 place-items-center">
+                        <x-svgs.tick/>
+                        Be where your customers are with a user-friendly website.
+                    </li>
+                    <li class="flex flex-row gap-x-1 place-items-center">
+                        <x-svgs.tick/>
+                        Increase revenue by tapping into the vast online market.
+                    </li>
+                    <li class="flex flex-row gap-x-1 place-items-center">
+                        <x-svgs.tick/>
+                        Improve local visibility and attract new customers.
+                    </li>
+                </ul>
+
+                <x-cta.secondary-btn href="{{route('shop')}}">Browse Landing Page Deals</x-cta.secondary-btn>
+            </div>
+
+            <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/creator/online-shop-landing.png?raw=true"
+                 class="rounded place-self-center"
+            >
         </div>
 
-        <h4 class="mt-4 text-lg font-medium italic text-creator-green-light underline underline-offset-8 decoration-dashed decoration-creator-orange">
-            Coding Projects
-        </h4>
+        <!--landing page sale proposition-->
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-10 pb-10 lg:pb-20">
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 pb-8 lg:pb-14">
-            <div class="w-full rounded-md bg-white shadow-sm rounded-md">
-                <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/order%20management%20system/admin-dashboard.png?raw=true"
-                     alt="Order Management System"
-                     class="rounded-md"
-                     title="Order Management Application"
-                >
-                <div class="py-4 px-2">
-                    <h3 class="py-2 text-lg font-semibold">
-                        Order Management CRM
-                    </h3>
+            <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-semibold">
+                Transform Your Business with a Website <span class="block pt-2 text-creator-primary font-bold text-2xl lg:text-5xl">~ Elevate the Shop to an Online Hub!</span>
+            </h2>
 
-                    <p class="mt-1 pb-3 text-sm xl:text-base">
-                        A professional responsive web application for managing and tracking orders. Integrates secure payments through Paypal and Stripe APIs. Built with PHP-Laravel and Vue.js frameworks.
-                    </p>
+            <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/creator/great-biz-needs-a-great-website.png?raw=true"
+                 class="rounded place-self-center"
+            >
 
-                    <a href="https://ordersystem.mwangikanothe.com/" class="text-creator-orange font-medium">
-                        View Demo.
-                    </a>
-                </div>
-            </div>
+            <div class="mt-4 lg:mt-10 py-3 lg:py-8 place-self-center">
+                <h4 class="py-2 text-lg font-medium text-black">
+                    Join the Majority - <span class="font-bold text-orange-500"> 71% of businesses now have a website.</span>
+                </h4>
 
-            <div class="w-full rounded-md bg-white shadow-sm rounded-md">
-                <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/safari/safari-restaurant-landing-page.png?raw=true"
-                     alt="Restaurant Application"
-                     class="rounded-md"
-                     title="Restaurant Website"
-                >
-                <div class="py-4 px-2">
-                    <h3 class="py-2 text-lg font-semibold">
-                        Restaurant Website
-                    </h3>
+                <ul class="grid gap-y-2 pl-3 pb-3 lg:pb-8 mt-3 text-sm xl:text-base">
+                    <li class="flex flex-row gap-x-1 place-items-center">
+                        <x-svgs.tick/>
+                        Establish a professional online presence with a custom website.
+                    </li>
+                    <li class="flex flex-row gap-x-1 place-items-center">
+                        <x-svgs.tick/>
+                        Showcase your products and services 24/7.
+                    </li>
+                    <li class="flex flex-row gap-x-1 place-items-center">
+                        <x-svgs.tick/>
+                        Attract a broader customer base and enhance brand credibility.
+                    </li>
+                    <li class="flex flex-row gap-x-1 place-items-center">
+                        <x-svgs.tick/>
+                        Stay ahead of the competition with a modern digital storefront.
+                    </li>
+                </ul>
 
-                    <p class="mt-1 pb-3 text-sm xl:text-base">
-                        A responsive website for restaurants. Includes Landing page, Menus, About, Contact-us and Location(Map) pages. Built with Laravel-livewire framework.
-                    </p>
-
-                    <a href="https://github.com/mwanginjuguna/safari" class="text-creator-orange font-medium">
-                        View on GitHub.
-                    </a>
-                </div>
-            </div>
-
-            <div class="w-full rounded-md bg-white shadow-sm rounded-md">
-                <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/veggie-detector/veggie-detector-hf.png?raw=true"
-                     alt="Veggie detector"
-                     class="rounded-md"
-                     title="Veggie Detector"
-                >
-                <div class="py-4 px-2">
-                    <h3 class="py-2 text-lg font-semibold">
-                        Veggie Detector
-                    </h3>
-
-                    <p class="mt-1 pb-3 text-sm xl:text-base">
-                        A machine learning Image Classifier that is trained to automatically classify images of select vegetables. Built with Pytorch, fast.ai, and deployed on huggingface.co spaces.
-                    </p>
-
-                    <a href="https://huggingface.co/spaces/kanothe/veggie-detector" class="text-creator-orange font-medium">
-                        View Demo.
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <h4 class="mt-4 pt-6 lg:pt-14 text-lg font-medium italic text-creator-green-light underline underline-offset-8 decoration-dashed decoration-creator-orange border-t border-green-200">
-            Writing Samples
-        </h4>
-        <ul class="pl-3 py-3 space-y-1 text-sm xl:text-base list-[square] list-inside">
-            <li>Blogs and Website content</li>
-            <li>Product description</li>
-            <li>Software & API Documentation</li>
-            <li>How-to & quickstart</li>
-            <li>Explainers and Tutorials</li>
-            <li>Custom Writing</li>
-        </ul>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 pb-6 lg:pb-10">
-            <div class="w-full rounded-md bg-white shadow-sm rounded-md">
-                <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/blog/computer-engineering-abstraction-layers-image.png?raw=true"
-                     alt="Basics of Computer Abstraction"
-                     class="rounded-md max-h-52 mx-auto w-full object-cover object-center"
-                     title="Order Management Application"
-                >
-                <div class="py-4 px-2">
-                    <h3 class="py-2 font-semibold text-creator-green-light">
-                        HOW COMPUTERS Run Programs and EXECUTE CODE in 6 Steps
-                    </h3>
-
-                    <p class="mt-1 pb-3 text-sm xl:text-base">
-                        A simple guide to understanding how computers work, specifically by focusing on how we instruct them(CODE), how they understand us(Compilers and ISA), and how they execute the instructions(CPU) to complete the task.
-                    </p>
-
-                    <a href="https://www.linkedin.com/posts/francis-m-njuguna_how-computers-run-programs-and-execute-code-activity-7156272188877123584-g_C7" class="text-creator-orange font-medium">
-                        View on LinkedIn.
-                    </a>
-                </div>
-            </div>
-
-            <div class="w-full rounded-md bg-white shadow-sm rounded-md">
-                <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/blog/how-plants-grow.png?raw=true"
-                     alt="How Plants Grow"
-                     class="rounded-md"
-                     title="How Plants Grow"
-                >
-                <div class="py-4 px-2">
-                    <h3 class="py-2 text-lg font-semibold text-creator-green-light">
-                        How Plants Grow: EXPLAINER
-                    </h3>
-
-                    <p class="mt-1 pb-3 text-sm xl:text-base">
-                        All living things need food to live. Humans eat plants and animals. Animals eat plants, other animals, insects, etc.  But what do plants eat? Fertilizers or soil? Plants, unlike animals and humans, make their own food (from thin air).
-                    </p>
-
-                    <a href="https://x.com/mwangikanothe/status/1753313655695847688" class="text-creator-orange font-medium">
-                        View on X.
-                    </a>
-                </div>
-            </div>
-
-            <div class="w-full rounded-md bg-white shadow-sm rounded-md">
-                <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/veggie-detector/deriving-nn-kaggle.png?raw=true"
-                     alt="Veggie detector"
-                     class="rounded-md"
-                     title="Veggie Detector"
-                >
-                <div class="py-4 px-2">
-                    <h3 class="py-2 font-semibold text-creator-green-light">
-                        Deriving Neural-Nets from linear and quadratic equations: ML Technical
-                    </h3>
-
-                    <p class="mt-1 pb-3 text-sm xl:text-base">
-                        ML technical notebook that demonstrates how to derive Neural Networks using linear algebra. This is based on fast.ai lessons on Deep Learning.
-                    </p>
-
-                    <a href="https://www.kaggle.com/code/mkanothe/deriving-nn-from-linear-and-quadratic-equations" class="text-creator-orange font-medium">
-                        View on Kaggle.com.
-                    </a>
-                </div>
+                <x-cta.secondary-btn href="{{route('shop')}}">Get A Website Quote</x-cta.secondary-btn>
             </div>
         </div>
 
+        <!--pricing-->
+        <div class="mt-10 lg:mt-20 py-6 lg:py-10 grid gap-y-6 ">
+            <div class="flex flex-col md:flex-row gap-y-1 md:justify-between md:place-items-center px-3 py-2 text-sm lg:text-base xl:text-lg hover:text-white bg-white hover:bg-orange-500 border-2 border-creator-light hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
+                <p class="font-semibold">High converting Landing Page</p>
+
+                <p class="font-bold font-heading">
+                    $ 59.99
+                </p>
+
+                <x-cta.cta-btn href="{{route('shop')}}">Buy Now.</x-cta.cta-btn>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-y-1 md:justify-between md:place-items-center px-3 py-2 text-sm lg:text-base xl:text-lg text-white bg-orange-500 border-2 border-creator-primary rounded-lg transition-all ease-in-out duration-300">
+                <p class="font-semibold">Professional Business Websites and Web Applications.</p>
+
+                <p class="font-bold font-heading">
+                    $ 119.99 <span class="text-sm xl:text-base">(3 page site)</span>
+                </p>
+
+                <x-cta.cta-btn href="{{route('shop')}}">Order Now</x-cta.cta-btn>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-y-1 md:justify-between md:place-items-center px-3 py-2 text-sm lg:text-base xl:text-lg hover:text-white bg-white hover:bg-orange-500 border-2 border-creator-light hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
+                <p class="font-semibold">Technical Documentation and Business Writing</p>
+
+                <p class="font-bold font-heading">
+                    $ 55.00 / 500 words
+                </p>
+
+                <x-cta.cta-btn href="{{route('shop')}}">Order Now.</x-cta.cta-btn>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-y-1 md:justify-between md:place-items-center px-3 py-2 text-sm lg:text-base xl:text-lg hover:text-white bg-white hover:bg-orange-500 border-2 border-creator-light hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
+                <p class="font-semibold">Content and Blog Writing</p>
+
+                <p class="font-bold font-heading">
+                    $ 35.00 / 500 words
+                </p>
+
+                <x-cta.cta-btn href="{{route('shop')}}">Order Now.</x-cta.cta-btn>
+            </div>
+
+            <x-cta.secondary-btn href="{{route('contact')}}">Contact Me for Custom Order</x-cta.secondary-btn>
+
+        </div>
+
+        <!--portfolio-->
+        <div class="mt-4 pb-3 lg:pb-8">
+            <div class="flex flex-col gap-y-4 pb-3 lg:pb-8">
+                <h2 class="text-xl lg:text-4xl font-bold">Portfolio</h2>
+                <p>Explore my work.</p>
+            </div>
+
+            <h4 class="mt-4 text-lg font-medium italic text-creator-green-light underline underline-offset-8 decoration-dashed decoration-creator-orange">
+                Coding Projects
+            </h4>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 pb-8 lg:pb-14">
+                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                    <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/order%20management%20system/admin-dashboard.png?raw=true"
+                         alt="Order Management System"
+                         class="rounded-md"
+                         title="Order Management Application"
+                    >
+                    <div class="py-4 px-2">
+                        <h3 class="py-2 text-lg font-semibold">
+                            Order Management CRM
+                        </h3>
+
+                        <p class="mt-1 pb-3 text-sm xl:text-base">
+                            A professional responsive web application for managing and tracking orders. Integrates secure payments through Paypal and Stripe APIs. Built with PHP-Laravel and Vue.js frameworks.
+                        </p>
+
+                        <a href="https://ordersystem.mwangikanothe.com/" class="text-creator-orange font-medium">
+                            View Demo.
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                    <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/safari/safari-restaurant-landing-page.png?raw=true"
+                         alt="Restaurant Application"
+                         class="rounded-md"
+                         title="Restaurant Website"
+                    >
+                    <div class="py-4 px-2">
+                        <h3 class="py-2 text-lg font-semibold">
+                            Restaurant Website
+                        </h3>
+
+                        <p class="mt-1 pb-3 text-sm xl:text-base">
+                            A responsive website for restaurants. Includes Landing page, Menus, About, Contact-us and Location(Map) pages. Built with Laravel-livewire framework.
+                        </p>
+
+                        <a href="https://github.com/mwanginjuguna/safari" class="text-creator-orange font-medium">
+                            View on GitHub.
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                    <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/veggie-detector/veggie-detector-hf.png?raw=true"
+                         alt="Veggie detector"
+                         class="rounded-md"
+                         title="Veggie Detector"
+                    >
+                    <div class="py-4 px-2">
+                        <h3 class="py-2 text-lg font-semibold">
+                            Veggie Detector
+                        </h3>
+
+                        <p class="mt-1 pb-3 text-sm xl:text-base">
+                            A machine learning Image Classifier that is trained to automatically classify images of select vegetables. Built with Pytorch, fast.ai, and deployed on huggingface.co spaces.
+                        </p>
+
+                        <a href="https://huggingface.co/spaces/kanothe/veggie-detector" class="text-creator-orange font-medium">
+                            View Demo.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--blog samples-->
+        <div class="mt-4 pb-3 lg:pb-8">
+
+            <h4 class="mt-4 pt-6 lg:pt-14 text-lg font-medium italic text-creator-green-light underline underline-offset-8 decoration-dashed decoration-creator-orange border-t border-green-200">
+                Writing Samples
+            </h4>
+
+            <ul class="pl-3 py-3 space-y-1 text-sm xl:text-base list-[square] list-inside">
+                <li>Blogs and Website content</li>
+                <li>Product description</li>
+                <li>Software & API Documentation</li>
+                <li>How-to & quickstart</li>
+                <li>Explainers and Tutorials</li>
+                <li>Custom Writing</li>
+            </ul>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 pb-6 lg:pb-10">
+                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                    <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/blog/computer-engineering-abstraction-layers-image.png?raw=true"
+                         alt="Basics of Computer Abstraction"
+                         class="rounded-md max-h-52 mx-auto w-full object-cover object-center"
+                         title="Order Management Application"
+                    >
+                    <div class="py-4 px-2">
+                        <h3 class="py-2 font-semibold text-creator-green-light">
+                            HOW COMPUTERS Run Programs and EXECUTE CODE in 6 Steps
+                        </h3>
+
+                        <p class="mt-1 pb-3 text-sm xl:text-base">
+                            A simple guide to understanding how computers work, specifically by focusing on how we instruct them(CODE), how they understand us(Compilers and ISA), and how they execute the instructions(CPU) to complete the task.
+                        </p>
+
+                        <a href="https://www.linkedin.com/posts/francis-m-njuguna_how-computers-run-programs-and-execute-code-activity-7156272188877123584-g_C7" class="text-creator-orange font-medium">
+                            View on LinkedIn.
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                    <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/blog/how-plants-grow.png?raw=true"
+                         alt="How Plants Grow"
+                         class="rounded-md"
+                         title="How Plants Grow"
+                    >
+                    <div class="py-4 px-2">
+                        <h3 class="py-2 text-lg font-semibold text-creator-green-light">
+                            How Plants Grow: EXPLAINER
+                        </h3>
+
+                        <p class="mt-1 pb-3 text-sm xl:text-base">
+                            All living things need food to live. Humans eat plants and animals. Animals eat plants, other animals, insects, etc.  But what do plants eat? Fertilizers or soil? Plants, unlike animals and humans, make their own food (from thin air).
+                        </p>
+
+                        <a href="https://x.com/mwangikanothe/status/1753313655695847688" class="text-creator-orange font-medium">
+                            View on X.
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                    <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/veggie-detector/deriving-nn-kaggle.png?raw=true"
+                         alt="Veggie detector"
+                         class="rounded-md"
+                         title="Veggie Detector"
+                    >
+                    <div class="py-4 px-2">
+                        <h3 class="py-2 font-semibold text-creator-green-light">
+                            Deriving Neural-Nets from linear and quadratic equations: ML Technical
+                        </h3>
+
+                        <p class="mt-1 pb-3 text-sm xl:text-base">
+                            ML technical notebook that demonstrates how to derive Neural Networks using linear algebra. This is based on fast.ai lessons on Deep Learning.
+                        </p>
+
+                        <a href="https://www.kaggle.com/code/mkanothe/deriving-nn-from-linear-and-quadratic-equations" class="text-creator-orange font-medium">
+                            View on Kaggle.com.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Products-->
         <div class="flex flex-col gap-y-4 mt-6 pt-10 lg:pt-20 pb-3 lg:pb-8 border-t border-gray-300">
             <h2 class="text-xl lg:text-4xl font-bold">Products and Services</h2>
             <p>World-class services and products <span class="text-creator-green">- One Click Away</span>.</p>
