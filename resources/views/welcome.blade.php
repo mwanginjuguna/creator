@@ -127,7 +127,7 @@
             </div>
 
             <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/creator/online-shop-landing.png?raw=true"
-                 class="rounded place-self-center"
+                 class="rounded-lg place-self-center ring ring-white hover:ring-creator-primary"
             >
         </div>
 
@@ -139,7 +139,7 @@
             </h2>
 
             <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/creator/great-biz-needs-a-great-website.png?raw=true"
-                 class="rounded place-self-center"
+                 class="rounded-lg place-self-center ring ring-white hover:ring-creator-primary"
             >
 
             <div class="mt-4 lg:mt-10 py-3 lg:py-8 place-self-center">
@@ -217,18 +217,18 @@
         </div>
 
         <!--portfolio-->
-        <div class="mt-4 pb-3 lg:pb-8">
+        <div class="mt-10 lg:mt-20 py-3 lg:py-8">
             <div class="flex flex-col gap-y-4 pb-3 lg:pb-8">
                 <h2 class="text-xl lg:text-4xl font-bold">Portfolio</h2>
-                <p>Explore my work.</p>
+                <p>Explore my work. More projects are available on my <a class="text-creator-primary hover:text-orange-500 font-semibold hover:underline" href="https://github.com/mwanginjuguna">GitHub Profile</a> .</p>
             </div>
 
-            <h4 class="mt-4 text-lg font-medium italic text-creator-green-light underline underline-offset-8 decoration-dashed decoration-creator-orange">
-                Coding Projects
+            <h4 class="mt-4 xl:text-lg font-medium italic text-creator-tertiary underline underline-offset-8 decoration-dashed decoration-creator-orange">
+                Sample Coding and ML/AI Projects
             </h4>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 pb-8 lg:pb-14">
-                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
                     <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/order%20management%20system/admin-dashboard.png?raw=true"
                          alt="Order Management System"
                          class="rounded-md"
@@ -243,13 +243,11 @@
                             A professional responsive web application for managing and tracking orders. Integrates secure payments through Paypal and Stripe APIs. Built with PHP-Laravel and Vue.js frameworks.
                         </p>
 
-                        <a href="https://ordersystem.mwangikanothe.com/" class="text-creator-orange font-medium">
-                            View Demo.
-                        </a>
+                        <x-text-link href="https://ordersystem.mwangikanothe.com/">View Demo.</x-text-link>
                     </div>
                 </div>
 
-                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
                     <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/safari/safari-restaurant-landing-page.png?raw=true"
                          alt="Restaurant Application"
                          class="rounded-md"
@@ -264,13 +262,13 @@
                             A responsive website for restaurants. Includes Landing page, Menus, About, Contact-us and Location(Map) pages. Built with Laravel-livewire framework.
                         </p>
 
-                        <a href="https://github.com/mwanginjuguna/safari" class="text-creator-orange font-medium">
+                        <x-text-link href="https://github.com/mwanginjuguna/safari">
                             View on GitHub.
-                        </a>
+                        </x-text-link>
                     </div>
                 </div>
 
-                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
                     <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/veggie-detector/veggie-detector-hf.png?raw=true"
                          alt="Veggie detector"
                          class="rounded-md"
@@ -285,9 +283,9 @@
                             A machine learning Image Classifier that is trained to automatically classify images of select vegetables. Built with Pytorch, fast.ai, and deployed on huggingface.co spaces.
                         </p>
 
-                        <a href="https://huggingface.co/spaces/kanothe/veggie-detector" class="text-creator-orange font-medium">
+                        <x-text-link href="https://huggingface.co/spaces/kanothe/veggie-detector">
                             View Demo.
-                        </a>
+                        </x-text-link>
                     </div>
                 </div>
             </div>
@@ -295,11 +293,7 @@
 
         <!--blog samples-->
         <div class="mt-4 pb-3 lg:pb-8">
-
-            <h4 class="mt-4 pt-6 lg:pt-14 text-lg font-medium italic text-creator-green-light underline underline-offset-8 decoration-dashed decoration-creator-orange border-t border-green-200">
-                Writing Samples
-            </h4>
-
+            <h3 class="py-3 lg:pb-6">Writing</h3>
             <ul class="pl-3 py-3 space-y-1 text-sm xl:text-base list-[square] list-inside">
                 <li>Blogs and Website content</li>
                 <li>Product description</li>
@@ -308,9 +302,18 @@
                 <li>Explainers and Tutorials</li>
                 <li>Custom Writing</li>
             </ul>
+            <p class="text-sm xl:text-base space-y-1">
+                In my writing, I capitalize on research-based, easy-to-understand outputs. Written words are powerful. The primary goal of my writing is to break-down complexity into practicality.
+                <br>
+                Writing is a tool to teach, interpret, and tell a story. <span class="text-base xl:text-lg text-orange-500">Let's tell great stories about your products.</span>
+            </p>
+
+            <h4 class="mt-4 pt-6 lg:pt-14 text-lg font-medium italic text-creator-green-light underline underline-offset-8 decoration-dashed decoration-creator-orange border-t border-green-200">
+                Writing Samples
+            </h4>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 pb-6 lg:pb-10">
-                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
                     <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/blog/computer-engineering-abstraction-layers-image.png?raw=true"
                          alt="Basics of Computer Abstraction"
                          class="rounded-md max-h-52 mx-auto w-full object-cover object-center"
@@ -331,7 +334,7 @@
                     </div>
                 </div>
 
-                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
                     <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/blog/how-plants-grow.png?raw=true"
                          alt="How Plants Grow"
                          class="rounded-md"
@@ -352,7 +355,7 @@
                     </div>
                 </div>
 
-                <div class="w-full rounded-md bg-white shadow-sm rounded-md">
+                <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
                     <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/veggie-detector/deriving-nn-kaggle.png?raw=true"
                          alt="Veggie detector"
                          class="rounded-md"
