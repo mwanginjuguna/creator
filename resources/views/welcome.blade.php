@@ -172,6 +172,8 @@
 
         <!--pricing-->
         <div class="mt-10 lg:mt-20 py-6 lg:py-10 grid gap-y-6 ">
+            <h2 class="mt-3 py-3 text-xl lg:text-4xl font-bold">Pricing</h2>
+
             <div class="flex flex-col md:flex-row gap-y-1 md:justify-between md:place-items-center px-3 py-2 text-sm lg:text-base xl:text-lg hover:text-white bg-white hover:bg-orange-500 border-2 border-creator-light hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
                 <p class="font-semibold">High converting Landing Page</p>
 
@@ -289,26 +291,30 @@
                     </div>
                 </div>
             </div>
+
+            <a href="{{ route('shop') }}" class="mt-3 flex flex-col w-fit font-bold text-creator-primary hover:text-orange-500 text-lg xl:text-xl group">
+                Browse More Projects
+                <span class="w-0 group-hover:w-full h-0.5 bg-orange-500 transition-all ease-in-out duration-500"></span>
+            </a>
         </div>
 
         <!--blog samples-->
         <div class="mt-4 pb-3 lg:pb-8">
-            <h3 class="py-3 lg:pb-6">Writing</h3>
-            <ul class="pl-3 py-3 space-y-1 text-sm xl:text-base list-[square] list-inside">
-                <li>Blogs and Website content</li>
-                <li>Product description</li>
-                <li>Software & API Documentation</li>
-                <li>How-to & quickstart</li>
-                <li>Explainers and Tutorials</li>
-                <li>Custom Writing</li>
-            </ul>
-            <p class="text-sm xl:text-base space-y-1">
-                In my writing, I capitalize on research-based, easy-to-understand outputs. Written words are powerful. The primary goal of my writing is to break-down complexity into practicality.
+            <h3 class="py-3 lg:pb-6 text-xl lg:text-4xl font-bold">Writing</h3>
+
+            <p class="text-sm xl:text-base space-y-1 py-2 max-w-3xl">
+                Written words are powerful. The primary goal of my writing is to break-down complexity into practicality.
                 <br>
-                Writing is a tool to teach, interpret, and tell a story. <span class="text-base xl:text-lg text-orange-500">Let's tell great stories about your products.</span>
+                Writing is a tool to teach, inspire, guide, and tell a story.  <span class="italic font-semibold">The Unread Story in NOT A Story.</span>
             </p>
 
-            <h4 class="mt-4 pt-6 lg:pt-14 text-lg font-medium italic text-creator-green-light underline underline-offset-8 decoration-dashed decoration-creator-orange border-t border-green-200">
+            <div class="flex flex-col md:flex-row gap-6 mt-4 lg:mt-7">
+                <p class="mt-1 py-2 text-base lg:text-lg text-orange-500">Let's tell the story of your products.</p>
+
+                <x-cta.cta-btn href="{{route('contact')}}" class="font-heading">Tell my story</x-cta.cta-btn>
+            </div>
+
+            <h4 class="mt-4 pt-6 lg:pt-14 text-lg font-medium italic text-creator-tertiary underline underline-offset-8 decoration-dashed">
                 Writing Samples
             </h4>
 
@@ -328,9 +334,9 @@
                             A simple guide to understanding how computers work, specifically by focusing on how we instruct them(CODE), how they understand us(Compilers and ISA), and how they execute the instructions(CPU) to complete the task.
                         </p>
 
-                        <a href="https://www.linkedin.com/posts/francis-m-njuguna_how-computers-run-programs-and-execute-code-activity-7156272188877123584-g_C7" class="text-creator-orange font-medium">
+                        <x-text-link href="https://www.linkedin.com/posts/francis-m-njuguna_how-computers-run-programs-and-execute-code-activity-7156272188877123584-g_C7">
                             View on LinkedIn.
-                        </a>
+                        </x-text-link>
                     </div>
                 </div>
 
@@ -349,9 +355,9 @@
                             All living things need food to live. Humans eat plants and animals. Animals eat plants, other animals, insects, etc.  But what do plants eat? Fertilizers or soil? Plants, unlike animals and humans, make their own food (from thin air).
                         </p>
 
-                        <a href="https://x.com/mwangikanothe/status/1753313655695847688" class="text-creator-orange font-medium">
+                        <x-text-link href="https://x.com/mwangikanothe/status/1753313655695847688">
                             View on X.
-                        </a>
+                        </x-text-link>
                     </div>
                 </div>
 
@@ -370,21 +376,31 @@
                             ML technical notebook that demonstrates how to derive Neural Networks using linear algebra. This is based on fast.ai lessons on Deep Learning.
                         </p>
 
-                        <a href="https://www.kaggle.com/code/mkanothe/deriving-nn-from-linear-and-quadratic-equations" class="text-creator-orange font-medium">
+                        <x-text-link href="https://www.kaggle.com/code/mkanothe/deriving-nn-from-linear-and-quadratic-equations">
                             View on Kaggle.com.
-                        </a>
+                        </x-text-link>
                     </div>
                 </div>
+            </div>
+
+            <div class="mt-4 lg:mt-7">
+                <x-cta.secondary-btn href="{{route('blog')}}">
+                    More Articles Here...
+                </x-cta.secondary-btn>
             </div>
         </div>
 
         <!--Products-->
         <div class="flex flex-col gap-y-4 mt-6 pt-10 lg:pt-20 pb-3 lg:pb-8 border-t border-gray-300">
-            <h2 class="text-xl lg:text-4xl font-bold">Products and Services</h2>
-            <p>World-class services and products <span class="text-creator-green">- One Click Away</span>.</p>
+            <h2 class="text-xl lg:text-4xl font-bold">
+                Products and Services
+            </h2>
+            <p>
+                World-class services and products <span class="text-creator-primary">- One Click Away</span>.
+            </p>
 
-            <div class="mt-6 py-6 grid md:grid-cols-2 gap-4 lg:gap-8">
-                <div class="flex flex-col gap-y-3 w-max p-4 bg-creator-green text-creator-light rounded-lg">
+            <div class="mt-6 py-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+                <div class="grid gap-y-3 p-4 bg-orange-500 hover:bg-white text-black border-2 border-orange-500 hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
                     <h2 class="py-2 font-semibold text-lg xl:text-xl">High converting Landing Page</h2>
                     <p class="font-medium italic">Key features:</p>
                     <ul class="pl-3 text-sm xl:text-lg space-y-2">
@@ -397,7 +413,7 @@
                         <li>Last Call to Action</li>
                         <li>Footer - optional</li>
                     </ul>
-                    <div class="flex justify-between place-items-center text-creator-green hover:text-white">
+                    <div class="flex justify-between place-items-center text-creator-primary">
                         <p class="text-lg lg:text-xl font-medium font-heading">$99</p>
 
                         <x-cta.cta-btn>Order Now</x-cta.cta-btn>
@@ -405,29 +421,42 @@
 
                 </div>
 
-                <div class="flex flex-col gap-y-3 w-max p-4 bg-creator-orange text-creator-light rounded-lg">
-                    <h2 class="py-2 font-semibold text-lg xl:text-xl">High converting Landing Page</h2>
+                <div class="grid gap-y-3 p-4 bg-creator-secondary hover:bg-white hover:text-black border-2 border-creator-secondary hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
+                    <h2 class="py-2 font-semibold text-lg xl:text-xl">Responsive e-commerce Website</h2>
                     <p class="font-medium italic">Key features:</p>
                     <ul class="pl-3 text-sm xl:text-lg space-y-2">
-                        <li>Value proposition headline</li>
-                        <li>CTA, and product/service visual</li>
-                        <li>Statistics and Metrics</li>
-                        <li>Features and Benefits</li>
-                        <li>Social proof with testimonials</li>
-                        <li>FAQs to handle objection</li>
-                        <li>Last Call to Action</li>
-                        <li>Footer - optional</li>
+                        <li>User-friendly UI</li>
+                        <li>Fast-loading Speed</li>
+                        <li>SEO optimization</li>
+                        <li>Secure Payment gateways e.g., Paypal, Stripe, mPesa</li>
+                        <li>Social media integration</li>
+                        <li>Customizable Templates</li>
+                        <li>Optimized for all devices</li>
+                        <li>Blog - optional</li>
                     </ul>
-                    <div class="flex justify-between place-items-center text-creator-green hover:text-white">
-                        <p class="text-lg lg:text-xl font-medium font-heading">$99</p>
+                    <div class="flex justify-between place-items-center text-creator-primary">
+                        <p class="text-lg lg:text-xl font-medium font-heading">$255</p>
 
                         <x-cta.cta-btn>Order Now</x-cta.cta-btn>
                     </div>
-
                 </div>
 
-                <div class="flex flex-col gap-y-3">
+                <div class="grid gap-y-3 p-4 bg-creator-tertiary hover:bg-white hover:text-black border-2 border-creator-tertiary hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
+                    <h2 class="py-2 font-semibold text-lg xl:text-xl">Cloud Deployment Assistance</h2>
+                    <p class="font-medium italic">Key features:</p>
+                    <ul class="pl-3 text-sm xl:text-lg space-y-2">
+                        <li>Deployment to Major cloud providers: AWS, Azure, GCP, Digital-Ocean.</li>
+                        <li>On-demand scalability of resources.</li>
+                        <li>High uptime guarantees and redundancy to minimize downtime</li>
+                        <li>Encryption, access controls, and regular security audits</li>
+                        <li>Flexibility and Customization</li>
+                        <li>Automated Deployment and Management</li>
+                    </ul>
+                    <div class="flex justify-between place-items-center text-creator-primary">
+                        <p class="text-lg lg:text-xl font-medium font-heading">$199</p>
 
+                        <x-cta.cta-btn>Order Now</x-cta.cta-btn>
+                    </div>
                 </div>
             </div>
         </div>
