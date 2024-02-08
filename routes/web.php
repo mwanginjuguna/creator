@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome')->name('home');
 Route::view('/dev', 'welcome')->name('dev');
 Route::view('/blog', 'welcome')->name('blog');
+Route::view('/writing', 'welcome')->name('writing');
+Route::view('/letter', 'welcome')->name('letter');
 Route::view('/shop', 'welcome')->name('shop');
 Route::view('/contact', 'welcome')->name('contact');
 
