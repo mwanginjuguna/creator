@@ -1,47 +1,39 @@
 <x-guest-layout>
     <div class="w-full min-h-screen p-3 lg:pb-8 bg-white text-creator-dark grid content-center">
-        <div class="max-w-7xl mx-auto grid sm:grid-cols-2 gap-x-4 content-center lg:p-8">
-            <!--<img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/profileImg.jpg?raw=true"
-                 class="rounded-full place-self-center"
-                 alt="Mwangi Kanothe profile image">-->
-            <video src="https://github.com/mwanginjuguna/public-image-assets/raw/main/creator/creator-hero-landing-page.mp4" autoplay loop muted
-                   class="rounded-lg place-self-center sm:min-h-[50%] lg:min-h-[75%] object-center object-cover"
-            ></video>
-
+        <!--About-->
+        <div id="about" class="max-w-7xl mx-auto grid sm:grid-cols-2 gap-x-4 content-center lg:p-8">
             <div class="flex flex-col gap-y-3 justify-center lg:px-8">
-                <h1 class="py-2 lg:pb-5 text-2xl lg:text-5xl text-creator-primary font-bold">
-                    Transform Ideas into Reality <span class="text-creator-dark text-lg lg:text-3xl">with code and words.</span>
-                </h1>
-
-                <h3 class="text-lg font-semibold">
-                    I am Francis Mwangi Njuguna <span class="italic">(Kanothe)</span>.
+                <h3 class="text-sm xl:text-lg font-medium text-creator-secondary uppercase">
+                    Mwangi <span class="italic">Kanothe</span>.
                 </h3>
 
-                <p class="font-medium">
-                    I am a writer, a software engineer, and a Machine Learning Expert.
-                </p>
+                <h1 class="py-2 lg:pb-3.5 text-2xl lg:text-5xl text-creator-primary font-bold">
+                    New Horizons.<br>More Customers.<br>Unlimited Markets.
+                    <span class="pt-2 block text-creator-dark text-lg lg:text-3xl">
+                        Fresh Ideas, Designs and Technologies To Digitize your Business.
+                    </span>
+                </h1>
 
-                <div class="p-3 lg:py-5">
-                    <p class="font-medium">I build:</p>
+                <div class="p-3">
+                    <p class="font-medium">Business Tools:</p>
                     <ul class="text-sm xl:text-base pl-3 lg:pl-5 space-y-3">
                         <li class="flex flex-wrap gap-x-3">
                             <x-svgs.tick />
-                            Web and Mobile Applications,
+                            E-Commerce Websites and Landing Pages.
                         </li>
                         <li class="flex flex-wrap gap-x-3">
                             <x-svgs.tick />
-                            cloud-first applications,
+                            Cloud-native, Web, Android, and iOS Applications.
                         </li>
                         <li class="flex flex-wrap gap-x-3">
                             <x-svgs.tick />
-                            Landing Pages, and
+                            Cloud Deployments (AWS, GCP, Azure, Digital-Ocean, Shared Hosting).
                         </li>
                         <li class="flex flex-wrap gap-x-3">
                             <x-svgs.tick />
-                            deploy software to cloud platforms(AWS, GCP, Azure, Digital-Ocean).
+                            Business Writing.
                         </li>
                     </ul>
-                    <p class="mt-3 py-2">I write about cloud for businesses, documentations and guides for software & APIs. I also write blogs for agriculture, technologies, and the African tech/heritage landscape.</p>
                 </div>
 
                 <div id="cta" class="mt-3">
@@ -49,7 +41,40 @@
                         Let's create, innovate, and grow together.
                     </h4>
 
-                    <x-cta.cta-btn>Get In Touch</x-cta.cta-btn>
+                    <x-cta.cta-btn>Browse Products</x-cta.cta-btn>
+                </div>
+            </div>
+
+            <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/creator/future-is-digital--expand.png?raw=true"
+                 class="rounded-md place-self-center border-2 border-white motion-safe:hover:scale-[1.01] hover:border-orange-500 transition-all ease-in-out duration-300"
+                 alt="Expand Online">
+
+            <div class="mt-4 py-3">
+                <p class="font-medium">
+                    I am an entrepreneur, a writer, a software engineer, and a Machine Learning Expert.
+                </p>
+
+                <div class="py-2">
+
+                    <form method="POST"
+                          class="p-3 py-5 rounded-md bg-creator-secondary grid grid-cols-1 md:grid-cols-2"
+                    >
+                        <h3 class="py-3 md:col-span-2 font-bold text-lg lg:text-2xl text-creator-primary">
+                            Join the MK NewsLetter
+                        </h3>
+
+                        <p class="py-2 md:col-span-2">
+                            Every Two Weeks on Saturday, I send <span class="font-medium">a special letter to 50+ users</span>. BY joining them, you'll learn a little about business, agriculture, Africa, and Digital tools.
+                        </p>
+
+                        <input name="newsletter-email" type="text"
+                               placeholder="Your Email ex. 'mwass@gmail.com'"
+                               class="py-1 pb-3 w-full text-creator-primary border-none"
+                        >
+                        <button type="submit" class="p-1.5 px-2.5 w-max font-semibold bg-white hover:bg-orange-500 border border-orange-500 hover:border-white hover:text-white text-sm xl:text-base transition-all ease-in-out duration-300">
+                            Read For Free
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -58,7 +83,7 @@
     <div class="max-w-6xl xl:max-w-7xl mx-auto mt-10 lg:mt-20 px-3">
 
         <!--skill-set value proposition-->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 pb-10 lg:pb-20">
+        <div id="skills" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 pb-10 lg:pb-20">
             <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-bold">With tech and curated words, Let's <span class="block pt-2 text-creator-primary">connect your ideas to the world.</span></h2>
 
             <div class="p-4 w-full grid bg-creator-secondary rounded-lg text-black hover:bg-white border-2 border-creator-secondary hover:border-creator-primary transition-all ease-in-out duration-300 group">
@@ -88,13 +113,13 @@
 
                 <h4 class="py-2 mt-4 font-medium lg:text-lg">Connecting Products to <span class="text-creator-primary font-bold">The New World Order!</span></h4>
 
-                <p class="py-1 text-sm xl:text-base">Let's ensure Your NOT LEFT BEHIND. The world is changing. AI is here and software must be Cloud-first.</p>
+                <p class="py-1 text-sm xl:text-base">Let's ensure you are NOT LEFT BEHIND. The world is changing. AI is here and software must be Cloud-first.</p>
             </div>
 
         </div>
 
         <!--landing page sale proposition-->
-        <div class="grid md:grid-cols-2 gap-6 lg:gap-10 mt-10 lg:mt-20 pb-10 lg:pb-20">
+        <div id="resources" class="grid md:grid-cols-2 gap-6 lg:gap-10 mt-10 lg:mt-20 pb-10 lg:pb-20">
             <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-semibold">
                 Boost Your Business Visibility <span class="block pt-2 text-creator-primary font-bold text-2xl lg:text-5xl">~ A Landing Page unlocks Online Presence!</span>
             </h2>
@@ -171,7 +196,7 @@
         </div>
 
         <!--pricing-->
-        <div class="mt-10 lg:mt-20 py-6 lg:py-10 grid gap-y-6 ">
+        <div id="pricing" class="mt-10 lg:mt-20 py-6 lg:py-10 grid gap-y-6 ">
             <h2 class="mt-3 py-3 text-xl lg:text-4xl font-bold">Pricing</h2>
 
             <div class="flex flex-col md:flex-row gap-y-1 md:justify-between md:place-items-center px-3 py-2 text-sm lg:text-base xl:text-lg hover:text-white bg-white hover:bg-orange-500 border-2 border-creator-light hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
@@ -219,7 +244,7 @@
         </div>
 
         <!--portfolio-->
-        <div class="mt-10 lg:mt-20 py-3 lg:py-8">
+        <div id="portfolio" class="mt-10 lg:mt-20 py-3 lg:py-8">
             <div class="flex flex-col gap-y-4 pb-3 lg:pb-8">
                 <h2 class="text-xl lg:text-4xl font-bold">Portfolio</h2>
                 <p>Explore my work. More projects are available on my <a class="text-creator-primary hover:text-orange-500 font-semibold hover:underline" href="https://github.com/mwanginjuguna">GitHub Profile</a> .</p>
@@ -299,7 +324,7 @@
         </div>
 
         <!--blog samples-->
-        <div class="mt-4 pb-3 lg:pb-8">
+        <div id="blog" class="mt-4 pb-3 lg:pb-8">
             <h3 class="py-3 lg:pb-6 text-xl lg:text-4xl font-bold">Writing</h3>
 
             <p class="text-sm xl:text-base space-y-1 py-2 max-w-3xl">
@@ -391,7 +416,7 @@
         </div>
 
         <!--Products-->
-        <div class="flex flex-col gap-y-4 mt-6 pt-10 lg:pt-20 pb-3 lg:pb-8 border-t border-gray-300">
+        <div id="products-and-services" class="flex flex-col gap-y-4 mt-6 pt-10 lg:pt-20 pb-3 lg:pb-8 border-t border-gray-300">
             <h2 class="text-xl lg:text-4xl font-bold">
                 Products and Services
             </h2>
@@ -453,10 +478,67 @@
                         <li>Automated Deployment and Management</li>
                     </ul>
                     <div class="flex justify-between place-items-center text-creator-primary">
-                        <p class="text-lg lg:text-xl font-medium font-heading">$199</p>
+                        <p class="text-lg lg:text-xl font-medium font-heading">$49</p>
 
                         <x-cta.cta-btn>Order Now</x-cta.cta-btn>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Technologies and Tools-->
+
+        <!--About-->
+        <div id="about" class="grid sm:grid-cols-2 gap-x-4 content-center lg:p-8">
+            <!--<img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/profileImg.jpg?raw=true"
+                 class="rounded-full place-self-center"
+                 alt="Mwangi Kanothe profile image">-->
+            <video src="https://github.com/mwanginjuguna/public-image-assets/raw/main/creator/creator-hero-landing-page.mp4" autoplay loop muted
+                   class="rounded-lg place-self-center sm:min-h-[50%] lg:min-h-[75%] object-center object-cover"
+            ></video>
+
+            <div class="flex flex-col gap-y-3 justify-center lg:px-8">
+                <h1 class="py-2 lg:pb-5 text-2xl lg:text-5xl text-creator-primary font-bold">
+                    Transform Ideas into Reality <span class="text-creator-dark text-lg lg:text-3xl">with code and words.</span>
+                </h1>
+
+                <h3 class="text-lg font-semibold">
+                    I am Francis Mwangi Njuguna <span class="italic">(Kanothe)</span>.
+                </h3>
+
+                <p class="font-medium">
+                    I am a writer, a software engineer, and a Machine Learning Expert.
+                </p>
+
+                <div class="p-3 lg:py-5">
+                    <p class="font-medium">I build:</p>
+                    <ul class="text-sm xl:text-base pl-3 lg:pl-5 space-y-3">
+                        <li class="flex flex-wrap gap-x-3">
+                            <x-svgs.tick />
+                            Web and Mobile Applications,
+                        </li>
+                        <li class="flex flex-wrap gap-x-3">
+                            <x-svgs.tick />
+                            cloud-first applications,
+                        </li>
+                        <li class="flex flex-wrap gap-x-3">
+                            <x-svgs.tick />
+                            Landing Pages, and
+                        </li>
+                        <li class="flex flex-wrap gap-x-3">
+                            <x-svgs.tick />
+                            deploy software to cloud platforms(AWS, GCP, Azure, Digital-Ocean).
+                        </li>
+                    </ul>
+                    <p class="mt-3 py-2">I write about cloud for businesses, documentations and guides for software & APIs. I also write blogs for agriculture, technologies, and the African tech/heritage landscape.</p>
+                </div>
+
+                <div id="cta" class="mt-3">
+                    <h4 class="font-semibold pb-3">
+                        Let's create, innovate, and grow together.
+                    </h4>
+
+                    <x-cta.cta-btn>Get In Touch</x-cta.cta-btn>
                 </div>
             </div>
         </div>
