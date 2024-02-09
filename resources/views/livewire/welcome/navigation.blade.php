@@ -1,11 +1,29 @@
-<div class="sm:sticky top-0 px-6 py-3 text-end z-10 bg-creator-light bg-opacity-85 w-full">
-    @auth
-        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500" wire:navigate>Dashboard</a>
-    @else
-        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500" wire:navigate>Log in</a>
+<div class="sm:sticky top-0 px-6 py-3 z-10 bg-creator-light bg-opacity-95 w-full">
+    <div class="max-w-6xl xl:max-w-7xl mx-auto flex flex-row justify-between">
+        <a href="/"><img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/creator/logo/mk-logo-banner-grey-light.png?raw=true"
+             alt="Mk-logo"
+             class="h-6 rounded-lg"
+        ></a>
 
-        @if (Route::has('register'))
-            <a href="{{ route('register') }}" class="ms-4 font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500" wire:navigate>Register</a>
-        @endif
-    @endauth
+        <div class="hidden md:flex flex-row md:gap-x-6">
+            <x-text-link href="/" wire:navigate>
+                {{ __('Home') }}
+            </x-text-link>
+            <x-text-link href="#shop">
+                {{ __('Shop') }}
+            </x-text-link>
+            <x-text-link href="{{route('letter')}}" wire:navigate>
+                {{ __('Letters') }}
+            </x-text-link>
+            <x-text-link href="#blog">
+                {{ __('Blog') }}
+            </x-text-link>
+            <x-text-link href="#about">
+                {{ __('About') }}
+            </x-text-link>
+            <x-text-link href="#contact">
+                {{ __('Contact') }}
+            </x-text-link>
+        </div>
+    </div>
 </div>
