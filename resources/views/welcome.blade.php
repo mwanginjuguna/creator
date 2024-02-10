@@ -375,7 +375,7 @@
 
         <!--blog samples-->
         <div id="blog" class="mt-4 pb-3 lg:pb-8">
-            <h3 class="py-3 lg:pb-6 text-xl lg:text-4xl font-bold">Writing</h3>
+            <h3 class="py-3 lg:pb-6 text-xl lg:text-4xl font-bold">Writing / Blog</h3>
 
             <p class="text-sm xl:text-base space-y-1 py-2 max-w-3xl">
                 Written words are powerful. The primary goal of my writing is to break-down complexity into practicality.

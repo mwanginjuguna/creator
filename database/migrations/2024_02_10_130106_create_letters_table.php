@@ -15,8 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('email')->unique();
             $table->boolean('active')->default(true);
-            $table->foreignId('image_id')->nullable()->constrained()->nullOnDelete();
-            $table->boolean('is_published')->default(true);
             $table->timestamps();
         });
     }

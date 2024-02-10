@@ -9,19 +9,19 @@
             <x-text-link href="/" wire:navigate>
                 {{ __('Home') }}
             </x-text-link>
-            <x-text-link href="#shop">
+            <x-text-link href="/#shop">
                 {{ __('Shop') }}
             </x-text-link>
             <x-text-link href="{{route('letter')}}" wire:navigate>
                 {{ __('Letters') }}
             </x-text-link>
-            <x-text-link href="#blog">
+            <x-text-link href="/#blog">
                 {{ __('Blog') }}
             </x-text-link>
-            <x-text-link href="#about">
+            <x-text-link href="/#about">
                 {{ __('About') }}
             </x-text-link>
-            <x-text-link href="#contact">
+            <x-text-link href="/#contact">
                 {{ __('Contact') }}
             </x-text-link>
         </div>

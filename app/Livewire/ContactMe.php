@@ -2,17 +2,18 @@
 
 namespace App\Livewire;
 
+use App\Livewire\Forms\ContactForm;
 use Livewire\Component;
 
 class ContactMe extends Component
 {
     public bool $sent;
-    public string $email;
-    public string $name;
-    public string $message;
+
+    public ContactForm $form;
 
     public function sendMessage()
     {
+        $this->form->store();
         $this->sent = true;
     }
 

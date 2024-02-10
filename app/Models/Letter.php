@@ -9,7 +9,7 @@ class Letter extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['email', 'active', 'image_id', 'is_published'];
+    protected $fillable = ['email', 'active'];
 
     public function unsubscribe()
     {
