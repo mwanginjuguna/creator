@@ -1,6 +1,6 @@
 <div class="py-2">
 
-    <form method="POST"
+    <form
           wire:submit.prevent="signup"
           class="p-3 py-5 rounded-md bg-creator-secondary text-creator-dark grid grid-cols-1 md:grid-cols-2"
     >

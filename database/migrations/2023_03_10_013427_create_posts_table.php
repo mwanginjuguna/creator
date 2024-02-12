@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('excerpt')->nullable();
             $table->string('slug');
-            $table->longText('body')->default("Post Content.");
+            $table->longText('body');
             $table->string('status')->default('Draft'); // Published or Draft
             $table->boolean('is_public')->default(false); // public & private posts
             $table->foreignId('category_id')->nullable()->constrained()->nullOnDelete();

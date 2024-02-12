@@ -28,7 +28,7 @@ new #[Layout('layouts.guest')] class extends Component
     }
 }; ?>
 
-<div>
+<div class="max-w-xl mx-auto mt-6 sm:mt-10 lg:mt-16">
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
