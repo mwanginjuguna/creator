@@ -1,6 +1,12 @@
 <?php
 
+use App\Livewire\Pages\About;
+use App\Livewire\Pages\Blog;
+use App\Livewire\Pages\Contact;
+use App\Livewire\Pages\Portfolio;
+use App\Livewire\Pages\Shop;
 use Illuminate\Support\Facades\Route;
+use Livewire\Volt\Volt;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,11 +21,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('home');
 Route::view('/dev', 'welcome')->name('dev');
-Route::view('/#blog', 'welcome')->name('blog');
 Route::view('/#writing', 'welcome')->name('writing');
 Route::view('/letter', 'letters')->name('letter');
-Route::view('/#shop', 'welcome')->name('shop');
-Route::view('/#contact', 'welcome')->name('contact');
+Route::get('/about', About::class)->name('about');
+Volt::route('/blog', Blog::class)->name('blog');
+Volt::route('/shop', Shop::class)->name('shop');
+Volt::route('/portfolio', Portfolio::class)->name('portfolio');
+Volt::route('/contact', Contact::class)->name('contact');
+//Volt::route('/about', 'pages.about')->name('about');
+//Volt::route('/blog', 'pages.blog')->name('blog');
+//Volt::route('/shop', 'pages.shop')->name('shop');
+//Volt::route('/portfolio', 'pages.portfolio')->name('portfolio');
+//Volt::route('/contact', 'pages.contact')->name('contact');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

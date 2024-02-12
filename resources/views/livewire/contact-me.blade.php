@@ -1,10 +1,15 @@
 <!--contact form-->
 <div class="py-6">
     <div class="lg:px-6 md:pl-10">
-        <p class="py-4 text-slate-200 text-justify font-light italic leading-tight">Let's connect and build digital products together. Send me a message, and I will get back to you.</p>
+        <h3 class="py-2 mt-2 lg:mt-4 font-bold text-xl sm:text-2xl lg:text-3xl">
+            Let's connect and build digital products together.
+        </h3>
+        <p class="py-4 italic">
+            Send me a message, and I will get back to you.
+        </p>
 
         <hr class="md:hidden text-slate-600 mb-6">
-        <p class="font-semibold py-4 text-creator-secondary">Leave A Message.</p>
+        <p class="font-semibold py-4 text-creator-primary">Leave A Message.</p>
         @if($sent === true)
             <div class="p-4 flex flex-row gap-x-4 bg-lime-300 text-slate-700 text-xs rounded-lg items-center">
                 <svg version="1.1" id="Capa_1" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" xml:space="preserve">

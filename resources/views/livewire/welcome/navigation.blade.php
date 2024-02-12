@@ -1,29 +1,69 @@
-<div class="sm:sticky top-0 px-6 py-3 z-10 bg-creator-light bg-opacity-95 w-full">
+<div x-data="{ open: false }" class="sm:sticky top-0 px-6 py-1 z-10 bg-creator-tertiary bg-opacity-95 w-full border-b border-gray-200">
     <div class="max-w-6xl xl:max-w-7xl mx-auto flex flex-row justify-between">
-        <a href="/"><img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/creator/logo/mk-logo-banner-grey-light.png?raw=true"
-             alt="Mk-logo"
-             class="h-6 rounded-lg"
-        ></a>
+        <div class="flex">
+            <!-- Logo -->
+            <div class="shrink-0 flex items-center">
+                <a href="{{ route('home') }}" wire:navigate>
+                    <x-application-logo class="block h-9 w-auto place-self-center rounded-lg fill-current" />
+                </a>
+            </div>
 
-        <div class="hidden md:flex flex-row md:gap-x-6">
-            <x-text-link href="/" wire:navigate>
-                {{ __('Home') }}
-            </x-text-link>
-            <x-text-link href="/#shop">
-                {{ __('Shop') }}
-            </x-text-link>
-            <x-text-link href="{{route('letter')}}" wire:navigate>
-                {{ __('Letters') }}
-            </x-text-link>
-            <x-text-link href="/#blog">
-                {{ __('Blog') }}
-            </x-text-link>
-            <x-text-link href="/#about">
-                {{ __('About') }}
-            </x-text-link>
-            <x-text-link href="/#contact">
-                {{ __('Contact') }}
-            </x-text-link>
+            <!-- Navigation Links -->
+            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex items-center">
+                <x-nav-link :href="route('home')" :active="request()->routeIs('home')" wire:navigate>
+                    {{ __('Home') }}
+                </x-nav-link>
+                <x-nav-link :href="route('shop')" :active="request()->routeIs('shop')" wire:navigate>
+                    {{ __('Shop') }}
+                </x-nav-link>
+                <x-nav-link :href="route('letter')" :active="request()->routeIs('letter')" wire:navigate>
+                    {{ __('Letters') }}
+                </x-nav-link>
+                <x-nav-link :href="route('blog')" :active="request()->routeIs('blog')" wire:navigate>
+                    {{ __('Blog') }}
+                </x-nav-link>
+                <x-nav-link :href="route('about')" :active="request()->routeIs('about')" wire:navigate>
+                    {{ __('About') }}
+                </x-nav-link>
+                <x-nav-link :href="route('contact')" :active="request()->routeIs('contact')" wire:navigate>
+                    {{ __('Contact') }}
+                </x-nav-link>
+            </div>
+        </div>
+
+        <!--open humberger-->
+        <div class="flex sm:hidden">
+            <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Responsive Navigation Menu -->
+    <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
+        <!-- Responsive Menu Options -->
+        <div class="pt-4 pb-1">
+
+            <div class="mt-3 space-y-1">
+                <x-responsive-nav-link :href="route('home')" wire:navigate>
+                    {{ __('Home') }}
+                </x-responsive-nav-link>
+
+                <x-responsive-nav-link :href="route('shop')" wire:navigate>
+                    {{ __('Shop') }}
+                </x-responsive-nav-link>
+
+                <x-responsive-nav-link :href="route('blog')" wire:navigate>
+                    {{ __('Blog') }}
+                </x-responsive-nav-link>
+
+                <x-responsive-nav-link :href="route('about')" wire:navigate>
+                    {{ __('About') }}
+                </x-responsive-nav-link>
+            </div>
         </div>
     </div>
 </div>

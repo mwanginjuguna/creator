@@ -22,6 +22,4 @@
 
         @livewire('about-me')
     </div>
-
-    @livewire('footer')
 </x-guest-layout>

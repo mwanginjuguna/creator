@@ -30,6 +30,9 @@
             <!-- Page Content -->
             <main>
                 {{ $slot }}
+
+                <!--footer-->
+                @livewire('footer')
             </main>
         </div>
     </body>
