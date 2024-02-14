@@ -9,7 +9,7 @@
         </h3>
 
         @if($hasJoined)
-            <div class="p-4 flex flex-row gap-x-4 items-center bg-lime-300 text-slate-700 text-xs rounded-lg">
+            <div class="p-4 max-w-sm flex flex-row gap-x-4 items-center bg-lime-300 text-slate-700 text-xs xl:text-sm rounded-lg">
                 <svg version="1.1" id="Capa_1" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" xml:space="preserve">
                     <circle style="fill:#25AE88;" cx="25" cy="25" r="25"/>
                     <polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="
@@ -19,7 +19,7 @@
                     @if($exists)
                         You are already subscribed. Thank you.
                     @else
-                        Thank you subscribing. Expect Nothing but Great Content.
+                        Thank you, my friend. This is an act of courage and kindness. Watch out for a welcome email.
                     @endif
                 </p>
             </div>

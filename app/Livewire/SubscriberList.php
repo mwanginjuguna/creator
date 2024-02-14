@@ -7,12 +7,13 @@ use Livewire\Component;
 
 class SubscriberList extends Component
 {
-    public $subscribers;
-
     public function render()
     {
-        $this->subscribers = Letter::query()->where('active',  true)->get();
-
-        return view('livewire.subscriber-list');
+        return view('livewire.subscriber-list', [
+            'subscribers' => Letter::query()
+                ->where('active',  true)
+                ->select(['id','email'])
+                ->get()
+        ]);
     }
 }
