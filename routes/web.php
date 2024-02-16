@@ -4,6 +4,7 @@ use App\Livewire\Pages\About;
 use App\Livewire\Pages\Blog;
 use App\Livewire\Pages\Contact;
 use App\Livewire\Pages\Portfolio;
+use App\Livewire\Pages\Posts\CategoryTag;
 use App\Livewire\Pages\Posts\PostCreate;
 use App\Livewire\Pages\Shop;
 use Illuminate\Support\Facades\Route;
@@ -31,7 +32,8 @@ Volt::route('/portfolio', Portfolio::class)->name('portfolio');
 Volt::route('/contact', Contact::class)->name('contact');
 
 Route::middleware('auth')->group(function () {
-    Volt::route('/admin/posts/new', PostCreate::class)->name('post-new');
+    Volt::route('/admin/posts/new', PostCreate::class)->name('post-create');
+    Volt::route('/admin/posts/category-tag', CategoryTag::class)->name('category-tag');
 });
 
 

@@ -3,7 +3,7 @@
         Create A new Post
     </h1>
 
-    <div class="grid md:grid-cols-2 gap-4 divide-x divide-orange-300">
+    <div class="relative grid md:grid-cols-2 gap-4 divide-x divide-orange-300">
         <div class="py-3">
             <form wire:submit="form.save" class="space-y-4 lg:space-y-8">
                 <div class="mt-1 flex flex-col gap-y-1">
@@ -90,7 +90,7 @@
         </div>
 
         <!--display post-->
-        <div class="p-3">
+        <div class="p-3 sticky md:top-0 overflow-y-auto">
             <h2 class="py-1 font-bold text-2xl lg:text-3xl">
                 {{ $form->title }}
             </h2>
@@ -103,8 +103,11 @@
             </p>
 
 
-            <div class="nowrap">
-                {!! $form->body !!}
+            <div class="grid prose prose-img:rounded-lg prose-img:place-self-center
+            prose-headings:font-heading prose-headings:font-bold prose-h1:text-creator-primary prose-h1:text-2xl md:prose-h1:text-3xl
+            prose-a:text-creator-primary hover:prose-a:text-orange-500 prose-a:underline
+            prose-p:font-body prose-ul:list-[square] prose-ul:list-inside">
+                {!! $bodyMarkdown !!}
             </div>
         </div>
     </div>

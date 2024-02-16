@@ -14,14 +14,20 @@ class PostCreateForm extends Form
 {
     #[Rule('required|min:5')]
     public string $title = '';
+
     #[Rule('required|max:200')]
     public string $excerpt = '';
+
     #[Rule('required')]
     public int $categoryId = 0;
+
     #[Rule('required')]
     public int $tagId = 0;
+
     public string $category = '';
+
     public string $tag = '';
+
     #[Rule('required')]
     public string $body = '';
 

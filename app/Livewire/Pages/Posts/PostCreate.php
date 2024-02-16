@@ -5,6 +5,7 @@ namespace App\Livewire\Pages\Posts;
 use App\Livewire\Forms\PostCreateForm;
 use App\Models\Category;
 use App\Models\Tag;
+use Illuminate\Support\Str;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
@@ -19,9 +20,11 @@ class PostCreate extends Component
         $this->form->getCategory();
         $this->form->getTag();
 
+
         return view('livewire.pages.posts.post-create', [
             'categories' => Category::all(),
-            'tags' => Tag::all()
+            'tags' => Tag::all(),
+            'bodyMarkdown' => Str::markdown($this->form->body)
         ]);
     }
 }
