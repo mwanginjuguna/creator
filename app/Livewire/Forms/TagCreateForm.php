@@ -21,7 +21,7 @@ class TagCreateForm extends Form
     {
         $this->validate();
 
-        Tag::create([
+        $tag = Tag::create([
             'title' => $this->title,
             'description' => $this->description,
             'slug' => Str::slug($this->title)

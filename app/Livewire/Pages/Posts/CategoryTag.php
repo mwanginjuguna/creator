@@ -17,6 +17,16 @@ class CategoryTag extends Component
 
     public CategoryCreateForm $categoryForm;
 
+    public function saveCategory()
+    {
+        $this->categoryForm->store();
+    }
+
+    public function saveTag()
+    {
+        $this->tagForm->store();
+    }
+
     public function render()
     {
         return view('livewire.pages.posts.category-tag', [

@@ -14,7 +14,7 @@
             <x-cta.cta-btn href="{{route('contact')}}" class="font-heading">Tell my story</x-cta.cta-btn>
         </div>
 
-        @livewire('blog-inline')
+        <livewire:blog-inline :posts="$posts" />
     </div>
     <div class="p-3 bg-creator-light border-2 border-creator-light hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
         @livewire('contact-me')

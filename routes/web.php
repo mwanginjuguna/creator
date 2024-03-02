@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Livewire\Pages\About;
 use App\Livewire\Pages\Blog;
 use App\Livewire\Pages\Contact;
@@ -35,6 +36,8 @@ Route::middleware('auth')->group(function () {
     Volt::route('/admin/posts/new', PostCreate::class)->name('post-create');
     Volt::route('/admin/posts/category-tag', CategoryTag::class)->name('category-tag');
 });
+
+Route::get('/posts/{post}', [BlogController::class, 'show'])->name('post-view');
 
 
 Route::view('dashboard', 'dashboard')

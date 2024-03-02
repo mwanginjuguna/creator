@@ -18,6 +18,10 @@
                     @livewire('subscriber-list')
                 </div>
             </div>
+
+            <div class="container mx-auto mt-6 lg:mt-10 px-4">
+
+            </div>
         </div>
     </div>
 </x-app-layout>

@@ -15,11 +15,15 @@ class PostCreate extends Component
 {
     public PostCreateForm $form;
 
+    public function save()
+    {
+        $this->form->save();
+    }
+
     public function render()
     {
         $this->form->getCategory();
         $this->form->getTag();
-
 
         return view('livewire.pages.posts.post-create', [
             'categories' => Category::all(),

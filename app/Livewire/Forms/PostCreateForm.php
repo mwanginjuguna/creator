@@ -24,28 +24,32 @@ class PostCreateForm extends Form
     #[Rule('required')]
     public int $tagId = 0;
 
-    public string $category = '';
+    public mixed $category;
 
-    public string $tag = '';
+    public mixed $tag;
 
     #[Rule('required')]
     public string $body = '';
 
     public function getCategory()
     {
-        $this->category = Category::query()->where('id', $this->categoryId)->get('title') ?? null;
+        $this->category = Category::query()->where('id', $this->categoryId)
+                ->pluck('title')
+                ->first() ?? null;
     }
 
     public function getTag()
     {
-        $this->tag = Tag::query()->where('id', $this->tagId)->get('title') ?? null;
+        $this->tag = Tag::query()->where('id', $this->tagId)
+                ->pluck('title')
+                ->first() ?? null;
     }
 
     public function save()
     {
         $this->validate();
 
-        Post::create([
+        $post = Post::create([
             'title' => $this->title,
             'excerpt' => $this->excerpt,
             'slug' => Str::slug($this->title,'-'),
@@ -57,5 +61,7 @@ class PostCreateForm extends Form
         ]);
 
         $this->reset();
+
+        dd($post);
     }
 }

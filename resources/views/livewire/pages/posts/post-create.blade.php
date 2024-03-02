@@ -3,9 +3,9 @@
         Create A new Post
     </h1>
 
-    <div class="relative grid md:grid-cols-2 gap-4 divide-x divide-orange-300">
+    <div class="relative grid md:grid-cols-2 gap-4 divide-x divide-orange-300 text-gray-700">
         <div class="py-3">
-            <form wire:submit="form.save" class="space-y-4 lg:space-y-8">
+            <form wire:submit="save" class="space-y-4 lg:space-y-8">
                 <div class="mt-1 flex flex-col gap-y-1">
                     <label for="title" class="font-medium">
                         Title
@@ -43,11 +43,11 @@
                            id="category"
                             name="category"
                             wire:change="form.getCategory"
-                           wire:model.live="form.category"
+                           wire:model.live="form.categoryId"
                     >
                         <option selected value="">Select Post Category</option>
                         @foreach($categories as $category)
-                            <option value="{{$category->id}}">{{$category->name}}</option>
+                            <option value="{{$category->id}}">{{$category->title}}</option>
                         @endforeach
                     </select>
                     <div>@error('form.category_id') {{ $message }} @enderror</div>
@@ -62,11 +62,11 @@
                         id="tag"
                         name="tag"
                         wire:change="form.getTag"
-                        wire:model.live="form.tag"
+                        wire:model.live="form.tagId"
                     >
                         <option selected value="">Select Post Tag</option>
                         @foreach($tags as $tag)
-                            <option value="{{$tag->id}}">{{$tag->name}}</option>
+                            <option value="{{$tag->id}}">{{$tag->title}}</option>
                         @endforeach
                     </select>
                 </div>

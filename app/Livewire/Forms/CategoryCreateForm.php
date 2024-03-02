@@ -20,15 +20,7 @@ class CategoryCreateForm extends Form
     {
         $this->validate();
 
-        $data = [
-            'title' => $this->title,
-            'description' => $this->description,
-            'slug' => Str::slug($this->title),
-            'body' => $this->body
-        ];
-        dd($data);
-
-        Category::create([
+        $category = Category::create([
             'title' => $this->title,
             'description' => $this->description,
             'slug' => Str::slug($this->title),
