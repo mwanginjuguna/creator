@@ -14,7 +14,7 @@ class Post extends Model
 
     protected $fillable = [
         'title', 'excerpt', 'slug', 'body', 'status', 'is_public',
-        'category_id', 'tag_id', 'author'
+        'category', 'tag', 'category_id', 'tag_id', 'author'
     ];
 
     public function category(): BelongsTo
@@ -22,9 +22,9 @@ class Post extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function tags(): BelongsToMany
+    public function tags(): HasMany
     {
-        return $this->belongsToMany(Tag::class);
+        return $this->hasMany(Tag::class);
     }
 
     public function comments(): HasMany
@@ -50,5 +50,10 @@ class Post extends Model
     public function featuredImage(): BelongsTo
     {
         return $this->belongsTo(FeaturedImage::class);
+    }
+
+    public function getRouteKeyName(): string
+    {
+        return 'slug';
     }
 }

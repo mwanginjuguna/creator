@@ -18,47 +18,80 @@ class PostCreateForm extends Form
     #[Rule('required|max:200')]
     public string $excerpt = '';
 
-    #[Rule('required')]
-    public int $categoryId = 0;
+    public string $category = '';
 
-    #[Rule('required')]
-    public int $tagId = 0;
-
-    public mixed $category;
-
-    public mixed $tag;
+    public string $tag = '';
 
     #[Rule('required')]
     public string $body = '';
 
-    public function getCategory()
+    public function saveCategory()
     {
-        $this->category = Category::query()->where('id', $this->categoryId)
-                ->pluck('title')
-                ->first() ?? null;
+        return Category::create([
+            'title' => $this->category,
+            'slug' => Str::slug($this->category)
+        ]);
     }
 
-    public function getTag()
+    public function saveTag()
     {
-        $this->tag = Tag::query()->where('id', $this->tagId)
-                ->pluck('title')
-                ->first() ?? null;
+        return Tag::create([
+            'title' => $this->tag,
+            'slug' => Str::slug($this->tag)
+        ]);
+    }
+
+    public function checkSlugExists($slug): bool
+    {
+        $post = Post::where('slug', '=', $slug)->first();
+        return (bool)$post;
+    }
+
+    public function updateSlug(string $slug, int $iteration=1): string
+    {
+        $newSlug = '';
+        $num = 1;
+        if ($iteration === 1) {
+            $newSlug = $slug . '-' . $this->tag;
+        } elseif ($iteration === 2) {
+            $newSlug = $slug . '-' . $this->tag. '-' . $this->category;
+        } elseif ($iteration === 3) {
+            $newSlug = $slug . '-' . $this->tag. '-' . $this->category.'-'.$num;
+        } else {
+            $num += $iteration;
+            $newSlug = $slug . '-' . $this->tag. '-' . $this->category.'-'.$num;
+        }
+
+        return $newSlug;
     }
 
     public function save()
     {
         $this->validate();
 
+        $slug =Str::slug($this->title);
+
+        while ($this->checkSlugExists($slug) === true) {
+            $slug = $this->updateSlug($slug);
+        }
+
         $post = Post::create([
             'title' => $this->title,
             'excerpt' => $this->excerpt,
-            'slug' => Str::slug($this->title,'-'),
-            'category_id' => $this->categoryId,
-            'tag_id' => $this->tagId,
+            'slug' => $slug,
+            'body' => $this->body,
+            'category' => $this->category,
+            'tag' => $this->tag,
             'status' => 'Draft',
             'is_public' => false,
             'author' => 'Francis Njuguna'
         ]);
+
+        $post->tag_id = $this->saveTag()->id;
+
+        $post->category_id = $this->saveCategory()->id;
+
+        $post->save();
 
         $this->reset();
 

@@ -22,9 +22,6 @@ class PostCreate extends Component
 
     public function render()
     {
-        $this->form->getCategory();
-        $this->form->getTag();
-
         return view('livewire.pages.posts.post-create', [
             'categories' => Category::all(),
             'tags' => Tag::all(),

@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('excerpt')->nullable();
-            $table->string('slug');
+            $table->string('slug')->unique();
+            $table->string('category');
+            $table->string('tag');
             $table->longText('body');
             $table->string('status')->default('Draft'); // Published or Draft
             $table->boolean('is_public')->default(false); // public & private posts
