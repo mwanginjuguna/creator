@@ -39,26 +39,13 @@
                     <label for="category" class="font-medium">
                         Select/Enter Category
                     </label>
-                    <div class="md:grid md:grid-cols-2 gap-4">
-                        <select class="px-0.5 py-1 rounded"
-                                id="category"
-                                name="category"
-                                wire:change="form.getCategory"
-                                wire:model.live="form.categoryId"
-                        >
-                            <option selected value="">Select Post Category</option>
-                            @foreach($categories as $category)
-                                <option value="{{$category->id}}">{{$category->title}}</option>
-                            @endforeach
-                        </select>
 
-                        <input class="px-0.5 py-1 rounded bg-white w-full"
-                               id="category"
-                               type="text"
-                               name="category"
-                               placeholder="Enter the Category"
-                               wire:model.live="form.category">
-                    </div>
+                    <input class="px-0.5 py-1 rounded bg-white w-full"
+                           id="category"
+                           type="text"
+                           name="category"
+                           placeholder="Enter the Category"
+                           wire:model.live="form.category">
                     <div>@error('form.category_id') {{ $message }} @enderror</div>
                 </div>
 
@@ -66,26 +53,12 @@
                     <label for="tag" class="font-medium">
                         Select/Enter Tag
                     </label>
-                    <div class="md:grid md:grid-cols-2 gap-4">
-                        <select
-                            class="px-0.5 py-1 rounded"
-                            id="tag"
-                            name="tag"
-                            wire:change="form.getTag"
-                            wire:model.live="form.tagId"
-                        >
-                            <option selected value="">Select Post Tag</option>
-                            @foreach($tags as $tag)
-                                <option value="{{$tag->id}}">{{$tag->title}}</option>
-                            @endforeach
-                        </select>
-                        <input class="px-0.5 py-1 rounded bg-white w-full"
-                               id="tag"
-                               type="text"
-                               name="tag"
-                               placeholder="Enter the Tag"
-                               wire:model.live="form.tag">
-                    </div>
+                    <input class="px-0.5 py-1 rounded bg-white w-full"
+                           id="tag"
+                           type="text"
+                           name="tag"
+                           placeholder="Enter the Tag"
+                           wire:model.live="form.tag">
                 </div>
 
                 <div class="mt-1 flex flex-col gap-y-2 pb-2">

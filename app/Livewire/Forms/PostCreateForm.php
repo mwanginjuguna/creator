@@ -5,6 +5,7 @@ namespace App\Livewire\Forms;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Tag;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Str;
 use Livewire\Attributes\Rule;
 use Livewire\Attributes\Validate;
@@ -65,7 +66,7 @@ class PostCreateForm extends Form
         return $newSlug;
     }
 
-    public function save()
+    public function save(): RedirectResponse
     {
         $this->validate();
 
@@ -95,6 +96,6 @@ class PostCreateForm extends Form
 
         $this->reset();
 
-        dd($post);
+        return redirect()->route('admin-posts');
     }
 }

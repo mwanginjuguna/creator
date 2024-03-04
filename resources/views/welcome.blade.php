@@ -194,7 +194,7 @@
             <p class="text-sm xl:text-base space-y-1 py-2 max-w-3xl">
                 Written words are powerful. The primary goal of my writing is to break-down complexity into practicality.
                 <br>
-                Writing is a tool to teach, inspire, guide, and tell a story.  <span class="italic font-semibold">The Unread Story in NOT A Story.</span>
+                Writing is a tool to teach, inspire, guide, and tell a story.  <span class="italic font-semibold">The Unread Story is NOT A Story.</span>
             </p>
 
             <div class="flex flex-col md:flex-row gap-6 mt-4 lg:mt-7">

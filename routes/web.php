@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
 use App\Livewire\Pages\About;
 use App\Livewire\Pages\Blog;
@@ -35,12 +36,13 @@ Volt::route('/contact', Contact::class)->name('contact');
 Route::middleware('auth')->group(function () {
     Volt::route('/admin/posts/new', PostCreate::class)->name('post-create');
     Volt::route('/admin/posts/category-tag', CategoryTag::class)->name('category-tag');
+    Route::get('/admin/posts', [AdminController::class, 'posts'])->name('admin-posts');
 });
 
 Route::get('/posts/{post}', [BlogController::class, 'show'])->name('post-view');
 
 
-Route::view('dashboard', 'dashboard')
+Route::get('dashboard', [AdminController::class, 'dashboard'])
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 

@@ -27,6 +27,15 @@ class Post extends Model
         return $this->hasMany(Tag::class);
     }
 
+    public function relatedPosts(): HasMany
+    {
+        return $this->hasMany(Post::class, 'category', 'category')
+            ->where('id', '!=', $this->id)
+            ->where('status', '=', 'Published')
+            ->limit(3)
+            ->latest();
+    }
+
     public function comments(): HasMany
     {
         return $this->hasMany(Comment::class);

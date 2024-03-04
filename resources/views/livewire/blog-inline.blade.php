@@ -71,11 +71,6 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 pb-6 lg:pb-10">
         @foreach($posts as $post)
             <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
-                <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/blog/computer-engineering-abstraction-layers-image.png?raw=true"
-                     alt="Basics of Computer Abstraction"
-                     class="rounded-md max-h-52 mx-auto w-full object-cover object-center"
-                     title="Order Management Application"
-                >
                 <div class="py-4 px-2">
                     <h3 class="py-2 font-semibold text-creator-green-light">
                         {{ $post->title }}
@@ -85,7 +80,7 @@
                         {{ $post->excerpt }}
                     </p>
 
-                    <x-text-link href="{{ route('post-view', $post->id) }}">
+                    <x-text-link href="{{ route('post-view', $post->slug) }}">
                         Read for Free.
                     </x-text-link>
                 </div>
