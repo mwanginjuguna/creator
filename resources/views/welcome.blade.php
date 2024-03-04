@@ -1,13 +1,13 @@
 <x-guest-layout>
-    <div class="w-full min-h-screen p-3 lg:pb-8 bg-creator-tertiary text-creator-dark grid content-center">
+    <div class="w-full min-h-screen p-3 lg:pb-8 bg-gradient-to-tl from-creator-tertiary to-orange-500 via-violet-600 text-gray-900 grid content-center">
         <!--hero-->
         <div id="hero" class="max-w-7xl mx-auto grid sm:grid-cols-2 gap-x-4 content-center lg:p-8">
             <div class="flex flex-col gap-y-3 justify-center lg:px-8">
-                <h3 class="text-sm xl:text-lg font-medium text-orange-600 uppercase">
+                <h3 class="text-sm xl:text-lg font-medium text-orange-300 uppercase">
                     Mwangi <span class="italic">Kanothe</span>.
                 </h3>
 
-                <h1 class="py-2 lg:pb-3.5 text-2xl lg:text-5xl text-creator-primary font-bold">
+                <h1 class="py-2 lg:pb-3.5 text-2xl lg:text-5xl text-white font-bold">
                     New Horizons.<br>More Customers.<br>Unlimited Markets.
                     <span class="pt-2 block text-creator-dark text-lg lg:text-3xl">
                         Fresh Ideas, Designs and Technologies To Digitize your Business.
