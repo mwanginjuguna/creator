@@ -15,7 +15,7 @@
                     <polyline style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="
                         38,15 22,33 12,25 "/>
                     </svg>
-                <p class="pl-3">Thank you for your message. I will get back to you soon. I sincerely appreciate your message and your valuable time.</p>
+                <p class="pl-3">Thank you for your message. I will give feedback to you soon. I sincerely appreciate your valuable time.</p>
             </div>
         @endif
         <form wire:submit="sendMessage" class="text-sm md:text-base">

@@ -24,7 +24,6 @@ use Livewire\Volt\Volt;
 */
 
 Route::view('/', 'welcome')->name('home');
-Route::view('/dev', 'welcome')->name('dev');
 Route::view('/#writing', 'welcome')->name('writing');
 Route::view('/letter', 'letters')->name('letter');
 Route::get('/about', About::class)->name('about');
@@ -37,6 +36,7 @@ Route::middleware('auth')->group(function () {
     Volt::route('/admin/posts/new', PostCreate::class)->name('post-create');
     Volt::route('/admin/posts/category-tag', CategoryTag::class)->name('category-tag');
     Route::get('/admin/posts', [AdminController::class, 'posts'])->name('admin-posts');
+    Route::view('/dev', 'welcome')->name('dev');
 });
 
 Route::get('/posts/{post}', [BlogController::class, 'show'])->name('post-view');

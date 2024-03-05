@@ -22,6 +22,16 @@
                         {!! \Illuminate\Support\Str::markdown($post->body) !!}
                     </div>
                 </div>
+
+                <div class="mt-6">
+                    <div id="cta" class="mt-3">
+                        <h4 class="font-semibold pb-3">
+                            Let's innovate, design, build, and grow together.
+                        </h4>
+
+                        <x-cta.cta-btn href="{{ route('shop') }}">Browse Products</x-cta.cta-btn>
+                    </div>
+                </div>
             </div>
 
             <aside class="lg:sticky lg:top-20 h-max lg:px-2">
@@ -35,6 +45,12 @@
                             <p><x-text-link href="{{ route('post-view', $rpost->slug) }}">{{ $rpost->title }}</x-text-link></p>
                         </div>
                     @endforeach
+
+                    <div class="mt-6">
+                        <x-cta.secondary-btn href="{{route('blog')}}">
+                            More Articles Here...
+                        </x-cta.secondary-btn>
+                    </div>
                 @endif
             </aside>
         </div>
