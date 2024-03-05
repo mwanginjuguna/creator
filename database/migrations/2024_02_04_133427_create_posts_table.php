@@ -21,6 +21,7 @@ return new class extends Migration
             $table->longText('body');
             $table->string('status')->default('Draft'); // Published or Draft
             $table->boolean('is_public')->default(false); // public & private posts
+            $table->foreignId('user_id')->nullable()->constrained()->nullOnDelete();
             $table->foreignId('category_id')->nullable()->constrained()->nullOnDelete();
             $table->foreignId('tag_id')->nullable()->constrained()->nullOnDelete();
             $table->string('author')->nullable();

@@ -14,8 +14,13 @@ class Post extends Model
 
     protected $fillable = [
         'title', 'excerpt', 'slug', 'body', 'status', 'is_public',
-        'category', 'tag', 'category_id', 'tag_id', 'author'
+        'category', 'tag', 'user_id', 'category_id', 'tag_id', 'author'
     ];
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 
     public function category(): BelongsTo
     {
@@ -44,11 +49,6 @@ class Post extends Model
     public function replies(): HasMany
     {
         return $this->hasMany(Reply::class);
-    }
-
-    public function images(): HasMany
-    {
-        return $this->hasMany(Image::class);
     }
 
     public function documents(): HasMany

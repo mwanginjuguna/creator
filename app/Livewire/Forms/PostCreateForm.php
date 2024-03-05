@@ -85,7 +85,8 @@ class PostCreateForm extends Form
             'tag' => $this->tag,
             'status' => 'Draft',
             'is_public' => false,
-            'author' => 'Francis Njuguna'
+            'author' => 'Francis Njuguna',
+            'user_id' => auth()->id()
         ]);
 
         $post->tag_id = $this->saveTag()->id;

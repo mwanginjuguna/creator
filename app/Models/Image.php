@@ -11,11 +11,6 @@ class Image extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'description', 'slug', 'index', 'post_id', 'alt', 'filename'
+        'title', 'description', 'slug', 'index', 'alt', 'filename'
     ];
-
-    public function post(): BelongsTo
-    {
-        return $this->belongsTo(Post::class);
-    }
 }

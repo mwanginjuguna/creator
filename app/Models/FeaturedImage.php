@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class FeaturedImage extends Model
 {
@@ -14,19 +15,19 @@ class FeaturedImage extends Model
         'post_id', 'category_id', 'tag_id', 'image_id'
     ];
 
-    public function post(): BelongsTo
+    public function posts(): HasMany
     {
-        return $this->belongsTo(Post::class);
+        return $this->hasMany(Post::class);
     }
 
-    public function category(): BelongsTo
+    public function categories(): HasMany
     {
-        return $this->belongsTo(Category::class);
+        return $this->hasMany(Category::class);
     }
 
-    public function tag(): BelongsTo
+    public function tags(): HasMany
     {
-        return $this->belongsTo(Tag::class);
+        return $this->hasMany(Tag::class);
     }
 
     public function image(): BelongsTo

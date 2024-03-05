@@ -15,9 +15,4 @@ class Letter extends Model
     {
         $this->active = false;
     }
-
-    public function image()
-    {
-        return $this->belongsTo(Image::class);
-    }
 }
