@@ -15,6 +15,13 @@ class Posts extends Component
         $post->save();
     }
 
+    public function deletePost($id)
+    {
+        $post = Post::query()->where('id', '=', $id)->first();
+        $post->delete();
+        $this->redirectRoute('admin-posts');
+    }
+
     public function render()
     {
         return view('livewire.admin.posts', [

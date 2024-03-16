@@ -12,7 +12,7 @@
                 Public?
             </th>
             <th scope="col" class="px-6 py-3">
-                <span class="sr-only">Action</span>
+                <span>Action</span>
             </th>
         </tr>
         </thead>
@@ -37,7 +37,15 @@
                     @endif
                 </td>
                 <td class="px-6 py-4 text-right">
-                    <a href="{{ route('post-view', $post->slug) }}" class="font-medium text-blue-600 hover:underline">View</a>
+                    <a href="{{ route('post-view', $post->slug) }}" class="font-medium text-blue-600 hover:underline">
+                        View
+                    </a>
+
+                    <button class="p-1 rounded-lg text-xs md:text-sm xl:text-base text-white hover:text-red-500 bg-red-500 hover:bg-white border-2 border-red-500 transition-all ease-in-out duration-300"
+                            wire:click="deletePost({{ $post->id }})"
+                    >
+                        Delete
+                    </button>
                 </td>
             </tr>
         @endforeach

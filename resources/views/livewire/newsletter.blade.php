@@ -32,10 +32,10 @@
         <input name="newsletter-email" type="text"
                wire:model="form.email"
                placeholder="Your Email ex. 'mk@gmail.com'"
-               class="py-1 w-full text-creator-primary border-none rounded-l-md"
+               class="py-1 w-full text-creator-primary border-none md:rounded-l-md"
         >
         @error('form.email') <p class="py-1 text-red-600 text-sm xl:text-base">{{ $message }}</p> @enderror
-        <button type="submit" class="p-1.5 px-2.5 w-max font-semibold bg-white hover:bg-orange-500 border border-creator-light hover:text-white text-sm xl:text-base rounded-r-md transition-all ease-in-out duration-300">
+        <button type="submit" class="p-1.5 px-2.5 w-max font-semibold bg-orange-100 hover:bg-orange-500 border border-creator-light hover:text-white text-sm xl:text-base md:rounded-r-md transition-all ease-in-out duration-300">
             Read For Free
         </button>
     </form>

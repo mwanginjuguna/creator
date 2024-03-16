@@ -2,6 +2,10 @@
 // dd($post);
 ?>
 <x-guest-layout>
+    <x-slot:title>
+        $post->title
+    </x-slot:title>
+
     <section class="relative container mx-auto py-10 px-4">
         <div class="grid lg:grid-cols-3">
             <div class="lg:col-span-2">

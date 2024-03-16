@@ -37,6 +37,7 @@ Route::middleware('auth')->group(function () {
     Volt::route('/admin/posts/category-tag', CategoryTag::class)->name('category-tag');
     Route::get('/admin/posts', [AdminController::class, 'posts'])->name('admin-posts');
     Route::view('/dev', 'welcome')->name('dev');
+    Route::get('/admin/uploads', [AdminController::class, 'uploads'])->name('admin-uploads');
 });
 
 Route::get('/posts/{post}', [BlogController::class, 'show'])->name('post-view');

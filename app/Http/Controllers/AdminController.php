@@ -20,18 +20,20 @@ class AdminController extends Controller
 
     public function dashboard(): Factory|View
     {
-        $posts = Post::query()->latest()->limit(5)->get();
-        $postCount = count($posts);
+        $posts = Post::query()->where('status', '=', 'Published')->latest()->limit(5)->get();
         $contacts = Emails::query()->count('*');
         $subCount = Letter::query()->count('*');
-        $published = Post::query()->where('status', '=', 'Published')->count();
+        $published = $posts->count();
 
         return view('dashboard', [
             'posts' => $posts,
-            'postCount' => $postCount,
             'subsCount' => $subCount,
             'contacts' => $contacts,
             'publishedCount' => $published
         ]);
+    }
+
+    public function uploads() {
+        return view('admin.file-uploads');
     }
 }

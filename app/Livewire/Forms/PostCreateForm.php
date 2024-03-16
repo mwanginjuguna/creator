@@ -66,7 +66,7 @@ class PostCreateForm extends Form
         return $newSlug;
     }
 
-    public function save(): RedirectResponse
+    public function save()
     {
         $this->validate();
 
@@ -96,7 +96,5 @@ class PostCreateForm extends Form
         $post->save();
 
         $this->reset();
-
-        return redirect()->route('admin-posts');
     }
 }

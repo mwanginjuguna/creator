@@ -11,14 +11,6 @@
         <div class="overflow-hidden shadow-sm sm:rounded-lg">
             <div class="container mx-auto mt-6 lg:mt-10 px-4">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8">
-                    <div class="p-3 bg-gradient-to-tl from-orange-500 to-creator-secondary text-gray-50 rounded-lg">
-                        <p class="w-fit text-sm text-black font-semibold">
-                            Posts
-                        </p>
-                        <p class="mt-3 text-center text-3xl md:text-5xl font-bold">
-                            {{ $postCount }}
-                        </p>
-                    </div>
                     <div class="p-3 bg-gradient-to-tr from-orange-500 to-violet-500 text-gray-50 rounded-lg">
                         <p class="w-fit text-sm text-black font-semibold">
                             Subscribers
@@ -27,6 +19,7 @@
                             {{ $subsCount }}
                         </p>
                     </div>
+
                     <div class="p-3 bg-gradient-to-tr from-lime-500 to-violet-500 text-gray-50 rounded-lg">
                         <p class="w-fit text-sm text-black font-semibold">
                             Contacts
@@ -35,6 +28,7 @@
                             {{ $contacts }}
                         </p>
                     </div>
+
                     <div class="p-3 bg-gradient-to-b from-orange-500 to-gray-600 text-gray-50 rounded-lg">
                         <p class="w-fit text-sm text-black font-semibold">
                             Published Posts

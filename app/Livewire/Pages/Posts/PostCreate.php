@@ -18,6 +18,8 @@ class PostCreate extends Component
     public function save()
     {
         $this->form->save();
+
+        $this->redirectRoute('admin-posts');
     }
 
     public function render()
