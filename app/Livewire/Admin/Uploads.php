@@ -77,8 +77,8 @@ class Uploads extends Component
 
     public function render()
     {
-        $this->images = Image::all();
-        $this->documents = Document::all();
+        $this->images = Image::query()->latest()->get();
+        $this->documents = Document::query()->latest()->get();
 
         return view('livewire.admin.uploads');
     }
