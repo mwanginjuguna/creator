@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ProductController;
 use App\Livewire\Pages\About;
 use App\Livewire\Pages\Blog;
 use App\Livewire\Pages\Contact;
@@ -37,6 +38,7 @@ Route::middleware('auth')->group(function () {
     Volt::route('/admin/posts/category-tag', CategoryTag::class)->name('category-tag');
     Route::get('/admin/posts', [AdminController::class, 'posts'])->name('admin-posts');
     Route::view('/dev', 'welcome')->name('dev');
+    Route::get('/admin/shop', [ProductController::class, 'shop'])->name('admin-shop');
     Route::get('/admin/uploads', [AdminController::class, 'uploads'])->name('admin-uploads');
 });
 

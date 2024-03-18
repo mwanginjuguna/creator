@@ -8,6 +8,7 @@
             World-class services and products <span class="text-creator-primary">- One Click Away</span>.
         </p>
 
+        <livewire:shop.product />
         <div class="mt-6 py-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
             <div class="grid gap-y-3 p-4 bg-orange-500 hover:bg-white text-black border-2 border-orange-500 hover:border-creator-primary rounded-lg group transition-all ease-in-out duration-300">
                 <h2 class="py-2 font-semibold text-lg xl:text-xl">Advanced Landing Page</h2>

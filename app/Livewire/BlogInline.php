@@ -10,7 +10,7 @@ class BlogInline extends Component
     public function render()
     {
         return view('livewire.blog-inline', [
-            'posts' => Post::query()->limit(3)->latest()->get()
+            'posts' => Post::query()->where('status', '=', 'Published')->limit(3)->latest()->get()
         ]);
     }
 }
