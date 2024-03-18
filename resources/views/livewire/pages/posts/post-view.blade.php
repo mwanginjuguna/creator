@@ -3,8 +3,11 @@
 ?>
 <x-guest-layout>
     <x-slot:title>
-        $post->title
+        {{$post->title}}
     </x-slot:title>
+    <x-slot:meta>
+        {{$post->excerpt}}
+    </x-slot:meta>
 
     <section class="relative container mx-auto py-10 px-4">
         <div class="grid lg:grid-cols-3">

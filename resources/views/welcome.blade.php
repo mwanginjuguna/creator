@@ -1,4 +1,7 @@
 <x-guest-layout>
+    <x-slot:title>
+        The Leading Digital Tools for Small Businesses in Africa - MK Digital
+    </x-slot:title>
     <div class="w-full min-h-screen p-3 lg:pb-8 bg-gradient-to-tl from-creator-tertiary to-orange-500 via-violet-600 text-gray-900 grid content-center">
         <!--hero-->
         <div id="hero" class="max-w-7xl mx-auto grid sm:grid-cols-2 gap-x-4 content-center lg:p-8">
@@ -38,7 +41,7 @@
 
                 <div id="cta" class="mt-3">
                     <h4 class="font-semibold pb-3">
-                        Let's create, innovate, and grow together.
+                        Grow your Business through Quality Online Presence. Grab the best digital tools for success.
                     </h4>
 
                     <x-cta.cta-btn>Browse Products</x-cta.cta-btn>
@@ -63,16 +66,16 @@
 
         <!--skill-set value proposition-->
         <div id="skills" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 pb-10 lg:pb-20">
-            <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-bold">With tech and curated words, Let's <span class="block pt-2 text-creator-primary">connect your ideas to the world.</span></h2>
+            <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-bold">Digital Positioning is the next frontier. <span class="block pt-2 text-creator-primary">Connect your ideas to the online customers.</span></h2>
 
             <div class="p-4 w-full grid bg-creator-secondary rounded-lg text-black hover:bg-white border-2 border-creator-secondary hover:border-creator-primary transition-all ease-in-out duration-300 group">
                 <p class="py-2 text-white group-hover:uppercase group-hover:text-creator-primary transition-all ease-in-out duration-700">Writer</p>
 
                 <x-svgs.write-gold class="h-24 w-24 px-1 justify-self-end rounded-lg md:group-hover:mr-8 transition-all ease-in-out duration-700 bg-white md:group-hover:bg-creator-secondary" />
 
-                <h4 class="py-2 mt-4 font-medium lg:text-lg">Let's create <span class="text-creator-primary font-bold" >Compelling Narratives</span> for your Solutions.</h4>
+                <h4 class="py-2 mt-4 font-medium lg:text-lg">I Create <span class="text-creator-primary font-bold" >Compelling Narratives</span> for Landing Page Solutions.</h4>
 
-                <p class="py-1 text-sm xl:text-base">Curated words leading customers to products.</p>
+                <p class="py-1 text-sm xl:text-base">Nurturing the power of storytelling to reach the heart of the customer.</p>
             </div>
 
             <div class="p-4 w-full grid bg-creator-light rounded-lg text-black hover:bg-white border-2 border-creator-light hover:border-creator-primary transition-all ease-in-out duration-300 group">
@@ -82,7 +85,7 @@
 
                 <h4 class="py-2 mt-4 font-medium lg:text-lg"><span class="text-creator-primary font-bold" >Bridge the Gap</span> ~ with Innovative Software!</h4>
 
-                <p class="py-1 text-sm xl:text-base">Responsive, user-friendly Apps and Solutions for businesses and creators.</p>
+                <p class="py-1 text-sm xl:text-base">Responsive, user-friendly Apps and E-Commerce Solutions for businesses and creators.</p>
             </div>
 
             <div class="p-4 w-full grid bg-creator-tertiary rounded-lg text-black hover:bg-white border-2 border-creator-tertiary hover:border-creator-primary transition-all ease-in-out duration-300 group">
@@ -90,9 +93,9 @@
 
                 <x-svgs.ai-img class="h-24 w-24 justify-self-end rounded-lg md:group-hover:mr-8 transition-all ease-in-out duration-700" />
 
-                <h4 class="py-2 mt-4 font-medium lg:text-lg">Connecting Products to <span class="text-creator-primary font-bold">The New World Order!</span></h4>
+                <h4 class="py-2 mt-4 font-medium lg:text-lg">Connecting Products to <span class="text-creator-primary font-bold">The Cloud!</span></h4>
 
-                <p class="py-1 text-sm xl:text-base">Let's ensure you are NOT LEFT BEHIND. The world is changing. AI is here and software must be Cloud-first.</p>
+                <p class="py-1 text-sm xl:text-base">Let's ensure you are NOT LEFT BEHIND. The world is changing. Helping small businesses realize the opportunity of Cloud-first software.</p>
             </div>
 
         </div>

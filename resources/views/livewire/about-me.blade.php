@@ -7,7 +7,7 @@
             Who is Mwangi Kanothe?
         </h2>
 
-        <p class="text-center">I am a Man obsessed with building tools and helping humans succeed in DIGITAL SPACE.</p>
+        <p class="text-center">I am a Man obsessed with building tools and helping small businesses succeed in DIGITAL SPACE.</p>
     </div>
 
     <video src="https://github.com/mwanginjuguna/public-image-assets/raw/main/creator/creator-hero-landing-page.mp4" autoplay loop muted
@@ -38,7 +38,7 @@
                     <x-svgs.tick />
                     cloud-native applications,
                 </li>
-                <li class="flex flex-row gap-x-1">
+                <li class="flex flex-row gap-x-1 font-medium">
                     <x-svgs.tick />
                     Landing Pages, and Websites
                 </li>
@@ -55,7 +55,7 @@
 
         <div id="cta" class="mt-3">
             <h4 class="font-semibold pb-3">
-                Let's create, innovate, and grow together.
+                Let's create, innovate, and grow your business.
             </h4>
 
             <x-cta.cta-btn>Get In Touch</x-cta.cta-btn>
