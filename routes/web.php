@@ -40,6 +40,7 @@ Route::middleware('auth')->group(function () {
     Route::view('/dev', 'welcome')->name('dev');
     Route::get('/admin/shop', [ProductController::class, 'shop'])->name('admin-shop');
     Route::get('/admin/uploads', [AdminController::class, 'uploads'])->name('admin-uploads');
+    Route::get('/admin/posts/{post}/edit', [BlogController::class, 'edit'])->name('post-edit');
 });
 
 Route::get('/posts/{post}', [BlogController::class, 'show'])->name('post-view');
