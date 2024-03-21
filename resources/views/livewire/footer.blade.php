@@ -1,9 +1,9 @@
-<footer class="w-full mt-2 md:mt-6 py-6 lg:py-10">
+<footer class="w-full mt-2 md:mt-6 py-6 lg:py-10 border-t">
     <div class="max-w-5xl mx-auto p-3">
         <div class="grid lg:grid-cols-3">
             <!--socials-->
-            <div class="mt-5 text-creator-dark text-sm xl:text-base">
-                <p class="hidden md:block py-4 font-medium text-base italic text-lime-500">Connect on Social Media</p>
+            <div class="md:mt-5 text-creator-dark text-sm xl:text-base">
+                <p class="py-4 font-medium text-base italic text-lime-500">Connect on Social Media</p>
                 <!--gmail-->
                 <div class="flex flex-row space-x-3 place-items-center max-w-sm py-1">
                     <svg width="24px" height="24px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
