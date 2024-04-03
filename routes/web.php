@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\VisitorController;
 use App\Livewire\Pages\About;
 use App\Livewire\Pages\Blog;
 use App\Livewire\Pages\Contact;
@@ -41,10 +42,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/shop', [ProductController::class, 'shop'])->name('admin-shop');
     Route::get('/admin/uploads', [AdminController::class, 'uploads'])->name('admin-uploads');
     Route::get('/admin/posts/{post}/edit', [BlogController::class, 'edit'])->name('post-edit');
+    Route::get('/admin/visitors', [VisitorController::class, 'index'])->name('admin-visitors');
+    Route::get('/admin/visitors/{visitor}', [VisitorController::class, 'show'])->name('admin-visitors.show');
+    Route::delete('/admin/visitors/{visitor}', [VisitorController::class, 'destroy'])->name('admin-visitors.delete');
 });
 
 Route::get('/posts/{post}', [BlogController::class, 'show'])->name('post-view');
-
 
 Route::get('dashboard', [AdminController::class, 'dashboard'])
     ->middleware(['auth', 'verified'])

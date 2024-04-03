@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Emails;
 use App\Models\Letter;
 use App\Models\Post;
+use App\Models\Visitor;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
@@ -29,11 +30,13 @@ class AdminController extends Controller
             'posts' => $posts,
             'subsCount' => $subCount,
             'contacts' => $contacts,
-            'publishedCount' => $published
+            'publishedCount' => $published,
+            'visitors' => count(Visitor::query()->select('ip_address')->distinct()->get())
         ]);
     }
 
-    public function uploads() {
+    public function uploads(): View
+    {
         return view('admin.file-uploads');
     }
 }

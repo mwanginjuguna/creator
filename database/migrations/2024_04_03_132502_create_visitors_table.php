@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('referer')->nullable();
             $table->text('url')->nullable();
             $table->text('path')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
