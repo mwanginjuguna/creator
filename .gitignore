@@ -3,8 +3,12 @@
 /public/build
 /public/hot
 /public/storage
+/public/sitemaps
+/public/sitemaps/*
 /public/*.log
+/public/*.csv
 /storage/*.log
+/storage/*.csv
 /storage/*.key
 /vendor
 .env
