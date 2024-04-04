@@ -125,6 +125,7 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
+    'google_site_verification' => env('GOOGLE_SITE_VERIFICATION'),
 
     /*
     |--------------------------------------------------------------------------
