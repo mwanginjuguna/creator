@@ -25,8 +25,12 @@
                             </a>
                         </h3>
 
-                        <p class="mt-1 pb-3 text-sm xl:text-base">
+                        <p class="py-1 text-sm xl:text-base">
                             {{ $post->excerpt }}
+                        </p>
+
+                        <p class="mt-1 pb-3 text-xs text-gray-500">
+                            {{ $post->created_at->format('F j, Y') }}
                         </p>
 
                         <x-text-link href="{{ route('post-view', $post->slug) }}">

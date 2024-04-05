@@ -18,6 +18,7 @@ class Blog extends Component
         return view('livewire.pages.blog', [
             'posts' => Post::query()
                 ->where('status', '=', 'Published')
+                ->latest()
                 ->simplePaginate(12),
         ]);
     }

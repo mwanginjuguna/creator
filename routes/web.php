@@ -37,6 +37,7 @@ Volt::route('/contact', Contact::class)->name('contact');
 Route::middleware('auth')->group(function () {
     Volt::route('/admin/posts/new', PostCreate::class)->name('post-create');
     Volt::route('/admin/posts/category-tag', CategoryTag::class)->name('category-tag');
+    Route::get('/admin/sitemap', [BlogController::class, 'sitemaps'])->name('sitemaps');
     Route::get('/admin/posts', [AdminController::class, 'posts'])->name('admin-posts');
     Route::view('/dev', 'welcome')->name('dev');
     Route::get('/admin/shop', [ProductController::class, 'shop'])->name('admin-shop');

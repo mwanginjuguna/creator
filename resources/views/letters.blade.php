@@ -3,9 +3,9 @@
         <div class="grid md:grid-cols-2 gap-3 ">
             <div class="py-3">
                 <h1 class="flex flex-col gap-y-2 py-3 pb-5 lg:pb-8 text-2xl md:text-4xl xl:text-5xl font-bold text-creator-primary">
-                    Connect with Top Ideas.
-                    <span>Build Insights.</span>
-                    <span>Execute with Confidence.</span>
+                    Read Top Business Insights.
+                    <span>Enrich Your Ideas.</span>
+                    <span>Execute the Next Business with Confidence.</span>
                 </h1>
 
                 <div class="lg:max-w-3xl">
@@ -19,6 +19,7 @@
             >
         </div>
 
+        <livewire:read-newsletters />
 
         @livewire('about-me')
     </div>

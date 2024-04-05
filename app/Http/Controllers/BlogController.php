@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
@@ -18,11 +19,15 @@ class BlogController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * List of all sitemaps.
      */
-    public function create()
+    public function sitemaps(): View
     {
-        //
+        $files = Storage::disk('public')->files('sitemaps');
+
+        return view('admin.sitemaps', [
+            'sitemaps' => $files
+        ]);
     }
 
     /**
