@@ -7,7 +7,14 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ $title ?? config('app.name', 'Digitizing the Small Businesses in Africa - Mwangi Kanothe') }}</title>
-        <meta name="description" content="{{ $meta ?? 'Gain customers, reach new markets, and grow your online business. I am helping small business go digital. My focus is on building websites, ecommerce platforms, and landing pages for 100% online presence.' }}">
+        <meta name="description" content="{{ $meta ?? 'MK Digital is on a mission to help small businesses grow your online business. I build websites, ecommerce platforms, and landing pages for 100% online presence.' }}">
+
+        <link href="{{ asset('mk-digital-logo.png') }}" rel="MK Digital Logo" type="image/icon">
+
+        <meta content="{{ $title ?? config('app.name', 'Digitizing the Small Businesses in Africa - MK Digital') }}" property="og:title">
+        <meta content="{{ $meta ?? 'On a mission to help small businesses grow your online business. I build websites, ecommerce platforms, and landing pages for 100% online presence.' }}" property="og:description">
+
+        <meta href="{{ $ftImg ?? asset('mk-digital-logo.png') }}" property="og:image">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +26,16 @@
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "{{$pageType ?? 'Article'}}",
-            "headline": "{{ $h1Heading ?? 'Small Business Digital Service' }}",
-            "description": "{{ $meta ?? 'This service is dedicated to building digital tools dedicated to helping small businesses achieve 100% online presence.' }}",
+            "@type": "Organization",
+            "name": "{{ 'MK Digital' }}",
+            "headline": "{{ 'Small Business Digital Service - MK Digital' }}",
+            "description": "{{ $meta ?? 'MK Digital is a service for building digital tools dedicated to helping small businesses achieve 100% online presence. Founder/CEO Mwangi Kanothe.' }}",
+            "logo": "{{ asset('mk-digital-logo.png') }}",
+            "sameAs": [
+                "https://twitter.com/mwangikanothe",
+                "https://www.linkedin.com/in/francis-m-njuguna/",
+                "https://github.com/mwanginjuguna"
+            ],
             {{ $snippet ?? '' }}
             }
         </script>
