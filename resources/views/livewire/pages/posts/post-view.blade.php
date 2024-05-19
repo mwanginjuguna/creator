@@ -1,6 +1,3 @@
-<?php
-// dd($post);
-?>
 <x-guest-layout>
     <x-slot:title>
         {{$post->title}}
@@ -56,7 +53,8 @@
                     <div class="grid prose prose-img:rounded-lg prose-img:place-self-center
                     prose-headings:font-heading prose-headings:font-bold prose-h1:text-creator-primary sm:prose-h1:text-2xl prose-headings:text-gray-800 prose-h2:text-lg md:prose-h2:text-2xl
                     prose-a:text-creator-primary hover:prose-a:text-orange-500 prose-a:underline
-                    prose-p:font-body prose-ul:list-[square] prose-ul:list-inside">
+                    prose-p:font-body prose-p:my-2 prose-p:text-lg md:prose-p:text-lg
+                    prose-ul:list-[square] prose-ul:list-inside md:prose-li:text-lg">
                         {!! \Illuminate\Support\Str::markdown($post->body) !!}
                     </div>
                 </div>
@@ -86,7 +84,7 @@
 
                     <div class="mt-6">
                         <x-cta.secondary-btn href="{{route('blog')}}">
-                            More Articles Here...
+                            Read More Articles Here...
                         </x-cta.secondary-btn>
                     </div>
                 @endif
