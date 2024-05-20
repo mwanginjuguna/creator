@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\Mpesa\StkPushController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\VisitorController;
 use App\Livewire\Pages\About;
@@ -35,6 +36,8 @@ Volt::route('/portfolio', Portfolio::class)->name('portfolio');
 Volt::route('/contact', Contact::class)->name('contact');
 
 Route::middleware('auth')->group(function () {
+    Route::post('/orders/pay/mpesa/stk-push', [StkPushController::class, 'stkInit'])->name('mpesa.stk-push');
+
     Volt::route('/admin/posts/new', PostCreate::class)->name('post-create');
     Volt::route('/admin/posts/category-tag', CategoryTag::class)->name('category-tag');
     Route::get('/admin/sitemap', [BlogController::class, 'sitemaps'])->name('sitemaps');
