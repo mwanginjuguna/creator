@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\Mpesa\C2BController;
 use App\Http\Controllers\Mpesa\StkPushController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\VisitorController;
@@ -37,6 +38,7 @@ Volt::route('/contact', Contact::class)->name('contact');
 
 Route::middleware('auth')->group(function () {
     Route::post('/orders/pay/mpesa/stk-push', [StkPushController::class, 'stkInit'])->name('mpesa.stk-push');
+    Route::post('/mpesa/c2b/register-urls', [C2BController::class, 'registerURLS'])->name('c2b.registerUrls');
 
     Volt::route('/admin/posts/new', PostCreate::class)->name('post-create');
     Volt::route('/admin/posts/category-tag', CategoryTag::class)->name('category-tag');
