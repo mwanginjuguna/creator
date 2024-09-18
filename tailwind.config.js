@@ -12,9 +12,9 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                heading: ['Libre Baskerville', ...defaultTheme.fontFamily.serif],
-                body: ['Josefin Sans', ...defaultTheme.fontFamily.sans],
-                sans: ['Josefin Sans', ...defaultTheme.fontFamily.sans]
+                heading: ['Public Sans', ...defaultTheme.fontFamily.sans],
+                body: ['Public Sans', ...defaultTheme.fontFamily.sans],
+                sans: ['Public Sans', ...defaultTheme.fontFamily.sans]
             },
             colors: {
                 'creator-primary': '#5c59c3',
@@ -34,4 +34,5 @@ export default {
         forms,
         require('@tailwindcss/typography')
     ],
+    darkMode: "class",
 };
