@@ -27,7 +27,7 @@
                         wire:model="form.name"
                         type="text" name="name"
                         placeholder="ex. John or Jane Doe"
-                        class="block w-full border-lime-300 my-0.5 text-slate-700 bg-white rounded border active:border-lime-500" required>
+                        class="block w-full border-lime-300 my-0.5 text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-950 rounded border active:border-lime-500" required>
                     @error('form.name') <p class="text-red-600 text-sm xl:text-base">{{ $message }}</p> @enderror
                 </div>
 
@@ -38,7 +38,7 @@
                         wire:model="form.email"
                         type="email" name="email"
                         placeholder="ex. johndoe@example.com"
-                        class="block w-full border-lime-300 my-0.5 text-slate-700 bg-white rounded border active:border-green-600" required>
+                        class="block w-full border-lime-300 my-0.5 text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-950 rounded border active:border-green-600" required>
                     @error('form.email') <p class="text-red-600 text-sm xl:text-base">{{ $message }}</p> @enderror
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     rows="6"
                     required
                     placeholder="Your Message or Inquiry Here."
-                    class="p-3 my-0.5 block w-full text-slate-700 border rounded-sm border-lime-300 active:border-lime-500"></textarea>
+                    class="p-3 my-0.5 block w-full text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-950 border rounded-sm border-lime-300 active:border-lime-500"></textarea>
                 @error('form.message') <p class="text-red-600 text-sm xl:text-base">{{ $message }}</p> @enderror
             </div>
 

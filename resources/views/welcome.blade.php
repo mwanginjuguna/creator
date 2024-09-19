@@ -2,221 +2,631 @@
     <x-slot:title>
         Gameplan IT - Small Business, Big Game.
     </x-slot:title>
-    <div class="w-full min-h-screen p-3 lg:pb-8 grid content-center">
-        <!-- Hero -->
-        <div class="relative bg-gradient-to-bl from-blue-100 via-transparent dark:from-blue-950 dark:via-transparent">
-            <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-                <!-- Grid -->
-                <div class="grid items-center md:grid-cols-2 gap-8 lg:gap-12">
-                    <div>
-                        <p class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
-                            Gameplan IT: Your Partner in Digital Transformation
+
+    <!-- Hero -->
+    <div class="relative bg-gradient-to-bl from-blue-100 via-transparent dark:from-blue-950 dark:via-transparent">
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <!-- content -->
+            <div class="grid items-center md:grid-cols-2 gap-8 lg:gap-12">
+                <div>
+                    <p class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+                        Gameplan IT: Your Partner in Digital Transformation
+                    </p>
+
+                    <!-- Title -->
+                    <div class="mt-4 md:mb-12 max-w-2xl">
+                        <h1 class="mb-4 font-semibold text-gray-800 text-4xl lg:text-5xl dark:text-neutral-200">
+                            Innovative IT Solutions to Improve Your Business Digital Strategy
+                        </h1>
+                        <p class="text-gray-600 dark:text-neutral-400">
+                            Unlock your business potential with our cutting-edge IT services and products. From
+                            custom websites and e-commerce platforms to ERP and POS systems, Gameplan provides the
+                            tools that help your business thrive in a digital-first world.
                         </p>
+                    </div>
+                    <!-- End Title -->
 
-                        <!-- Title -->
-                        <div class="mt-4 md:mb-12 max-w-2xl">
-                            <h1 class="mb-4 font-semibold text-gray-800 text-4xl lg:text-5xl dark:text-neutral-200">
-                                Innovative IT Solutions to Improve Your Business Digital Strategy
-                            </h1>
-                            <p class="text-gray-600 dark:text-neutral-400">
-                                Unlock your business potential with our cutting-edge IT services and products. From custom websites and e-commerce platforms to ERP and POS systems, Gameplan provides the tools that help your business thrive in a digital-first world.
-                            </p>
+                    <!-- Stats -->
+                    <div class="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5 text-sm">
+                        <div class="grid font-semibold">
+                            <p class="text-zinc-600 dark:text-zinc-400">Trusted by:</p>
+                            <p class="text-xl lg:text-3xl">37+</p>
+                            <p class="text-base lg:text-lg">Businesses and Partnerships</p>
                         </div>
-                        <!-- End Title -->
 
-                        <!-- Stats -->
-                        <div class="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5 text-sm">
-                            <div class="grid font-semibold">
-                                <p class="text-zinc-600 dark:text-zinc-400">Trusted by:</p>
-                                <p class="text-xl lg:text-3xl">37+</p>
-                                <p class="text-base lg:text-lg">Businesses and Partnerships</p>
-                            </div>
-
-                            <div class="grid font-semibold">
-                                <p class="text-zinc-600 dark:text-zinc-400">Delivered:</p>
-                                <p class="text-xl lg:text-3xl">75+</p>
-                                <p class="text-base lg:text-lg">Websites and Business Software</p>
-                            </div>
+                        <div class="grid font-semibold">
+                            <p class="text-zinc-600 dark:text-zinc-400">Delivered:</p>
+                            <p class="text-xl lg:text-3xl">75+</p>
+                            <p class="text-base lg:text-lg">Websites and Business Software</p>
                         </div>
                     </div>
-                    <!-- End Col -->
+                </div>
+                <!-- End Col -->
 
-                    <div>
-                        <!-- Form -->
-                        <form>
-                            <div class="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
-                                <!-- Card -->
-                                <div class="p-4 sm:p-7 flex flex-col bg-zinc-50 rounded-2xl shadow-lg dark:bg-zinc-800">
-                                    <div class="text-center">
-                                        <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">Get A Quote</h1>
+                <div>
+                    <!-- Form -->
+                    <form>
+                        <div class="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
+                            <!-- Card -->
+                            <div class="p-4 sm:p-7 flex flex-col bg-zinc-50 rounded-2xl shadow-lg dark:bg-zinc-800">
+                                <div class="text-center">
+                                    <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">Get A
+                                        Quote</h1>
+                                </div>
+
+                                <div class="mt-5">
+                                    <button type="button"
+                                            class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 hover:border-[#67C15E] hover:text-[#67C15E] dark:bg-zinc-900 dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-800 dark:hover:border-[#67C15E] dark:hover:text-[#67C15E]">
+                                        <svg class="w-6 h-6" viewBox="0 0 48 48" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
+                                            <g><title>WhatsApp Chat</title>
+                                                <g id="Icons" stroke="none" stroke-width="1" fill="none"
+                                                   fill-rule="evenodd">
+                                                    <g id="Color-" transform="translate(-700.000000, -360.000000)"
+                                                       fill="#67C15E">
+                                                        <path
+                                                            d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        Chat on WhatsApp
+                                    </button>
+
+                                    <div
+                                        class="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-neutral-500 dark:before:border-neutral-700 dark:after:border-neutral-700">
+                                        Or
+                                    </div>
+
+                                    <!-- Grid -->
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <!-- name -->
+                                        <div class="max-w-sm">
+                                            <label for="quote-name"
+                                                   class="block text-sm font-medium mb-2 dark:text-white">Name <span
+                                                    class="italic text-zinc-500 dark:text-zinc-600">(required)</span></label>
+                                            <input type="text" id="quote-name"
+                                                   class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                                   placeholder="Francis Njuguna" required>
+                                        </div>
+
+                                        <!-- company-name -->
+                                        <div class="max-w-sm">
+                                            <label for="quote-company"
+                                                   class="block text-sm font-medium mb-2 dark:text-white">
+                                                Company name <span class="italic text-zinc-500 dark:text-zinc-600">(optional)</span>
+                                            </label>
+                                            <input type="text" id="quote-company"
+                                                   class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                                   placeholder="Gameplan IT Ltd.">
+                                        </div>
+
+                                        <!-- Email -->
+                                        <div class="max-w-sm">
+                                            <label for="quote-email"
+                                                   class="block text-sm font-medium mb-2 dark:text-white">Your Email
+                                                <span
+                                                    class="italic text-zinc-500 dark:text-zinc-600">(required)</span></label>
+                                            <input type="email" id="quote-email"
+                                                   class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                                   placeholder="francis@gameplanit.com" required>
+                                        </div>
+
+                                        <!-- phone -->
+                                        <div class="max-w-sm">
+                                            <label for="quote-phone"
+                                                   class="block text-sm font-medium mb-2 dark:text-white">
+                                                Phone <span class="italic text-zinc-500 dark:text-zinc-600">(optional)</span>
+                                            </label>
+                                            <input type="text" id="quote-phone"
+                                                   class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                                   placeholder="+254 717 749371.">
+                                        </div>
+
+                                        <!-- Product/service -->
+                                        <div class="relative col-span-full">
+                                            <label for="product_service"
+                                                   class="block text-sm font-medium mb-2 dark:text-white">IT
+                                                Product/Service <span
+                                                    class="italic text-zinc-500 dark:text-zinc-600">(required)</span></label>
+                                            <select id="product_service"
+                                                    class="py-3 px-4 pe-9 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                                    required>
+                                                <option>Select a product/service</option>
+                                                <option value="web-business">Business Website</option>
+                                                <option value="web-personal">Personal Website</option>
+                                                <option value="web-custom">Custom Website</option>
+                                                <option value="ecommerce-integration">E-commerce Integration
+                                                </option>
+                                                <option value="sw-inventory">Inventory Software</option>
+                                                <option value="sw-erp">ERP Software</option>
+                                                <option value="sw-pos">POS Software</option>
+                                                <option value="sw-custom">Custom Software</option>
+                                                <option value="sw-upgrades">Software Upgrades</option>
+                                                <option value="sw-maintenance">Software Maintenance</option>
+                                                <option value="sw-fixing">Software Bug/Error Fixing</option>
+                                                <option value="sw-documentation">Software Documentation</option>
+                                                <option value="security-audits-upgrades">Security Audits and
+                                                    Upgrades
+                                                </option>
+                                                <option value="biz-computers">Business Computers</option>
+                                                <option value="biz-it-accessories">Business IT Accessories</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- accept-tc -->
+                                    <div class="mt-5 flex items-center">
+                                        <div class="flex">
+                                            <input id="accept-tc" name="accept-tc" type="checkbox" checked
+                                                   class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:bg-zinc-900 dark:border-zinc-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">
+                                        </div>
+                                        <div class="ms-3">
+                                            <label for="accept-tc" class="text-sm dark:text-white">I accept the <a
+                                                    class="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500"
+                                                    href="#">Terms and Conditions</a></label>
+                                        </div>
                                     </div>
 
                                     <div class="mt-5">
-                                        <button type="button" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 hover:border-[#67C15E] hover:text-[#67C15E] dark:bg-zinc-900 dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-800 dark:hover:border-[#67C15E] dark:hover:text-[#67C15E]">
-                                            <svg class="w-6 h-6" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
-                                                <g> <title>WhatsApp Chat</title><g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-700.000000, -360.000000)" fill="#67C15E"> <path d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z"> </path> </g> </g> </g></svg>
-                                            Chat on WhatsApp
+                                        <button type="submit"
+                                                class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                                            Request A Quote
                                         </button>
-
-                                        <div class="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-neutral-500 dark:before:border-neutral-700 dark:after:border-neutral-700">Or</div>
-
-                                        <!-- Grid -->
-                                        <div class="grid grid-cols-2 gap-4">
-                                            <!-- name -->
-                                            <div class="max-w-sm">
-                                                <label for="quote-name" class="block text-sm font-medium mb-2 dark:text-white">Name <span class="italic text-zinc-500 dark:text-zinc-600">(required)</span></label>
-                                                <input type="text" id="quote-name"
-                                                       class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                                                       placeholder="Francis Njuguna" required>
-                                            </div>
-
-                                            <!-- company-name -->
-                                            <div class="max-w-sm">
-                                                <label for="quote-company" class="block text-sm font-medium mb-2 dark:text-white">
-                                                    Company name <span class="italic text-zinc-500 dark:text-zinc-600">(optional)</span>
-                                                </label>
-                                                <input type="text" id="quote-company" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Gameplan IT Ltd.">
-                                            </div>
-
-                                            <!-- Email -->
-                                            <div class="max-w-sm">
-                                                <label for="quote-email" class="block text-sm font-medium mb-2 dark:text-white">Your Email <span class="italic text-zinc-500 dark:text-zinc-600">(required)</span></label>
-                                                <input type="email" id="quote-email" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="francis@gameplanit.com" required>
-                                            </div>
-
-                                            <!-- phone -->
-                                            <div class="max-w-sm">
-                                                <label for="quote-phone" class="block text-sm font-medium mb-2 dark:text-white">
-                                                    Phone <span class="italic text-zinc-500 dark:text-zinc-600">(optional)</span>
-                                                </label>
-                                                <input type="text" id="quote-phone" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="+254 717 749371.">
-                                            </div>
-
-                                            <!-- Product/service -->
-                                            <div class="relative col-span-full">
-                                                <label for="product_service" class="block text-sm font-medium mb-2 dark:text-white">IT Product/Service <span class="italic text-zinc-500 dark:text-zinc-600">(required)</span></label>
-                                                <select id="product_service" class="py-3 px-4 pe-9 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" required>
-                                                    <option>Select a product/service</option>
-                                                    <option value="web-business">Business Website</option>
-                                                    <option value="web-personal">Personal Website</option>
-                                                    <option value="web-custom">Custom Website</option>
-                                                    <option value="ecommerce-integration">E-commerce Integration</option>
-                                                    <option value="sw-inventory">Inventory Software</option>
-                                                    <option value="sw-erp">ERP Software</option>
-                                                    <option value="sw-pos">POS Software</option>
-                                                    <option value="sw-custom">Custom Software</option>
-                                                    <option value="sw-upgrades">Software Upgrades</option>
-                                                    <option value="sw-maintenance">Software Maintenance</option>
-                                                    <option value="sw-fixing">Software Bug/Error Fixing</option>
-                                                    <option value="sw-documentation">Software Documentation</option>
-                                                    <option value="security-audits-upgrades">Security Audits and Upgrades</option>
-                                                    <option value="biz-computers">Business Computers</option>
-                                                    <option value="biz-it-accessories">Business IT Accessories</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <!-- accept-tc -->
-                                        <div class="mt-5 flex items-center">
-                                            <div class="flex">
-                                                <input id="accept-tc" name="accept-tc" type="checkbox" checked class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:bg-zinc-900 dark:border-zinc-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">
-                                            </div>
-                                            <div class="ms-3">
-                                                <label for="accept-tc" class="text-sm dark:text-white">I accept the <a class="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500" href="#">Terms and Conditions</a></label>
-                                            </div>
-                                        </div>
-
-                                        <div class="mt-5">
-                                            <button type="submit" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">Request A Quote</button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
-
-                <!-- Clients Section -->
-                <div class="mt-6 md:mt-12 py-3 flex items-center text-sm text-gray-800 gap-x-1.5 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-white dark:after:border-zinc-700">
-                    <span class="font-semibold bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
-                        100% Project Acceptance Rate</span>
-                    (Easily Integrates with Leading Business Apps)
-                </div>
-
-                <!-- Clients -->
-                <div class="flex flex-wrap gap-x-6 sm:gap-x-12 lg:gap-x-24">
-                    <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500" viewBox="0 -197.5 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="currentColor">
-                        <g ><title>Wordpress integration</title> <g> <path d="M296.949504,45.7261845 L276.794787,45.7261845 L276.794787,47.8642513 C283.099003,47.8642513 284.11257,49.2153577 284.11257,57.2101157 L284.11257,71.6228664 C284.11257,79.6166761 283.099951,81.0806119 276.794787,81.0806119 C271.954508,80.4055327 268.688149,77.8152008 264.184461,72.8611437 L259.005693,67.2320074 C265.985936,65.9918338 269.700768,61.6019228 269.700768,56.6469176 C269.700768,50.4555313 264.410119,45.7261845 254.501057,45.7261845 L234.684828,45.7261845 L234.684828,47.8642513 C240.989043,47.8642513 242.002611,49.2153577 242.002611,57.2101157 L242.002611,71.6228664 C242.002611,79.6166761 240.989043,81.0806119 234.684828,81.0806119 L234.684828,83.2196268 L257.09044,83.2196268 L257.09044,81.0806119 C250.786225,81.0806119 249.772657,79.6166761 249.772657,71.6228664 L249.772657,67.5704951 L251.686015,67.5704951 L264.184461,83.2196268 L296.949504,83.2196268 C313.049952,83.2196268 320.031143,74.6635671 320.031143,64.4160169 C320.031143,54.1703631 313.050901,45.7261845 296.949504,45.7261845 L296.949504,45.7261845 L296.949504,45.7261845 Z M249.773606,64.0775292 L249.773606,49.1044248 L254.389175,49.1044248 C259.455114,49.1044248 261.707905,52.5945462 261.707905,56.6478657 C261.707905,60.5893041 259.455114,64.0784773 254.389175,64.0784773 L249.773606,64.0784773 L249.773606,64.0775292 L249.773606,64.0775292 Z M297.287992,79.7295054 L296.499135,79.7295054 C292.446763,79.7295054 291.883565,78.7168866 291.883565,73.537171 L291.883565,49.1044248 L297.287992,49.1044248 C308.997581,49.1044248 311.135648,57.6604845 311.135648,64.3041358 C311.135648,71.1715494 308.996634,79.7295054 297.287992,79.7295054 L297.287992,79.7295054 L297.287992,79.7295054 Z M171.972627,68.2455742 L179.741726,45.2748675 C181.994519,38.6321643 180.980952,36.7188079 173.775051,36.7188079 L173.775051,34.4660156 L194.942386,34.4660156 L194.942386,36.7188079 C187.849313,36.7188079 186.160667,38.4074539 183.345625,46.6269222 L170.508691,85.1339313 L169.045704,85.1339313 L157.559876,49.8913851 L145.851235,85.1339313 L144.3873,85.1339313 L131.889801,46.6269222 C129.187588,38.4074539 127.386113,36.7188079 120.85529,36.7188079 L120.85529,34.4660156 L145.851235,34.4660156 L145.851235,36.7188079 C139.207584,36.7188079 137.40516,38.2946247 139.770782,45.2748675 L147.314222,68.2455742 L158.686272,34.4660156 L160.826236,34.4660156 L171.972627,68.2455742 L171.972627,68.2455742 Z M210.25303,84.6826144 C197.868361,84.6826144 187.734588,75.5633567 187.734588,64.4150688 C187.734588,53.3815065 197.869309,44.2603525 210.25303,44.2603525 C222.638647,44.2603525 232.771472,53.3815065 232.771472,64.4150688 C232.771472,75.5633567 222.638647,84.6826144 210.25303,84.6826144 L210.25303,84.6826144 L210.25303,84.6826144 Z M210.25303,47.7533183 C199.895494,47.7533183 196.291596,57.0972864 196.291596,64.4160169 C196.291596,71.8485249 199.895494,81.0806119 210.25303,81.0806119 C220.725291,81.0806119 224.328241,71.8485249 224.328241,64.4160169 C224.328241,57.0972864 220.725291,47.7533183 210.25303,47.7533183 L210.25303,47.7533183 L210.25303,47.7533183 Z" fill="#00749A"> </path> <path d="M347.840233,80.9677826 L347.840233,83.2196268 L322.056381,83.2196268 L322.056381,80.9677826 C329.60077,80.9677826 330.951876,79.0544262 330.951876,67.7933091 L330.951876,49.779504 C330.951876,38.5183869 329.60077,36.7178597 322.056381,36.7178597 L322.056381,34.4650675 L345.362731,34.4650675 C356.959492,34.4650675 363.37938,40.4326915 363.37938,48.4283975 C363.37938,56.1974969 356.959492,62.277002 345.362731,62.277002 L338.944738,62.277002 L338.944738,67.792361 C338.944738,79.0544262 340.295844,80.9677826 347.840233,80.9677826 L347.840233,80.9677826 L347.840233,80.9677826 Z M345.362731,38.5183869 L338.944738,38.5183869 L338.944738,58.1108533 L345.362731,58.1108533 C351.668843,58.1108533 354.595766,53.7199942 354.595766,48.4283975 C354.595766,43.0239715 351.668843,38.5183869 345.362731,38.5183869 L345.362731,38.5183869 L345.362731,38.5183869 Z M440.729043,72.6364333 L440.165845,74.662619 C439.153226,78.3783989 437.913052,79.7295054 429.919242,79.7295054 L428.342477,79.7295054 C422.488631,79.7295054 421.475063,78.3783989 421.475063,70.3845892 L421.475063,65.2058217 C430.25773,65.2058217 430.933757,65.9927819 430.933757,71.8485249 L433.072772,71.8485249 L433.072772,55.0711007 L430.933757,55.0711007 C430.933757,60.9258955 430.25773,61.713804 421.475063,61.713804 L421.475063,49.1044248 L427.66645,49.1044248 C435.662156,49.1044248 436.899485,50.4555313 437.913052,54.1713112 L438.477198,56.309378 L440.277725,56.309378 L439.490765,45.7261845 L406.387234,45.7261845 L406.387234,47.8642513 C412.691449,47.8642513 413.705964,49.2153577 413.705964,57.2101157 L413.705964,71.6228664 C413.705964,78.935908 412.845048,80.7781537 407.873925,81.0407898 C403.149319,80.3192515 399.905715,77.7421936 395.467449,72.8611437 L390.287733,67.2320074 C397.268924,65.9918338 400.984704,61.6019228 400.984704,56.6469176 C400.984704,50.4555313 395.693107,45.7261845 385.784993,45.7261845 L365.968765,45.7261845 L365.968765,47.8642513 C372.27298,47.8642513 373.286546,49.2153577 373.286546,57.2101157 L373.286546,71.6228664 C373.286546,79.6166761 372.273929,81.0806119 365.968765,81.0806119 L365.968765,83.2196268 L388.375325,83.2196268 L388.375325,81.0806119 C382.071109,81.0806119 381.056594,79.6166761 381.056594,71.6228664 L381.056594,67.5704951 L382.970899,67.5704951 L395.468397,83.2196268 L441.743557,83.2196268 L442.419584,72.6373814 L440.729043,72.6373814 L440.729043,72.6364333 L440.729043,72.6364333 Z M381.055646,64.0775292 L381.055646,49.1044248 L385.671215,49.1044248 C390.738102,49.1044248 392.990895,52.5945462 392.990895,56.6478657 C392.990895,60.5893041 390.738102,64.0784773 385.671215,64.0784773 L381.055646,64.0784773 L381.055646,64.0775292 L381.055646,64.0775292 Z M463.585023,84.6826144 C459.081335,84.6826144 455.139897,82.3188891 453.451251,80.8540052 C452.888053,81.4181515 451.875434,83.1067975 451.650723,84.6826144 L449.510761,84.6826144 L449.510761,69.1463119 L451.762605,69.1463119 C452.664291,76.5769236 457.84211,80.9677826 464.485761,80.9677826 C468.088712,80.9677826 471.016583,78.9415969 471.016583,75.5643048 C471.016583,72.6373814 468.4272,70.3845892 463.810682,68.2455742 L457.392689,65.2058217 C452.888053,63.0649104 449.510761,59.3491306 449.510761,54.3960215 C449.510761,48.9915956 454.577647,44.3760261 461.558838,44.3760261 C465.274617,44.3760261 468.426251,45.7271326 470.341504,47.3029495 C470.903754,46.8525807 471.466952,45.6133553 471.80544,44.2613006 L473.944455,44.2613006 L473.944455,57.5486034 L471.579781,57.5486034 C470.790925,52.2560585 467.864002,47.8651995 461.897326,47.8651995 C458.744744,47.8651995 455.815924,49.6666748 455.815924,52.4826651 C455.815924,55.4095884 458.180598,56.9854053 463.585971,59.4629079 L469.777358,62.5026605 C475.182732,65.0920442 477.320798,69.2600892 477.320798,72.6373814 C477.320798,79.7295054 471.128465,84.6826144 463.585023,84.6826144 L463.585023,84.6826144 L463.585023,84.6826144 Z M498.263424,84.6826144 C493.758787,84.6826144 489.817349,82.3188891 488.12965,80.8540052 C487.566452,81.4181515 486.553834,83.1067975 486.329124,84.6826144 L484.18916,84.6826144 L484.18916,69.1463119 L486.441004,69.1463119 C487.341743,76.5769236 492.520509,80.9677826 499.164161,80.9677826 C502.767112,80.9677826 505.694984,78.9415969 505.694984,75.5643048 C505.694984,72.6373814 503.105599,70.3845892 498.488134,68.2455742 L492.070141,65.2058217 C487.566452,63.0649104 484.188212,59.3491306 484.188212,54.3960215 C484.188212,48.9915956 489.255099,44.3760261 496.23629,44.3760261 C499.952069,44.3760261 503.103703,45.7271326 505.018956,47.3029495 C505.581206,46.8525807 506.144404,45.6133553 506.480995,44.2613006 L508.620959,44.2613006 L508.620959,57.5486034 L506.257233,57.5486034 C505.468376,52.2560585 502.541454,47.8651995 496.574778,47.8651995 C493.422195,47.8651995 490.493376,49.6666748 490.493376,52.4826651 C490.493376,55.4095884 492.85805,56.9854053 498.263424,59.4629079 L504.45481,62.5026605 C509.860184,65.0920442 511.998251,69.2600892 511.998251,72.6373814 C511.998251,79.7295054 505.805917,84.6826144 498.263424,84.6826144 L498.263424,84.6826144 L498.263424,84.6826144 Z" fill="#464342"> </path> <g fill="#464342"> <path d="M8.25644587,58.0833571 C8.25644587,77.8066675 19.7185697,94.8514688 36.3395499,102.928715 L12.5705052,37.8044338 C9.80571461,44.0015089 8.25644587,50.859441 8.25644587,58.0833571 L8.25644587,58.0833571 L8.25644587,58.0833571 Z M91.7235384,55.5688768 C91.7235384,49.4106756 89.5115164,45.1459199 87.6142785,41.8264645 C85.0884204,37.7219452 82.7209025,34.2460459 82.7209025,30.1415266 C82.7209025,25.5610386 86.1949055,21.297231 91.0882814,21.297231 C91.3091991,21.297231 91.5187392,21.3247272 91.733968,21.337053 C82.8688132,13.2152437 71.0577721,8.25644587 58.0852534,8.25644587 C40.6773129,8.25644587 25.3619281,17.1879709 16.4522105,30.7161025 C17.6212731,30.7511838 18.7230175,30.7758356 19.6588365,30.7758356 C24.8707891,30.7758356 32.9385541,30.1434229 32.9385541,30.1434229 C35.6246486,29.9850828 35.9413291,33.9303137 33.2580789,34.2479422 C33.2580789,34.2479422 30.5587104,34.5655708 27.5549874,34.7229628 L45.7005846,88.6961118 L56.6051992,55.9917494 L48.8417886,34.7210665 C46.1585386,34.5636745 43.6165621,34.2460459 43.6165621,34.2460459 C40.9314157,34.0886539 41.2461998,29.9831865 43.9313462,30.1415266 C43.9313462,30.1415266 52.1602959,30.7739393 57.0565162,30.7739393 C62.2675206,30.7739393 70.3362338,30.1415266 70.3362338,30.1415266 C73.0242245,29.9831865 73.3399568,33.9284174 70.6557585,34.2460459 C70.6557585,34.2460459 67.9507012,34.5636745 64.952667,34.7210665 L82.9598351,88.285565 L87.9300106,71.6769106 C90.0841959,64.7848453 91.7235384,59.8345807 91.7235384,55.5688768 L91.7235384,55.5688768 L91.7235384,55.5688768 Z M58.959443,62.4419793 L44.009094,105.885031 C48.4729603,107.197263 53.1937738,107.915009 58.0852534,107.915009 C63.8879002,107.915009 69.4525627,106.911872 74.6322783,105.090485 C74.4985899,104.877152 74.3772273,104.650546 74.2776721,104.404028 L58.959443,62.4419793 L58.959443,62.4419793 Z M101.808008,34.1768314 C102.022289,35.7640259 102.143651,37.4678423 102.143651,39.3006065 C102.143651,44.3570632 101.199299,50.041192 98.3548637,57.1484862 L83.1342938,101.154736 C97.9481099,92.5161876 107.912165,76.4669387 107.912165,58.0843052 C107.913113,49.4211052 105.700142,41.2746441 101.808008,34.1768314 L101.808008,34.1768314 L101.808008,34.1768314 Z M58.0852534,0 C26.0578665,0 0,26.0559702 0,58.0833571 C0,90.1145366 26.0578665,116.169559 58.0852534,116.169559 C90.1116921,116.169559 116.173352,90.1145366 116.173352,58.0833571 C116.172403,26.0559702 90.1116921,0 58.0852534,0 L58.0852534,0 L58.0852534,0 Z M58.0852534,113.507167 C27.526543,113.507167 2.66333905,88.6439638 2.66333905,58.0833571 C2.66333905,27.5246467 27.5255949,2.66333905 58.0852534,2.66333905 C88.6430157,2.66333905 113.504323,27.5246467 113.504323,58.0833571 C113.504323,88.6439638 88.6430157,113.507167 58.0852534,113.507167 L58.0852534,113.507167 L58.0852534,113.507167 Z"> </path> </g> </g> </g></svg>
-
-                    <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500" viewBox="0 -51.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="currentColor">
-                        <g><title>AWS integration</title> <g> <path d="M72.392053,55.4384106 C72.392053,58.5748344 72.7311258,61.1178808 73.3245033,62.9827815 C74.002649,64.8476821 74.8503311,66.8821192 76.0370861,69.0860927 C76.4609272,69.7642384 76.6304636,70.4423841 76.6304636,71.0357616 C76.6304636,71.8834437 76.1218543,72.7311258 75.0198675,73.5788079 L69.6794702,77.1390728 C68.9165563,77.6476821 68.1536424,77.9019868 67.4754967,77.9019868 C66.6278146,77.9019868 65.7801325,77.4781457 64.9324503,76.7152318 C63.7456954,75.4437086 62.7284768,74.0874172 61.8807947,72.7311258 C61.0331126,71.2900662 60.1854305,69.6794702 59.2529801,67.7298013 C52.6410596,75.5284768 44.3337748,79.4278146 34.3311258,79.4278146 C27.210596,79.4278146 21.5311258,77.3933775 17.3774834,73.3245033 C13.2238411,69.2556291 11.1046358,63.8304636 11.1046358,57.0490066 C11.1046358,49.8437086 13.6476821,43.994702 18.818543,39.586755 C23.989404,35.1788079 30.8556291,32.9748344 39.586755,32.9748344 C42.4688742,32.9748344 45.4357616,33.2291391 48.5721854,33.6529801 C51.7086093,34.0768212 54.9298013,34.7549669 58.3205298,35.5178808 L58.3205298,29.3298013 C58.3205298,22.8874172 56.9642384,18.394702 54.3364238,15.7668874 C51.6238411,13.1390728 47.0463576,11.8675497 40.5192053,11.8675497 C37.5523179,11.8675497 34.5006623,12.2066225 31.3642384,12.9695364 C28.2278146,13.7324503 25.1761589,14.6649007 22.2092715,15.8516556 C20.8529801,16.4450331 19.8357616,16.784106 19.2423841,16.9536424 C18.6490066,17.1231788 18.2251656,17.207947 17.8860927,17.207947 C16.6993377,17.207947 16.1059603,16.3602649 16.1059603,14.5801325 L16.1059603,10.4264901 C16.1059603,9.07019868 16.2754967,8.05298013 16.6993377,7.45960265 C17.1231788,6.86622517 17.8860927,6.27284768 19.0728477,5.6794702 C22.0397351,4.15364238 25.6,2.88211921 29.7536424,1.86490066 C33.9072848,0.762913907 38.3152318,0.254304636 42.9774834,0.254304636 C53.0649007,0.254304636 60.4397351,2.54304636 65.186755,7.1205298 C69.8490066,11.6980132 72.2225166,18.6490066 72.2225166,27.9735099 L72.2225166,55.4384106 L72.392053,55.4384106 Z M37.9761589,68.3231788 C40.7735099,68.3231788 43.6556291,67.8145695 46.7072848,66.797351 C49.7589404,65.7801325 52.4715232,63.9152318 54.7602649,61.3721854 C56.1165563,59.7615894 57.1337748,57.981457 57.6423841,55.9470199 C58.1509934,53.9125828 58.4900662,51.4543046 58.4900662,48.5721854 L58.4900662,45.0119205 C56.0317881,44.418543 53.4039735,43.9099338 50.6913907,43.5708609 C47.9788079,43.2317881 45.3509934,43.0622517 42.7231788,43.0622517 C37.0437086,43.0622517 32.8900662,44.1642384 30.0927152,46.4529801 C27.2953642,48.7417219 25.9390728,51.9629139 25.9390728,56.2013245 C25.9390728,60.1854305 26.9562914,63.1523179 29.0754967,65.186755 C31.1099338,67.3059603 34.0768212,68.3231788 37.9761589,68.3231788 Z M106.045033,77.4781457 C104.519205,77.4781457 103.501987,77.2238411 102.823841,76.6304636 C102.145695,76.1218543 101.552318,74.9350993 101.043709,73.3245033 L81.1231788,7.7986755 C80.6145695,6.10331126 80.3602649,5.0013245 80.3602649,4.40794702 C80.3602649,3.05165563 81.0384106,2.28874172 82.394702,2.28874172 L90.7019868,2.28874172 C92.3125828,2.28874172 93.4145695,2.54304636 94.007947,3.13642384 C94.6860927,3.64503311 95.194702,4.83178808 95.7033113,6.44238411 L109.944371,62.5589404 L123.168212,6.44238411 C123.592053,4.74701987 124.100662,3.64503311 124.778808,3.13642384 C125.456954,2.62781457 126.643709,2.28874172 128.169536,2.28874172 L134.950993,2.28874172 C136.561589,2.28874172 137.663576,2.54304636 138.341722,3.13642384 C139.019868,3.64503311 139.613245,4.83178808 139.952318,6.44238411 L153.345695,63.2370861 L168.010596,6.44238411 C168.519205,4.74701987 169.112583,3.64503311 169.70596,3.13642384 C170.384106,2.62781457 171.486093,2.28874172 173.011921,2.28874172 L180.895364,2.28874172 C182.251656,2.28874172 183.01457,2.96688742 183.01457,4.40794702 C183.01457,4.83178808 182.929801,5.25562914 182.845033,5.76423841 C182.760265,6.27284768 182.590728,6.95099338 182.251656,7.88344371 L161.822517,73.4092715 C161.313907,75.1046358 160.72053,76.2066225 160.042384,76.7152318 C159.364238,77.2238411 158.262252,77.5629139 156.821192,77.5629139 L149.531126,77.5629139 C147.92053,77.5629139 146.818543,77.3086093 146.140397,76.7152318 C145.462252,76.1218543 144.868874,75.0198675 144.529801,73.3245033 L131.390728,18.6490066 L118.336424,73.2397351 C117.912583,74.9350993 117.403974,76.0370861 116.725828,76.6304636 C116.047682,77.2238411 114.860927,77.4781457 113.335099,77.4781457 L106.045033,77.4781457 Z M214.972185,79.7668874 C210.564238,79.7668874 206.156291,79.2582781 201.917881,78.2410596 C197.67947,77.2238411 194.37351,76.1218543 192.169536,74.8503311 C190.813245,74.0874172 189.880795,73.2397351 189.541722,72.4768212 C189.202649,71.7139073 189.033113,70.8662252 189.033113,70.1033113 L189.033113,65.7801325 C189.033113,64 189.711258,63.1523179 190.982781,63.1523179 C191.491391,63.1523179 192,63.2370861 192.508609,63.4066225 C193.017219,63.5761589 193.780132,63.9152318 194.627815,64.2543046 C197.509934,65.5258278 200.646358,66.5430464 203.952318,67.2211921 C207.343046,67.8993377 210.649007,68.2384106 214.039735,68.2384106 C219.380132,68.2384106 223.533775,67.3059603 226.415894,65.4410596 C229.298013,63.5761589 230.823841,60.8635762 230.823841,57.3880795 C230.823841,55.0145695 230.060927,53.0649007 228.535099,51.4543046 C227.009272,49.8437086 224.127152,48.402649 219.97351,47.0463576 L207.682119,43.2317881 C201.49404,41.2821192 196.916556,38.4 194.119205,34.5854305 C191.321854,30.8556291 189.880795,26.7019868 189.880795,22.2940397 C189.880795,18.7337748 190.643709,15.597351 192.169536,12.8847682 C193.695364,10.1721854 195.729801,7.7986755 198.272848,5.93377483 C200.815894,3.98410596 203.698013,2.54304636 207.088742,1.52582781 C210.47947,0.508609272 214.039735,0.0847682119 217.769536,0.0847682119 C219.634437,0.0847682119 221.584106,0.169536424 223.449007,0.42384106 C225.398675,0.678145695 227.178808,1.01721854 228.95894,1.35629139 C230.654305,1.78013245 232.264901,2.20397351 233.790728,2.71258278 C235.316556,3.22119205 236.503311,3.72980132 237.350993,4.2384106 C238.537748,4.91655629 239.38543,5.59470199 239.89404,6.35761589 C240.402649,7.03576159 240.656954,7.96821192 240.656954,9.15496689 L240.656954,13.1390728 C240.656954,14.9192053 239.978808,15.8516556 238.707285,15.8516556 C238.029139,15.8516556 236.927152,15.5125828 235.486093,14.8344371 C230.654305,12.6304636 225.229139,11.5284768 219.210596,11.5284768 C214.378808,11.5284768 210.564238,12.2913907 207.936424,13.9019868 C205.308609,15.5125828 203.952318,17.9708609 203.952318,21.4463576 C203.952318,23.8198675 204.8,25.8543046 206.495364,27.4649007 C208.190728,29.0754967 211.327152,30.6860927 215.819868,32.1271523 L227.856954,35.9417219 C233.960265,37.8913907 238.368212,40.6039735 240.996026,44.0794702 C243.623841,47.5549669 244.895364,51.5390728 244.895364,55.9470199 C244.895364,59.592053 244.13245,62.8980132 242.691391,65.7801325 C241.165563,68.6622517 239.131126,71.205298 236.503311,73.2397351 C233.875497,75.3589404 230.739073,76.8847682 227.09404,77.986755 C223.27947,79.1735099 219.295364,79.7668874 214.972185,79.7668874 Z" fill="#252F3E" fill-rule="nonzero"> </path> <path d="M230.993377,120.964238 C203.104636,141.562914 162.58543,152.498013 127.745695,152.498013 C78.9192053,152.498013 34.9245033,134.442384 1.69536424,104.434437 C-0.932450331,102.060927 1.4410596,98.8397351 4.57748344,100.704636 C40.5192053,121.557616 84.8529801,134.188079 130.712583,134.188079 C161.65298,134.188079 195.645033,127.745695 226.924503,114.521854 C231.586755,112.402649 235.570861,117.57351 230.993377,120.964238 Z M242.606623,107.740397 C239.046358,103.162914 219.04106,105.536424 209.970861,106.638411 C207.258278,106.977483 206.834437,104.603974 209.292715,102.823841 C225.229139,91.6344371 251.422517,94.8556291 254.474172,98.5854305 C257.525828,102.4 253.62649,128.593377 238.707285,141.139073 C236.418543,143.088742 234.21457,142.071523 235.231788,139.528477 C238.622517,131.136424 246.166887,112.233113 242.606623,107.740397 Z" fill="#FF9900"> </path> </g> </g></svg>
-
-                    <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500" viewBox="0 -182 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
-                        <g> <title>Azure integration</title> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M88.1004353,139.62683 C112.567045,135.30475 132.775068,131.72823 133.00716,131.679011 L133.429152,131.589518 L110.33026,104.114111 C97.6258791,89.0026353 87.2313796,76.5801094 87.2313796,76.5084996 C87.2313796,76.3729207 111.082936,10.690889 111.217022,10.4570512 C111.261853,10.3790877 127.493562,38.4026876 150.563749,78.3882717 C172.16248,115.823492 189.969587,146.688965 190.135099,146.978199 L190.436042,147.504087 L117.025859,147.494618 L43.6156897,147.485187 L88.1004353,139.626857 L88.1004353,139.62683 Z M369.619894,132.982059 C358.445424,132.265623 351.946305,125.90263 350.224075,113.992527 C349.765944,110.824245 349.764193,110.742042 349.71731,90.173623 L349.671933,70.2668333 L354.617465,70.2668333 L359.562981,70.2668333 L359.601927,89.5218293 C359.637031,106.875822 359.659056,108.910554 359.82497,110.131358 C360.498323,115.085873 361.838855,118.417676 364.121111,120.809186 C365.947645,122.72315 368.085892,123.843826 371.045792,124.43849 C372.442202,124.719032 376.414651,124.719594 377.687784,124.439645 C380.688543,123.779283 383.093622,122.473451 385.215267,120.35261 C387.633499,117.935291 389.422457,114.50562 390.288072,110.627341 L390.579811,109.32022 L390.612298,89.9022726 L390.644785,70.4843301 L395.693852,70.4843301 L400.74293,70.4843301 L400.74293,101.009883 L400.74293,131.535433 L395.745866,131.535433 L390.748801,131.535433 L390.748801,126.692266 C390.748801,123.401492 390.712734,121.861115 390.636321,121.886589 C390.574469,121.907221 390.317826,122.299823 390.066006,122.759067 C388.343996,125.899581 385.474939,128.771567 382.331115,130.501845 C378.562694,132.575877 374.783458,133.313357 369.619906,132.98229 L369.619894,132.982059 Z M483.0417,132.932728 C479.097099,132.636228 474.943659,131.280057 471.548892,129.180151 C464.393792,124.754183 460.160147,117.45875 458.920548,107.418927 C458.491593,103.944772 458.440038,99.2780919 458.79799,96.3260054 C459.597792,89.7297687 462.189813,83.2543494 465.880853,78.6314848 C466.827069,77.4463937 468.973634,75.2998325 470.158675,74.3536781 C473.358787,71.7986529 477.101956,70.0119727 481.07618,69.142559 C483.391754,68.635998 487.469512,68.3981545 489.929676,68.6261595 C496.109795,69.1989338 501.773946,72.1087451 505.62373,76.6885672 C509.535054,81.3416131 511.68493,87.8434569 511.959475,95.8496371 C512.002504,97.1043325 512.012936,99.3041276 511.982685,100.738071 L511.927642,103.345234 L490.282744,103.37264 L468.637845,103.400046 L468.637845,104.365954 C468.637845,107.306386 469.352719,110.655448 470.58858,113.504881 C471.654324,115.962081 473.488865,118.645288 474.990919,119.943764 C478.070751,122.606178 481.840061,124.199784 485.964629,124.583288 C487.493969,124.725476 491.391517,124.575782 493.134329,124.307996 C498.106682,123.543845 502.834005,121.593568 506.651598,118.731398 C507.100749,118.39465 507.530581,118.080031 507.606775,118.032256 C507.718277,117.962339 507.744629,118.84215 507.741807,122.540477 L507.738343,127.135574 L506.715456,127.768202 C502.396809,130.439177 497.449353,132.154247 492.211008,132.796272 C490.647729,132.987864 484.911294,133.073215 483.041761,132.93269 L483.0417,132.932728 Z M501.879178,94.1773502 C501.879178,89.25193 499.803538,83.7803987 496.866274,80.9629904 C494.770072,78.9523161 492.236039,77.7235256 489.223566,77.2569342 C487.798361,77.0361849 484.794603,77.1212051 483.291995,77.424823 C480.115537,78.0666628 477.488189,79.463092 475.196618,81.7274953 C472.784884,84.1106374 470.976695,87.0051636 469.839526,90.3030741 C469.430615,91.4889658 468.952341,93.4359096 468.803887,94.5188939 L468.733154,95.0348969 L485.306161,95.0348969 L501.879178,95.0348969 L501.879178,94.1773502 Z M208.270112,131.399412 C208.295466,131.324726 215.645563,112.015579 224.603672,88.4901966 L240.891141,45.716123 L246.124393,45.716123 L251.357635,45.716123 L251.791839,46.8296003 C253.118722,50.2322888 284.398199,131.442453 284.398199,131.484644 C284.398199,131.512435 281.892877,131.534393 278.830816,131.534393 L273.263433,131.533232 L268.755212,119.530464 L264.246991,107.527701 L246.094793,107.527481 L227.942592,107.527266 L227.784846,107.934634 C227.698094,108.158686 225.771975,113.559547 223.504568,119.936555 L219.382032,131.531091 L213.803026,131.533016 C209.386999,131.534393 208.233634,131.506611 208.270112,131.399127 L208.270112,131.399412 Z M260.933718,98.3678925 C260.933718,98.3488777 257.89986,90.1240728 254.19181,80.0905821 C247.254688,61.3196527 246.866623,60.1902513 246.31853,57.1766937 C246.061517,55.7635822 245.931474,55.7243131 245.778924,57.0137472 C245.669877,57.9354209 245.197058,59.9977894 244.832546,61.1417599 C244.651682,61.7093609 241.527745,70.2834078 237.890458,80.1951946 C234.253179,90.1069825 231.27722,98.2584455 231.27722,98.3095547 C231.27722,98.3606677 237.949936,98.4024849 246.105471,98.4024849 C254.261006,98.4024849 260.933718,98.3869343 260.933718,98.367881 L260.933718,98.3678925 Z M287.765787,129.971958 L287.765787,128.40871 L305.850917,103.547257 L323.936046,78.6858003 L307.561869,78.6314848 L291.187691,78.5771693 L291.159246,74.4220007 L291.1308,70.2668333 L314.813841,70.2668333 L338.496877,70.2668333 L338.496877,71.6702603 L338.496877,73.0736861 L320.409673,98.070722 C310.461711,111.819095 302.322469,123.090887 302.322469,123.119156 C302.322469,123.147409 310.363942,123.17055 320.192407,123.17055 L338.062349,123.17055 L338.062349,127.352874 L338.062349,131.535202 L312.914065,131.535202 L287.765787,131.535202 L287.765787,129.971958 Z M420.47771,131.462776 C420.437875,131.422953 420.405284,117.63757 420.405284,100.828595 L420.405284,70.2668333 L425.348037,70.2668333 L430.290786,70.2668333 L430.290786,76.5674803 C430.290786,80.032837 430.332923,82.8681285 430.384436,82.8681285 C430.435949,82.8681285 430.676514,82.3008854 430.919023,81.6075901 C432.030318,78.4306471 433.957523,75.4621285 436.440424,73.1028357 C438.677152,70.9774615 441.233533,69.7064764 444.249977,69.2200773 C445.097309,69.0834436 445.814276,69.0573579 447.508934,69.1015 C449.637228,69.1569357 450.749931,69.3125072 452.044315,69.735603 L452.451684,69.8687609 L452.451684,74.9992824 L452.451684,80.1298012 L451.283891,79.5452369 C449.221049,78.5126342 447.185636,78.1039997 444.738821,78.2312298 C443.146396,78.3140368 442.101176,78.5185158 440.828074,78.996312 C438.208647,79.9793837 436.083915,81.7145813 434.599255,84.0831698 C432.449984,87.5120673 430.917102,91.9195713 430.464987,95.9704815 C430.383851,96.6974493 430.33601,102.618055 430.316953,114.289894 L430.288815,131.535202 L425.41947,131.535202 C422.741335,131.535202 420.517541,131.5026 420.477717,131.462776 L420.47771,131.462776 Z M-4.03864498e-06,131.248155 C-4.03864498e-06,131.209471 10.8840818,112.315552 24.1868529,89.261653 L48.373706,47.3454764 L76.5606873,23.6909044 C92.0635269,10.6808927 104.789417,0.0204315308 104.840437,0.000455014926 C104.891458,-0.0184488374 104.687522,0.494832839 104.387245,1.14162264 C104.086968,1.78841244 90.3137756,31.3304598 73.7801502,66.7906143 L43.7190204,131.263621 L21.8595082,131.291027 C9.83677915,131.306116 -4.03864498e-06,131.286793 -4.03864498e-06,131.24814 L-4.03864498e-06,131.248155 Z" fill="#0089D6" fill-rule="nonzero"> </path> </g> </g></svg>
-
-                    <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500" viewBox="0 -32 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="currentColor">
-                        <g> <title>Digital Ocean integration</title> <g fill="#0080FF"> <path d="M127.806368,103.431977 L127.806368,128.137065 C169.680136,128.137065 202.283513,87.6839887 188.5857,43.8050085 C182.599796,24.6296657 167.363082,9.39295184 148.187739,3.40704816 C104.308759,-10.2907649 63.8549575,22.3133371 63.8549575,64.1871048 L88.6166119,64.1871048 C88.620238,64.1871048 88.6231388,64.1805779 88.6231388,64.1805779 C88.6267649,37.901779 114.633609,17.5849518 142.262028,27.610289 C152.497677,31.3248272 160.662119,39.4878187 164.378833,49.7227422 C174.405673,77.3349616 154.119391,103.331553 127.862935,103.368844 L127.862935,78.7435694 C127.862935,78.7435694 127.860759,78.742119 127.858584,78.742119 L103.173076,78.742119 C103.170901,78.742119 103.168725,78.745745 103.168725,78.745745 L103.168725,103.431977 L127.806368,103.431977 Z M103.164374,122.405711 L84.1971671,122.405711 L84.1928159,122.40136 L84.1928159,103.431977 L103.168725,103.431977 L103.168725,122.40136 C103.168725,122.40136 103.16655,122.405711 103.164374,122.405711 Z M84.2058697,103.431977 L68.3055864,103.431977 C68.2990595,103.431977 68.293983,103.427626 68.293983,103.427626 L68.293983,87.5345949 C68.293983,87.5345949 68.2990595,87.5229915 68.3055864,87.5229915 L84.1942663,87.5229915 C84.2007932,87.5229915 84.2058697,87.528068 84.2058697,87.528068 L84.2058697,103.431977 Z"> </path> <path d="M22.0964986,153.197507 C18.8772805,150.963853 14.8712068,149.831796 10.1899603,149.831796 L0,149.831796 L0,182.161042 L10.1899603,182.161042 C14.8596034,182.161042 18.8671275,180.965892 22.1001246,178.611127 C23.8594901,177.362312 25.241745,175.61745 26.2091785,173.426584 C27.1715354,171.24732 27.6596034,168.676442 27.6596034,165.78647 C27.6596034,162.929858 27.1715354,160.39234 26.2084533,158.243535 C25.241745,156.084578 23.8580397,154.386856 22.0964986,153.197507 Z M5.9518187,155.296272 L9.15000567,155.296272 C12.7086232,155.296272 15.6377564,155.996102 17.8590822,157.379082 C20.3248045,158.865768 21.575796,161.694096 21.575796,165.78647 C21.575796,170.001405 20.3219037,172.957371 17.8503796,174.57532 L17.848204,174.57532 C15.7211558,175.982232 12.8094278,176.695841 9.19424363,176.695841 L5.9518187,176.695841 L5.9518187,155.296272 Z M31.8332011,182.161042 L37.5631048,182.161042 L37.5631048,159.390822 L31.8332011,159.390822 L31.8332011,182.161042 Z M34.7529065,149.433654 C33.7738697,149.433654 32.9297224,149.781031 32.2501983,150.46128 C31.5626969,151.116147 31.2138697,151.946516 31.2138697,152.929178 C31.2138697,153.908215 31.5605212,154.751637 32.245847,155.436238 C32.9297224,156.121564 33.7738697,156.468941 34.7529065,156.468941 C35.7319433,156.468941 36.5753654,156.121564 37.2606912,155.436238 C37.9467422,154.750912 38.2933938,153.90749 38.2933938,152.929178 C38.2933938,151.947966 37.9445666,151.117598 37.2606912,150.465632 C36.5753654,149.781031 35.7319433,149.433654 34.7529065,149.433654 Z M58.3709008,161.293054 C56.6434448,159.756329 54.7143796,158.859966 52.6279433,158.859966 C49.4652918,158.859966 46.8363966,159.954312 44.8152295,162.109643 C42.7686799,164.248295 41.7301756,167.000476 41.7301756,170.289314 C41.7301756,173.503456 42.752,176.24621 44.7717167,178.445779 C46.8073881,180.573552 49.4507875,181.651943 52.6279433,181.651943 C54.8369405,181.651943 56.7355467,181.036963 58.2831501,179.822232 L58.2831501,180.346561 C58.2831501,182.235739 57.7769518,183.705745 56.7797847,184.715241 C55.7833428,185.723286 54.4010878,186.233836 52.6729065,186.233836 C50.0280567,186.233836 48.370221,185.194606 46.3519547,182.467082 L42.4503116,186.215705 L42.5554674,186.363649 C43.3981643,187.54647 44.6890425,188.703909 46.3925666,189.804057 C48.0968159,190.899127 50.2390935,191.456091 52.7606572,191.456091 C56.1626289,191.456091 58.914085,190.407433 60.9403286,188.339853 C62.9781756,186.261394 64.0116034,183.478028 64.0116034,180.070255 L64.0116034,159.390822 L58.3709008,159.390822 L58.3709008,161.293054 Z M56.8682606,174.741394 C55.8667422,175.878527 54.5809405,176.429688 52.9376091,176.429688 C51.2950028,176.429688 50.0164533,175.878527 49.0294391,174.742844 C48.0475014,173.612238 47.5485552,172.113949 47.5485552,170.289314 C47.5485552,168.434946 48.0475014,166.917802 49.0301643,165.779218 C50.0033994,164.652963 51.3182096,164.081496 52.9376091,164.081496 C54.5794901,164.081496 55.866017,164.637008 56.8675354,165.782119 C57.8654278,166.919977 58.3709008,168.436397 58.3709008,170.289314 C58.3709008,172.113224 57.8654278,173.611513 56.8682606,174.741394 Z M68.9154901,182.161042 L74.6453938,182.161042 L74.6453938,159.390822 L68.9154901,159.390822 L68.9154901,182.161042 Z M71.8359207,149.433654 C70.8561586,149.433654 70.0120113,149.781031 69.3324873,150.46128 C68.6449858,151.116147 68.2961586,151.946516 68.2961586,152.929178 C68.2961586,153.908215 68.6428102,154.751637 69.328136,155.436238 C70.0120113,156.121564 70.8561586,156.468941 71.8359207,156.468941 C72.8142323,156.468941 73.6576544,156.121564 74.3437054,155.436238 C75.0290312,154.750912 75.3756827,153.90749 75.3756827,152.929178 C75.3756827,151.947966 75.0268555,151.117598 74.3437054,150.465632 C73.6576544,149.781031 72.8142323,149.433654 71.8359207,149.433654 Z M87.203898,153.238844 L81.5631955,153.238844 L81.5631955,159.390822 L78.2874108,159.390822 L78.2874108,164.613076 L81.5631955,164.613076 L81.5631955,174.071297 C81.5631955,177.03089 82.1542436,179.14851 83.3211105,180.364691 C84.4908782,181.586674 86.5678867,182.206006 89.4948442,182.206006 C90.426017,182.206006 91.3629915,182.174822 92.2789348,182.115354 L92.5371105,182.097949 L92.5371105,176.880045 L90.5725099,176.983025 C89.2083853,176.983025 88.2975184,176.74298 87.8645666,176.271592 C87.425813,175.792227 87.203898,174.77838 87.203898,173.259059 L87.203898,164.613076 L92.5371105,164.613076 L92.5371105,159.390822 L87.203898,159.390822 L87.203898,153.238844 Z M112.201972,161.094346 L112.201246,161.094346 C110.465088,159.612011 108.064635,158.859966 105.068057,158.859966 C103.161473,158.859966 101.378901,159.278414 99.7660283,160.096453 C98.2742663,160.85285 96.8093371,162.106017 95.8781643,163.745722 L95.9361813,163.815343 L99.6050312,167.327547 C101.116374,164.918391 102.796691,164.081496 105.024544,164.081496 C106.22187,164.081496 107.215411,164.402765 107.979059,165.035875 C108.738357,165.664635 109.108215,166.464544 109.108215,167.478391 L109.108215,168.58434 C107.687524,168.152113 106.270459,167.933099 104.89183,167.933099 C102.040295,167.933099 99.7203399,168.603921 97.9965099,169.926708 C96.2509235,171.266176 95.3661643,173.182187 95.3661643,175.622527 C95.3661643,177.761904 96.1124079,179.499513 97.5889405,180.791841 C99.0785269,182.037756 100.939422,182.670867 103.121586,182.670867 C105.303025,182.670867 107.343773,181.791184 109.196691,180.286368 L109.196691,182.161042 L114.838119,182.161042 L114.838119,167.523354 C114.838119,164.751592 113.951184,162.589008 112.201972,161.094346 Z M102.028691,173.459943 C102.678482,173.006686 103.596601,172.778244 104.758391,172.778244 C106.137745,172.778244 107.600499,173.055275 109.108215,173.602085 L109.108215,175.835739 C107.863025,176.993178 106.199388,177.580601 104.162266,177.580601 C103.170176,177.580601 102.399275,177.360136 101.869144,176.924283 C101.349167,176.497858 101.096068,175.955399 101.096068,175.267898 C101.096068,174.486844 101.401382,173.895071 102.028691,173.459943 Z M119.403331,182.161042 L125.133235,182.161042 L125.133235,149.831796 L119.403331,149.831796 L119.403331,182.161042 Z M145.922176,182.648385 C136.732283,182.648385 129.256068,175.17217 129.256068,165.981552 C129.256068,156.79166 136.732283,149.315445 145.922176,149.315445 C155.112068,149.315445 162.588283,156.79166 162.588283,165.981552 C162.588283,175.17217 155.112068,182.648385 145.922176,182.648385 Z M145.922176,155.188941 C139.971082,155.188941 135.129564,160.030459 135.129564,165.981552 C135.129564,171.933371 139.971082,176.774164 145.922176,176.774164 C151.873269,176.774164 156.714788,171.933371 156.714788,165.981552 C156.714788,160.030459 151.873269,155.188941 145.922176,155.188941 Z M183.018969,174.019082 C181.994244,175.167819 180.945586,176.163535 180.1377,176.681337 L180.1377,176.682062 C179.345768,177.190436 178.3457,177.448612 177.166504,177.448612 C175.47821,177.448612 174.120612,176.833632 173.014663,175.567411 C171.915241,174.307717 171.357552,172.689042 171.357552,170.75345 C171.357552,168.818584 171.907989,167.202085 172.993632,165.951819 C174.085076,164.69285 175.435422,164.081496 177.122266,164.081496 C178.967932,164.081496 180.913677,165.228782 182.580941,167.200635 L186.368,163.568771 C183.898652,160.355354 180.749054,158.859966 176.990278,158.859966 C173.843581,158.859966 171.116782,160.005802 168.885303,162.264839 C166.664703,164.507195 165.539173,167.363807 165.539173,170.75345 C165.539173,174.143819 166.663977,177.006958 168.881677,179.264544 C171.101552,181.524306 173.829802,182.670867 176.990278,182.670867 C181.138493,182.670867 184.486799,180.879592 186.744385,177.598731 L183.018969,174.019082 Z M206.535433,162.572329 C205.723195,161.439547 204.616521,160.52868 203.24587,159.86221 C201.878844,159.19719 200.285552,158.859966 198.510958,158.859966 C195.312771,158.859966 192.695479,160.039887 190.730153,162.369269 C188.822844,164.680521 187.856861,167.553088 187.856861,170.908646 C187.856861,174.359207 188.917122,177.215819 191.00936,179.397983 C193.089269,181.569269 195.874085,182.670867 199.285484,182.670867 C203.149416,182.670867 206.320045,181.108034 208.708895,178.025881 L208.837983,177.859807 L205.100238,174.26783 C204.753586,174.685552 204.262618,175.159841 203.814436,175.581915 C203.248771,176.115671 202.71719,176.529042 202.148623,176.811875 C201.292147,177.2383 200.331966,177.448612 199.257201,177.448612 C197.669711,177.448612 196.354901,176.981575 195.349756,176.060555 C194.409881,175.199003 193.86017,174.037212 193.714402,172.602017 L208.89455,172.602017 L208.94604,170.510504 C208.94604,169.030346 208.744431,167.604578 208.347014,166.271637 C207.949598,164.936521 207.339694,163.691331 206.535433,162.572329 Z M194.012465,167.933099 C194.288045,166.84383 194.789892,165.936589 195.508578,165.232408 C196.28528,164.468034 197.295501,164.081496 198.512408,164.081496 C199.90119,164.081496 200.97668,164.476011 201.707694,165.25779 C202.385768,165.980102 202.767955,166.879365 202.847728,167.933099 L194.012465,167.933099 Z M228.53983,161.094346 L228.539105,161.094346 C226.802946,159.612011 224.402493,158.859966 221.405915,158.859966 C219.499331,158.859966 217.716759,159.278414 216.103887,160.096453 C214.611399,160.85285 213.14647,162.106017 212.216023,163.745722 L212.27404,163.815343 L215.94289,167.327547 C217.454232,164.918391 219.13455,164.081496 221.362402,164.081496 C222.559728,164.081496 223.553269,164.402765 224.316918,165.035875 C225.076215,165.664635 225.446074,166.464544 225.446074,167.478391 L225.446074,168.58434 C224.024657,168.152113 222.608317,167.933099 221.228963,167.933099 C218.378153,167.933099 216.057473,168.603921 214.334368,169.926708 C212.588782,171.266176 211.704023,173.182187 211.704023,175.622527 C211.704023,177.761904 212.450266,179.499513 213.926799,180.791841 C215.41566,182.037756 217.27728,182.670867 219.459445,182.670867 C221.640884,182.670867 223.681632,181.791184 225.533824,180.286368 L225.533824,182.161042 L231.175977,182.161042 L231.175977,167.523354 C231.175977,164.751592 230.289042,162.589008 228.53983,161.094346 Z M218.36655,173.459943 C219.01634,173.006686 219.934459,172.778244 221.096249,172.778244 C222.475603,172.778244 223.938357,173.055275 225.446074,173.602085 L225.446074,175.835739 C224.200159,176.993178 222.537246,177.580601 220.499399,177.580601 C219.508034,177.580601 218.737133,177.360136 218.207003,176.924283 C217.687025,176.497858 217.433926,175.955399 217.433926,175.267898 C217.433926,174.486844 217.739241,173.895071 218.36655,173.459943 Z M253.218085,161.541076 C251.621892,159.762856 249.379535,158.859966 246.551207,158.859966 C244.278391,158.859966 242.432,159.512657 241.051195,160.800635 L241.051195,159.390822 L235.432249,159.390822 L235.432249,182.161042 L241.162153,182.161042 L241.162153,169.603263 C241.162153,167.877983 241.572623,166.508057 242.38196,165.53047 C243.189847,164.555785 244.300147,164.081496 245.77668,164.081496 C247.07481,164.081496 248.058198,164.50502 248.784136,165.376 C249.512975,166.251331 249.882108,167.456635 249.882108,168.962176 L249.882108,182.161042 L255.612011,182.161042 L255.612011,168.962176 C255.612011,165.808227 254.807025,163.312045 253.218085,161.541076 Z"> </path> </g> </g></svg>
-
-                    <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500" viewBox="0 -172 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="currentColor">
-                        <g ><title>Google integrations</title> <g> <path d="M496.052455,102.672055 L510.255737,112.140909 C505.6459,118.931075 494.619668,130.580258 475.557368,130.580258 C451.885231,130.580258 434.255719,112.2655 434.255719,88.967133 C434.255719,64.1736841 452.072116,47.3540078 473.563925,47.3540078 C495.180323,47.3540078 505.77049,64.5474546 509.19672,73.8294242 L511.065574,78.5638516 L455.373756,101.613038 C459.609823,109.960581 466.213103,114.196648 475.557368,114.196648 C484.901633,114.196648 491.380323,109.586811 496.052455,102.672055 L496.052455,102.672055 Z M452.383592,87.6589359 L489.573765,72.2097517 C487.518026,67.0392586 481.413107,63.3638478 474.124581,63.3638478 C464.842612,63.3638478 451.947526,71.5868007 452.383592,87.6589359 L452.383592,87.6589359 Z" fill="#FF302F"> </path> <path d="M407.406531,4.93104632 L425.347519,4.93104632 L425.347519,126.780257 L407.406531,126.780257 L407.406531,4.93104632 L407.406531,4.93104632 Z" fill="#20B15A"> </path> <path d="M379.124557,50.5933528 L396.442594,50.5933528 L396.442594,124.599929 C396.442594,155.311412 378.314721,167.957316 356.885207,167.957316 C336.701596,167.957316 324.554051,154.376986 320.00651,143.350753 L335.891759,136.747473 C338.757334,143.537639 345.67209,151.573706 356.885207,151.573706 C370.652424,151.573706 379.124557,143.039278 379.124557,127.091732 L379.124557,121.111404 L378.501606,121.111404 C374.39013,126.095011 366.540947,130.580258 356.573731,130.580258 C335.767169,130.580258 316.704869,112.452385 316.704869,89.0917231 C316.704869,65.6064713 335.767169,47.2917126 356.573731,47.2917126 C366.478652,47.2917126 374.39013,51.7146646 378.501606,56.5736822 L379.124557,56.5736822 L379.124557,50.5933528 L379.124557,50.5933528 Z M380.370459,89.0917231 C380.370459,74.3900801 370.590128,63.6753233 358.131109,63.6753233 C345.547499,63.6753233 334.957333,74.3900801 334.957333,89.0917231 C334.957333,103.606481 345.547499,114.134352 358.131109,114.134352 C370.590128,114.196648 380.370459,103.606481 380.370459,89.0917231 L380.370459,89.0917231 Z" fill="#3686F7"> </path> <path d="M218.21632,88.7802476 C218.21632,112.763861 199.527791,130.393373 176.603195,130.393373 C153.678599,130.393373 134.990069,112.701565 134.990069,88.7802476 C134.990069,64.6720448 153.678599,47.1048274 176.603195,47.1048274 C199.527791,47.1048274 218.21632,64.6720448 218.21632,88.7802476 L218.21632,88.7802476 Z M200.026151,88.7802476 C200.026151,73.8294242 189.186804,63.5507331 176.603195,63.5507331 C164.019585,63.5507331 153.180238,73.8294242 153.180238,88.7802476 C153.180238,103.606481 164.019585,114.009763 176.603195,114.009763 C189.186804,114.009763 200.026151,103.606481 200.026151,88.7802476 L200.026151,88.7802476 Z" fill="#FF302F"> </path> <path d="M309.104867,88.967133 C309.104867,112.950746 290.416338,130.580258 267.491742,130.580258 C244.567146,130.580258 225.878617,112.950746 225.878617,88.967133 C225.878617,64.8589302 244.567146,47.3540078 267.491742,47.3540078 C290.416338,47.3540078 309.104867,64.796635 309.104867,88.967133 L309.104867,88.967133 Z M290.852404,88.967133 C290.852404,74.0163095 280.013057,63.7376184 267.429447,63.7376184 C254.845837,63.7376184 244.00649,74.0163095 244.00649,88.967133 C244.00649,103.793366 254.845837,114.196648 267.429447,114.196648 C280.075352,114.196648 290.852404,103.731071 290.852404,88.967133 L290.852404,88.967133 Z" fill="#FFBA40"> </path> <path d="M66.5900525,112.327794 C40.4884066,112.327794 20.0556146,91.2720515 20.0556146,65.1704056 C20.0556146,39.0687598 40.4884066,18.0130168 66.5900525,18.0130168 C80.6687446,18.0130168 90.9474357,23.5572805 98.5474373,30.6589216 L111.068752,18.137607 C100.478585,7.98350613 86.3375984,0.258913997 66.5900525,0.258913997 C30.8326666,0.258913997 0.744134408,29.4130196 0.744134408,65.1704056 C0.744134408,100.927792 30.8326666,130.081897 66.5900525,130.081897 C85.9015328,130.081897 100.478585,123.727797 111.878588,111.891729 C123.590067,100.180251 127.203183,83.7343447 127.203183,70.4031939 C127.203183,66.2294223 126.704822,61.9310606 126.144166,58.7540106 L66.5900525,58.7540106 L66.5900525,76.0720477 L109.013014,76.0720477 C107.767112,86.9113947 104.340882,94.3245113 99.2949785,99.3704142 C93.1900592,105.537629 83.534319,112.327794 66.5900525,112.327794 L66.5900525,112.327794 L66.5900525,112.327794 Z" fill="#3686F7"> </path> </g> </g></svg>
-
-                    <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32"><g clip-path="url(#a)"><path d="M46.6 11c.5-.7 1-1.3 1.9-1.7.7-.5 1.6-.7 2.6-.7v3.9h-1c-1.1 0-2 .2-2.6.8-.6.5-1 1.5-1 2.8v7.3H43V8.8h3.7v2.3ZM53 16c0-1.4.2-2.7.8-3.9a6.6 6.6 0 0 1 5.9-3.6 6 6 0 0 1 4.9 2.4v-2h3.7v14.5h-3.7v-2.1c-.5.6-1.2 1.2-2 1.7-.9.4-1.8.6-3 .6a6.4 6.4 0 0 1-5.8-3.6 8.7 8.7 0 0 1-.9-4Zm11.6.1c0-.9-.2-1.7-.6-2.3-.3-.6-.8-1.1-1.4-1.5-.6-.3-1.3-.5-2-.5a3.8 3.8 0 0 0-3.3 2c-.4.6-.5 1.4-.5 2.2 0 1 .1 1.7.5 2.4a3.8 3.8 0 0 0 3.4 2 4 4 0 0 0 1.9-.5c.6-.4 1-.9 1.4-1.5.4-.6.6-1.4.6-2.3ZM86.4 8.8l-9.2 21.5h-4l3.3-7.3-6-14.2h4.2L78.5 19l3.9-10.2h4ZM95.2 23.6a8 8 0 0 1-3.8-.9 7 7 0 0 1-2.7-2.7 8 8 0 0 1-1-3.9c0-1.5.3-2.8 1-4a7 7 0 0 1 2.8-2.6 8 8 0 0 1 3.8-1 8 8 0 0 1 3.9 1 7.6 7.6 0 0 1 3.7 6.6c0 1.5-.3 2.8-1 4a7 7 0 0 1-2.8 2.6c-1.2.6-2.4 1-3.9 1Zm0-3.2a3.6 3.6 0 0 0 3.3-2c.4-.6.6-1.4.6-2.3 0-1.4-.4-2.4-1.1-3.2a3.6 3.6 0 0 0-2.7-1.1c-1.1 0-2 .4-2.7 1.1-.7.8-1.1 1.8-1.1 3.2 0 1.4.4 2.5 1 3.2.8.7 1.6 1.1 2.7 1.1ZM114.1 8.6c1.8 0 3.2.6 4.3 1.7 1 1 1.6 2.6 1.6 4.5v8.6h-3.7v-8c0-1.2-.3-2.1-1-2.7-.5-.7-1.3-1-2.3-1-1 0-1.9.3-2.5 1-.6.6-.8 1.5-.8 2.6v8h-3.8V8.9h3.8v1.8a5 5 0 0 1 1.8-1.4 6 6 0 0 1 2.6-.6ZM25.1 0H7C3 0 0 3 0 6.9V25C0 29 3 32 6.9 32H25c3.8 0 6.9-3 6.9-6.9V7C32 3 29 0 25.1 0Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7 12a2.5 2.5 0 1 0 0-5.1 2.5 2.5 0 0 0 0 5Zm4-5.1a6.1 6.1 0 1 1 0 12.1V7Zm0 12.1 6.2 6.1H9V11.4l7.7 7.6Z" fill="currentColor" class="fill-white dark:fill-neutral-900"/></g></svg>
-
-                    <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="2500" height="1036" viewBox="0 -6.166 294.398 121.975"><path d="M12.139 90.511c-3.939 0-7.799-.479-10.938-1.292l.487-8.277c3.053 1.123 7.313 2.012 11.254 2.012 5.952 0 10.775-2.492 10.775-8.359C23.718 63.172 0 68.002 0 50.466c0-9.325 7.315-15.834 19.941-15.834 3.214 0 6.51.397 9.809.959l-.485 7.802c-3.132-.963-6.591-1.527-9.806-1.527-6.754 0-10.211 3.134-10.211 7.638 0 10.855 23.72 6.839 23.72 23.798-.005 9.973-7.882 17.209-20.829 17.209M54.106 90.264c-2.249 0-3.938-.076-6.03-.479v17.397h-8.601V49.746h8.12c0 2.094-.082 5.309-.484 7.476h.162c2.25-5.068 6.833-8.283 12.944-8.283 9.487 0 14.712 6.75 14.712 18.814.001 14.076-7.473 22.511-20.823 22.511m3.861-34.246c-6.434 0-9.892 7.558-9.892 14.384v12.312c1.852.562 3.86.804 6.272.804 6.833 0 11.497-4.182 11.497-14.958.001-8.039-2.49-12.542-7.877-12.542zM102.519 57.381C94.561 55.936 90.7 61.485 90.7 73.466v16.238h-8.606V49.746H90.3c0 2.246-.246 5.791-.809 8.844h.162c1.771-5.388 5.79-10.377 13.271-9.651l-.405 8.442M114.803 43.797c-3.056 0-5.55-2.414-5.55-5.393 0-2.971 2.494-5.385 5.55-5.385 2.974 0 5.467 2.333 5.467 5.385 0 2.979-2.493 5.393-5.467 5.393m4.26 45.907h-8.6V49.746h8.6v39.958zM154.449 89.704V63.975c0-4.982-1.374-7.875-5.951-7.875-6.03 0-10.457 6.345-10.457 14.302v19.303h-8.603V49.746h8.203c0 2.094-.162 5.546-.563 7.796l.082.075c2.33-5.141 7.157-8.68 13.91-8.68 9.084 0 11.9 5.711 11.9 12.787v27.979h-8.521M186.675 90.425c-8.524 0-11.1-3.294-11.1-12.214V56.417h-7.634v-6.671h7.634V37.04l8.523-2.333v15.039h10.532v6.671h-10.448v19.137c0 5.954 1.205 7.558 5.224 7.558 1.769 0 3.699-.24 5.226-.643v7.076c-2.331.486-5.307.88-7.957.88" fill="currentColor"/><path d="M233.712 78.636c11.72-15.086 20.938-32.809 20.938-45.537 0-6.652-4.765-11.295-10.978-14.823.123 13.831-4.668 46.263-9.96 60.36M195.279 115.809c27.47-9.188 67.29-30.598 94.985-49.725 2.324-1.6 4.135-3.085 4.135-5.685 0-4.519-8.275-10.576-12.292-12.987-21.792 22.653-65.163 56.596-86.828 68.397" fill="currentColor"/><path d="M220.76 96.567c16.938-11.709 41.545-33.739 49.873-45.727 1.963-2.82 3.416-4.454 3.416-7.405 0-4.839-5.644-8.382-9.703-10.849-9.727 22.924-31.579 51.469-43.586 63.981M236.192 64.087c2.191-14.477.903-31.952-1.894-42.913-1.521-5.969-6.901-12.706-11.88-14.812 6.526 18.522 12.128 44.898 13.774 57.725" fill="currentColor"/><path d="M231.367 43.779C226.235 29.91 213.446.998 194.633-6.165c12.247 13.516 30.417 40.337 36.734 49.944" fill="currentColor"/></svg>
-                </div>
-                <!-- End Clients -->
             </div>
-            <!-- End Clients Section -->
+
+            <!-- Clients Section -->
+            <div
+                class="mt-6 md:mt-12 py-3 flex items-center text-sm text-gray-800 gap-x-1.5 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-white dark:after:border-zinc-700">
+                <span
+                    class="font-semibold bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+                    100+ Business Integrations and Deployments</span>
+                (Integrate your business tools with Leading Business Apps)
+            </div>
+
+            <!-- Integrations -->
+            <div class="flex flex-wrap items-center gap-x-6 sm:gap-x-12 lg:gap-x-24">
+                <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500"
+                     viewBox="0 -197.5 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="currentColor">
+                    <g><title>Wordpress integration</title>
+                        <g>
+                            <path
+                                d="M296.949504,45.7261845 L276.794787,45.7261845 L276.794787,47.8642513 C283.099003,47.8642513 284.11257,49.2153577 284.11257,57.2101157 L284.11257,71.6228664 C284.11257,79.6166761 283.099951,81.0806119 276.794787,81.0806119 C271.954508,80.4055327 268.688149,77.8152008 264.184461,72.8611437 L259.005693,67.2320074 C265.985936,65.9918338 269.700768,61.6019228 269.700768,56.6469176 C269.700768,50.4555313 264.410119,45.7261845 254.501057,45.7261845 L234.684828,45.7261845 L234.684828,47.8642513 C240.989043,47.8642513 242.002611,49.2153577 242.002611,57.2101157 L242.002611,71.6228664 C242.002611,79.6166761 240.989043,81.0806119 234.684828,81.0806119 L234.684828,83.2196268 L257.09044,83.2196268 L257.09044,81.0806119 C250.786225,81.0806119 249.772657,79.6166761 249.772657,71.6228664 L249.772657,67.5704951 L251.686015,67.5704951 L264.184461,83.2196268 L296.949504,83.2196268 C313.049952,83.2196268 320.031143,74.6635671 320.031143,64.4160169 C320.031143,54.1703631 313.050901,45.7261845 296.949504,45.7261845 L296.949504,45.7261845 L296.949504,45.7261845 Z M249.773606,64.0775292 L249.773606,49.1044248 L254.389175,49.1044248 C259.455114,49.1044248 261.707905,52.5945462 261.707905,56.6478657 C261.707905,60.5893041 259.455114,64.0784773 254.389175,64.0784773 L249.773606,64.0784773 L249.773606,64.0775292 L249.773606,64.0775292 Z M297.287992,79.7295054 L296.499135,79.7295054 C292.446763,79.7295054 291.883565,78.7168866 291.883565,73.537171 L291.883565,49.1044248 L297.287992,49.1044248 C308.997581,49.1044248 311.135648,57.6604845 311.135648,64.3041358 C311.135648,71.1715494 308.996634,79.7295054 297.287992,79.7295054 L297.287992,79.7295054 L297.287992,79.7295054 Z M171.972627,68.2455742 L179.741726,45.2748675 C181.994519,38.6321643 180.980952,36.7188079 173.775051,36.7188079 L173.775051,34.4660156 L194.942386,34.4660156 L194.942386,36.7188079 C187.849313,36.7188079 186.160667,38.4074539 183.345625,46.6269222 L170.508691,85.1339313 L169.045704,85.1339313 L157.559876,49.8913851 L145.851235,85.1339313 L144.3873,85.1339313 L131.889801,46.6269222 C129.187588,38.4074539 127.386113,36.7188079 120.85529,36.7188079 L120.85529,34.4660156 L145.851235,34.4660156 L145.851235,36.7188079 C139.207584,36.7188079 137.40516,38.2946247 139.770782,45.2748675 L147.314222,68.2455742 L158.686272,34.4660156 L160.826236,34.4660156 L171.972627,68.2455742 L171.972627,68.2455742 Z M210.25303,84.6826144 C197.868361,84.6826144 187.734588,75.5633567 187.734588,64.4150688 C187.734588,53.3815065 197.869309,44.2603525 210.25303,44.2603525 C222.638647,44.2603525 232.771472,53.3815065 232.771472,64.4150688 C232.771472,75.5633567 222.638647,84.6826144 210.25303,84.6826144 L210.25303,84.6826144 L210.25303,84.6826144 Z M210.25303,47.7533183 C199.895494,47.7533183 196.291596,57.0972864 196.291596,64.4160169 C196.291596,71.8485249 199.895494,81.0806119 210.25303,81.0806119 C220.725291,81.0806119 224.328241,71.8485249 224.328241,64.4160169 C224.328241,57.0972864 220.725291,47.7533183 210.25303,47.7533183 L210.25303,47.7533183 L210.25303,47.7533183 Z"
+                                fill="#00749A"></path>
+                            <path
+                                d="M347.840233,80.9677826 L347.840233,83.2196268 L322.056381,83.2196268 L322.056381,80.9677826 C329.60077,80.9677826 330.951876,79.0544262 330.951876,67.7933091 L330.951876,49.779504 C330.951876,38.5183869 329.60077,36.7178597 322.056381,36.7178597 L322.056381,34.4650675 L345.362731,34.4650675 C356.959492,34.4650675 363.37938,40.4326915 363.37938,48.4283975 C363.37938,56.1974969 356.959492,62.277002 345.362731,62.277002 L338.944738,62.277002 L338.944738,67.792361 C338.944738,79.0544262 340.295844,80.9677826 347.840233,80.9677826 L347.840233,80.9677826 L347.840233,80.9677826 Z M345.362731,38.5183869 L338.944738,38.5183869 L338.944738,58.1108533 L345.362731,58.1108533 C351.668843,58.1108533 354.595766,53.7199942 354.595766,48.4283975 C354.595766,43.0239715 351.668843,38.5183869 345.362731,38.5183869 L345.362731,38.5183869 L345.362731,38.5183869 Z M440.729043,72.6364333 L440.165845,74.662619 C439.153226,78.3783989 437.913052,79.7295054 429.919242,79.7295054 L428.342477,79.7295054 C422.488631,79.7295054 421.475063,78.3783989 421.475063,70.3845892 L421.475063,65.2058217 C430.25773,65.2058217 430.933757,65.9927819 430.933757,71.8485249 L433.072772,71.8485249 L433.072772,55.0711007 L430.933757,55.0711007 C430.933757,60.9258955 430.25773,61.713804 421.475063,61.713804 L421.475063,49.1044248 L427.66645,49.1044248 C435.662156,49.1044248 436.899485,50.4555313 437.913052,54.1713112 L438.477198,56.309378 L440.277725,56.309378 L439.490765,45.7261845 L406.387234,45.7261845 L406.387234,47.8642513 C412.691449,47.8642513 413.705964,49.2153577 413.705964,57.2101157 L413.705964,71.6228664 C413.705964,78.935908 412.845048,80.7781537 407.873925,81.0407898 C403.149319,80.3192515 399.905715,77.7421936 395.467449,72.8611437 L390.287733,67.2320074 C397.268924,65.9918338 400.984704,61.6019228 400.984704,56.6469176 C400.984704,50.4555313 395.693107,45.7261845 385.784993,45.7261845 L365.968765,45.7261845 L365.968765,47.8642513 C372.27298,47.8642513 373.286546,49.2153577 373.286546,57.2101157 L373.286546,71.6228664 C373.286546,79.6166761 372.273929,81.0806119 365.968765,81.0806119 L365.968765,83.2196268 L388.375325,83.2196268 L388.375325,81.0806119 C382.071109,81.0806119 381.056594,79.6166761 381.056594,71.6228664 L381.056594,67.5704951 L382.970899,67.5704951 L395.468397,83.2196268 L441.743557,83.2196268 L442.419584,72.6373814 L440.729043,72.6373814 L440.729043,72.6364333 L440.729043,72.6364333 Z M381.055646,64.0775292 L381.055646,49.1044248 L385.671215,49.1044248 C390.738102,49.1044248 392.990895,52.5945462 392.990895,56.6478657 C392.990895,60.5893041 390.738102,64.0784773 385.671215,64.0784773 L381.055646,64.0784773 L381.055646,64.0775292 L381.055646,64.0775292 Z M463.585023,84.6826144 C459.081335,84.6826144 455.139897,82.3188891 453.451251,80.8540052 C452.888053,81.4181515 451.875434,83.1067975 451.650723,84.6826144 L449.510761,84.6826144 L449.510761,69.1463119 L451.762605,69.1463119 C452.664291,76.5769236 457.84211,80.9677826 464.485761,80.9677826 C468.088712,80.9677826 471.016583,78.9415969 471.016583,75.5643048 C471.016583,72.6373814 468.4272,70.3845892 463.810682,68.2455742 L457.392689,65.2058217 C452.888053,63.0649104 449.510761,59.3491306 449.510761,54.3960215 C449.510761,48.9915956 454.577647,44.3760261 461.558838,44.3760261 C465.274617,44.3760261 468.426251,45.7271326 470.341504,47.3029495 C470.903754,46.8525807 471.466952,45.6133553 471.80544,44.2613006 L473.944455,44.2613006 L473.944455,57.5486034 L471.579781,57.5486034 C470.790925,52.2560585 467.864002,47.8651995 461.897326,47.8651995 C458.744744,47.8651995 455.815924,49.6666748 455.815924,52.4826651 C455.815924,55.4095884 458.180598,56.9854053 463.585971,59.4629079 L469.777358,62.5026605 C475.182732,65.0920442 477.320798,69.2600892 477.320798,72.6373814 C477.320798,79.7295054 471.128465,84.6826144 463.585023,84.6826144 L463.585023,84.6826144 L463.585023,84.6826144 Z M498.263424,84.6826144 C493.758787,84.6826144 489.817349,82.3188891 488.12965,80.8540052 C487.566452,81.4181515 486.553834,83.1067975 486.329124,84.6826144 L484.18916,84.6826144 L484.18916,69.1463119 L486.441004,69.1463119 C487.341743,76.5769236 492.520509,80.9677826 499.164161,80.9677826 C502.767112,80.9677826 505.694984,78.9415969 505.694984,75.5643048 C505.694984,72.6373814 503.105599,70.3845892 498.488134,68.2455742 L492.070141,65.2058217 C487.566452,63.0649104 484.188212,59.3491306 484.188212,54.3960215 C484.188212,48.9915956 489.255099,44.3760261 496.23629,44.3760261 C499.952069,44.3760261 503.103703,45.7271326 505.018956,47.3029495 C505.581206,46.8525807 506.144404,45.6133553 506.480995,44.2613006 L508.620959,44.2613006 L508.620959,57.5486034 L506.257233,57.5486034 C505.468376,52.2560585 502.541454,47.8651995 496.574778,47.8651995 C493.422195,47.8651995 490.493376,49.6666748 490.493376,52.4826651 C490.493376,55.4095884 492.85805,56.9854053 498.263424,59.4629079 L504.45481,62.5026605 C509.860184,65.0920442 511.998251,69.2600892 511.998251,72.6373814 C511.998251,79.7295054 505.805917,84.6826144 498.263424,84.6826144 L498.263424,84.6826144 L498.263424,84.6826144 Z"
+                                fill="#464342"></path>
+                            <g fill="#464342">
+                                <path
+                                    d="M8.25644587,58.0833571 C8.25644587,77.8066675 19.7185697,94.8514688 36.3395499,102.928715 L12.5705052,37.8044338 C9.80571461,44.0015089 8.25644587,50.859441 8.25644587,58.0833571 L8.25644587,58.0833571 L8.25644587,58.0833571 Z M91.7235384,55.5688768 C91.7235384,49.4106756 89.5115164,45.1459199 87.6142785,41.8264645 C85.0884204,37.7219452 82.7209025,34.2460459 82.7209025,30.1415266 C82.7209025,25.5610386 86.1949055,21.297231 91.0882814,21.297231 C91.3091991,21.297231 91.5187392,21.3247272 91.733968,21.337053 C82.8688132,13.2152437 71.0577721,8.25644587 58.0852534,8.25644587 C40.6773129,8.25644587 25.3619281,17.1879709 16.4522105,30.7161025 C17.6212731,30.7511838 18.7230175,30.7758356 19.6588365,30.7758356 C24.8707891,30.7758356 32.9385541,30.1434229 32.9385541,30.1434229 C35.6246486,29.9850828 35.9413291,33.9303137 33.2580789,34.2479422 C33.2580789,34.2479422 30.5587104,34.5655708 27.5549874,34.7229628 L45.7005846,88.6961118 L56.6051992,55.9917494 L48.8417886,34.7210665 C46.1585386,34.5636745 43.6165621,34.2460459 43.6165621,34.2460459 C40.9314157,34.0886539 41.2461998,29.9831865 43.9313462,30.1415266 C43.9313462,30.1415266 52.1602959,30.7739393 57.0565162,30.7739393 C62.2675206,30.7739393 70.3362338,30.1415266 70.3362338,30.1415266 C73.0242245,29.9831865 73.3399568,33.9284174 70.6557585,34.2460459 C70.6557585,34.2460459 67.9507012,34.5636745 64.952667,34.7210665 L82.9598351,88.285565 L87.9300106,71.6769106 C90.0841959,64.7848453 91.7235384,59.8345807 91.7235384,55.5688768 L91.7235384,55.5688768 L91.7235384,55.5688768 Z M58.959443,62.4419793 L44.009094,105.885031 C48.4729603,107.197263 53.1937738,107.915009 58.0852534,107.915009 C63.8879002,107.915009 69.4525627,106.911872 74.6322783,105.090485 C74.4985899,104.877152 74.3772273,104.650546 74.2776721,104.404028 L58.959443,62.4419793 L58.959443,62.4419793 Z M101.808008,34.1768314 C102.022289,35.7640259 102.143651,37.4678423 102.143651,39.3006065 C102.143651,44.3570632 101.199299,50.041192 98.3548637,57.1484862 L83.1342938,101.154736 C97.9481099,92.5161876 107.912165,76.4669387 107.912165,58.0843052 C107.913113,49.4211052 105.700142,41.2746441 101.808008,34.1768314 L101.808008,34.1768314 L101.808008,34.1768314 Z M58.0852534,0 C26.0578665,0 0,26.0559702 0,58.0833571 C0,90.1145366 26.0578665,116.169559 58.0852534,116.169559 C90.1116921,116.169559 116.173352,90.1145366 116.173352,58.0833571 C116.172403,26.0559702 90.1116921,0 58.0852534,0 L58.0852534,0 L58.0852534,0 Z M58.0852534,113.507167 C27.526543,113.507167 2.66333905,88.6439638 2.66333905,58.0833571 C2.66333905,27.5246467 27.5255949,2.66333905 58.0852534,2.66333905 C88.6430157,2.66333905 113.504323,27.5246467 113.504323,58.0833571 C113.504323,88.6439638 88.6430157,113.507167 58.0852534,113.507167 L58.0852534,113.507167 L58.0852534,113.507167 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+
+                <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500"
+                     viewBox="0 -51.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="currentColor">
+                    <g><title>AWS integration</title>
+                        <g>
+                            <path
+                                d="M72.392053,55.4384106 C72.392053,58.5748344 72.7311258,61.1178808 73.3245033,62.9827815 C74.002649,64.8476821 74.8503311,66.8821192 76.0370861,69.0860927 C76.4609272,69.7642384 76.6304636,70.4423841 76.6304636,71.0357616 C76.6304636,71.8834437 76.1218543,72.7311258 75.0198675,73.5788079 L69.6794702,77.1390728 C68.9165563,77.6476821 68.1536424,77.9019868 67.4754967,77.9019868 C66.6278146,77.9019868 65.7801325,77.4781457 64.9324503,76.7152318 C63.7456954,75.4437086 62.7284768,74.0874172 61.8807947,72.7311258 C61.0331126,71.2900662 60.1854305,69.6794702 59.2529801,67.7298013 C52.6410596,75.5284768 44.3337748,79.4278146 34.3311258,79.4278146 C27.210596,79.4278146 21.5311258,77.3933775 17.3774834,73.3245033 C13.2238411,69.2556291 11.1046358,63.8304636 11.1046358,57.0490066 C11.1046358,49.8437086 13.6476821,43.994702 18.818543,39.586755 C23.989404,35.1788079 30.8556291,32.9748344 39.586755,32.9748344 C42.4688742,32.9748344 45.4357616,33.2291391 48.5721854,33.6529801 C51.7086093,34.0768212 54.9298013,34.7549669 58.3205298,35.5178808 L58.3205298,29.3298013 C58.3205298,22.8874172 56.9642384,18.394702 54.3364238,15.7668874 C51.6238411,13.1390728 47.0463576,11.8675497 40.5192053,11.8675497 C37.5523179,11.8675497 34.5006623,12.2066225 31.3642384,12.9695364 C28.2278146,13.7324503 25.1761589,14.6649007 22.2092715,15.8516556 C20.8529801,16.4450331 19.8357616,16.784106 19.2423841,16.9536424 C18.6490066,17.1231788 18.2251656,17.207947 17.8860927,17.207947 C16.6993377,17.207947 16.1059603,16.3602649 16.1059603,14.5801325 L16.1059603,10.4264901 C16.1059603,9.07019868 16.2754967,8.05298013 16.6993377,7.45960265 C17.1231788,6.86622517 17.8860927,6.27284768 19.0728477,5.6794702 C22.0397351,4.15364238 25.6,2.88211921 29.7536424,1.86490066 C33.9072848,0.762913907 38.3152318,0.254304636 42.9774834,0.254304636 C53.0649007,0.254304636 60.4397351,2.54304636 65.186755,7.1205298 C69.8490066,11.6980132 72.2225166,18.6490066 72.2225166,27.9735099 L72.2225166,55.4384106 L72.392053,55.4384106 Z M37.9761589,68.3231788 C40.7735099,68.3231788 43.6556291,67.8145695 46.7072848,66.797351 C49.7589404,65.7801325 52.4715232,63.9152318 54.7602649,61.3721854 C56.1165563,59.7615894 57.1337748,57.981457 57.6423841,55.9470199 C58.1509934,53.9125828 58.4900662,51.4543046 58.4900662,48.5721854 L58.4900662,45.0119205 C56.0317881,44.418543 53.4039735,43.9099338 50.6913907,43.5708609 C47.9788079,43.2317881 45.3509934,43.0622517 42.7231788,43.0622517 C37.0437086,43.0622517 32.8900662,44.1642384 30.0927152,46.4529801 C27.2953642,48.7417219 25.9390728,51.9629139 25.9390728,56.2013245 C25.9390728,60.1854305 26.9562914,63.1523179 29.0754967,65.186755 C31.1099338,67.3059603 34.0768212,68.3231788 37.9761589,68.3231788 Z M106.045033,77.4781457 C104.519205,77.4781457 103.501987,77.2238411 102.823841,76.6304636 C102.145695,76.1218543 101.552318,74.9350993 101.043709,73.3245033 L81.1231788,7.7986755 C80.6145695,6.10331126 80.3602649,5.0013245 80.3602649,4.40794702 C80.3602649,3.05165563 81.0384106,2.28874172 82.394702,2.28874172 L90.7019868,2.28874172 C92.3125828,2.28874172 93.4145695,2.54304636 94.007947,3.13642384 C94.6860927,3.64503311 95.194702,4.83178808 95.7033113,6.44238411 L109.944371,62.5589404 L123.168212,6.44238411 C123.592053,4.74701987 124.100662,3.64503311 124.778808,3.13642384 C125.456954,2.62781457 126.643709,2.28874172 128.169536,2.28874172 L134.950993,2.28874172 C136.561589,2.28874172 137.663576,2.54304636 138.341722,3.13642384 C139.019868,3.64503311 139.613245,4.83178808 139.952318,6.44238411 L153.345695,63.2370861 L168.010596,6.44238411 C168.519205,4.74701987 169.112583,3.64503311 169.70596,3.13642384 C170.384106,2.62781457 171.486093,2.28874172 173.011921,2.28874172 L180.895364,2.28874172 C182.251656,2.28874172 183.01457,2.96688742 183.01457,4.40794702 C183.01457,4.83178808 182.929801,5.25562914 182.845033,5.76423841 C182.760265,6.27284768 182.590728,6.95099338 182.251656,7.88344371 L161.822517,73.4092715 C161.313907,75.1046358 160.72053,76.2066225 160.042384,76.7152318 C159.364238,77.2238411 158.262252,77.5629139 156.821192,77.5629139 L149.531126,77.5629139 C147.92053,77.5629139 146.818543,77.3086093 146.140397,76.7152318 C145.462252,76.1218543 144.868874,75.0198675 144.529801,73.3245033 L131.390728,18.6490066 L118.336424,73.2397351 C117.912583,74.9350993 117.403974,76.0370861 116.725828,76.6304636 C116.047682,77.2238411 114.860927,77.4781457 113.335099,77.4781457 L106.045033,77.4781457 Z M214.972185,79.7668874 C210.564238,79.7668874 206.156291,79.2582781 201.917881,78.2410596 C197.67947,77.2238411 194.37351,76.1218543 192.169536,74.8503311 C190.813245,74.0874172 189.880795,73.2397351 189.541722,72.4768212 C189.202649,71.7139073 189.033113,70.8662252 189.033113,70.1033113 L189.033113,65.7801325 C189.033113,64 189.711258,63.1523179 190.982781,63.1523179 C191.491391,63.1523179 192,63.2370861 192.508609,63.4066225 C193.017219,63.5761589 193.780132,63.9152318 194.627815,64.2543046 C197.509934,65.5258278 200.646358,66.5430464 203.952318,67.2211921 C207.343046,67.8993377 210.649007,68.2384106 214.039735,68.2384106 C219.380132,68.2384106 223.533775,67.3059603 226.415894,65.4410596 C229.298013,63.5761589 230.823841,60.8635762 230.823841,57.3880795 C230.823841,55.0145695 230.060927,53.0649007 228.535099,51.4543046 C227.009272,49.8437086 224.127152,48.402649 219.97351,47.0463576 L207.682119,43.2317881 C201.49404,41.2821192 196.916556,38.4 194.119205,34.5854305 C191.321854,30.8556291 189.880795,26.7019868 189.880795,22.2940397 C189.880795,18.7337748 190.643709,15.597351 192.169536,12.8847682 C193.695364,10.1721854 195.729801,7.7986755 198.272848,5.93377483 C200.815894,3.98410596 203.698013,2.54304636 207.088742,1.52582781 C210.47947,0.508609272 214.039735,0.0847682119 217.769536,0.0847682119 C219.634437,0.0847682119 221.584106,0.169536424 223.449007,0.42384106 C225.398675,0.678145695 227.178808,1.01721854 228.95894,1.35629139 C230.654305,1.78013245 232.264901,2.20397351 233.790728,2.71258278 C235.316556,3.22119205 236.503311,3.72980132 237.350993,4.2384106 C238.537748,4.91655629 239.38543,5.59470199 239.89404,6.35761589 C240.402649,7.03576159 240.656954,7.96821192 240.656954,9.15496689 L240.656954,13.1390728 C240.656954,14.9192053 239.978808,15.8516556 238.707285,15.8516556 C238.029139,15.8516556 236.927152,15.5125828 235.486093,14.8344371 C230.654305,12.6304636 225.229139,11.5284768 219.210596,11.5284768 C214.378808,11.5284768 210.564238,12.2913907 207.936424,13.9019868 C205.308609,15.5125828 203.952318,17.9708609 203.952318,21.4463576 C203.952318,23.8198675 204.8,25.8543046 206.495364,27.4649007 C208.190728,29.0754967 211.327152,30.6860927 215.819868,32.1271523 L227.856954,35.9417219 C233.960265,37.8913907 238.368212,40.6039735 240.996026,44.0794702 C243.623841,47.5549669 244.895364,51.5390728 244.895364,55.9470199 C244.895364,59.592053 244.13245,62.8980132 242.691391,65.7801325 C241.165563,68.6622517 239.131126,71.205298 236.503311,73.2397351 C233.875497,75.3589404 230.739073,76.8847682 227.09404,77.986755 C223.27947,79.1735099 219.295364,79.7668874 214.972185,79.7668874 Z"
+                                fill="#252F3E" fill-rule="nonzero"></path>
+                            <path
+                                d="M230.993377,120.964238 C203.104636,141.562914 162.58543,152.498013 127.745695,152.498013 C78.9192053,152.498013 34.9245033,134.442384 1.69536424,104.434437 C-0.932450331,102.060927 1.4410596,98.8397351 4.57748344,100.704636 C40.5192053,121.557616 84.8529801,134.188079 130.712583,134.188079 C161.65298,134.188079 195.645033,127.745695 226.924503,114.521854 C231.586755,112.402649 235.570861,117.57351 230.993377,120.964238 Z M242.606623,107.740397 C239.046358,103.162914 219.04106,105.536424 209.970861,106.638411 C207.258278,106.977483 206.834437,104.603974 209.292715,102.823841 C225.229139,91.6344371 251.422517,94.8556291 254.474172,98.5854305 C257.525828,102.4 253.62649,128.593377 238.707285,141.139073 C236.418543,143.088742 234.21457,142.071523 235.231788,139.528477 C238.622517,131.136424 246.166887,112.233113 242.606623,107.740397 Z"
+                                fill="#FF9900"></path>
+                        </g>
+                    </g>
+                </svg>
+
+                <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500"
+                     viewBox="0 -182 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
+                    <g><title>Azure integration</title>
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path
+                                d="M88.1004353,139.62683 C112.567045,135.30475 132.775068,131.72823 133.00716,131.679011 L133.429152,131.589518 L110.33026,104.114111 C97.6258791,89.0026353 87.2313796,76.5801094 87.2313796,76.5084996 C87.2313796,76.3729207 111.082936,10.690889 111.217022,10.4570512 C111.261853,10.3790877 127.493562,38.4026876 150.563749,78.3882717 C172.16248,115.823492 189.969587,146.688965 190.135099,146.978199 L190.436042,147.504087 L117.025859,147.494618 L43.6156897,147.485187 L88.1004353,139.626857 L88.1004353,139.62683 Z M369.619894,132.982059 C358.445424,132.265623 351.946305,125.90263 350.224075,113.992527 C349.765944,110.824245 349.764193,110.742042 349.71731,90.173623 L349.671933,70.2668333 L354.617465,70.2668333 L359.562981,70.2668333 L359.601927,89.5218293 C359.637031,106.875822 359.659056,108.910554 359.82497,110.131358 C360.498323,115.085873 361.838855,118.417676 364.121111,120.809186 C365.947645,122.72315 368.085892,123.843826 371.045792,124.43849 C372.442202,124.719032 376.414651,124.719594 377.687784,124.439645 C380.688543,123.779283 383.093622,122.473451 385.215267,120.35261 C387.633499,117.935291 389.422457,114.50562 390.288072,110.627341 L390.579811,109.32022 L390.612298,89.9022726 L390.644785,70.4843301 L395.693852,70.4843301 L400.74293,70.4843301 L400.74293,101.009883 L400.74293,131.535433 L395.745866,131.535433 L390.748801,131.535433 L390.748801,126.692266 C390.748801,123.401492 390.712734,121.861115 390.636321,121.886589 C390.574469,121.907221 390.317826,122.299823 390.066006,122.759067 C388.343996,125.899581 385.474939,128.771567 382.331115,130.501845 C378.562694,132.575877 374.783458,133.313357 369.619906,132.98229 L369.619894,132.982059 Z M483.0417,132.932728 C479.097099,132.636228 474.943659,131.280057 471.548892,129.180151 C464.393792,124.754183 460.160147,117.45875 458.920548,107.418927 C458.491593,103.944772 458.440038,99.2780919 458.79799,96.3260054 C459.597792,89.7297687 462.189813,83.2543494 465.880853,78.6314848 C466.827069,77.4463937 468.973634,75.2998325 470.158675,74.3536781 C473.358787,71.7986529 477.101956,70.0119727 481.07618,69.142559 C483.391754,68.635998 487.469512,68.3981545 489.929676,68.6261595 C496.109795,69.1989338 501.773946,72.1087451 505.62373,76.6885672 C509.535054,81.3416131 511.68493,87.8434569 511.959475,95.8496371 C512.002504,97.1043325 512.012936,99.3041276 511.982685,100.738071 L511.927642,103.345234 L490.282744,103.37264 L468.637845,103.400046 L468.637845,104.365954 C468.637845,107.306386 469.352719,110.655448 470.58858,113.504881 C471.654324,115.962081 473.488865,118.645288 474.990919,119.943764 C478.070751,122.606178 481.840061,124.199784 485.964629,124.583288 C487.493969,124.725476 491.391517,124.575782 493.134329,124.307996 C498.106682,123.543845 502.834005,121.593568 506.651598,118.731398 C507.100749,118.39465 507.530581,118.080031 507.606775,118.032256 C507.718277,117.962339 507.744629,118.84215 507.741807,122.540477 L507.738343,127.135574 L506.715456,127.768202 C502.396809,130.439177 497.449353,132.154247 492.211008,132.796272 C490.647729,132.987864 484.911294,133.073215 483.041761,132.93269 L483.0417,132.932728 Z M501.879178,94.1773502 C501.879178,89.25193 499.803538,83.7803987 496.866274,80.9629904 C494.770072,78.9523161 492.236039,77.7235256 489.223566,77.2569342 C487.798361,77.0361849 484.794603,77.1212051 483.291995,77.424823 C480.115537,78.0666628 477.488189,79.463092 475.196618,81.7274953 C472.784884,84.1106374 470.976695,87.0051636 469.839526,90.3030741 C469.430615,91.4889658 468.952341,93.4359096 468.803887,94.5188939 L468.733154,95.0348969 L485.306161,95.0348969 L501.879178,95.0348969 L501.879178,94.1773502 Z M208.270112,131.399412 C208.295466,131.324726 215.645563,112.015579 224.603672,88.4901966 L240.891141,45.716123 L246.124393,45.716123 L251.357635,45.716123 L251.791839,46.8296003 C253.118722,50.2322888 284.398199,131.442453 284.398199,131.484644 C284.398199,131.512435 281.892877,131.534393 278.830816,131.534393 L273.263433,131.533232 L268.755212,119.530464 L264.246991,107.527701 L246.094793,107.527481 L227.942592,107.527266 L227.784846,107.934634 C227.698094,108.158686 225.771975,113.559547 223.504568,119.936555 L219.382032,131.531091 L213.803026,131.533016 C209.386999,131.534393 208.233634,131.506611 208.270112,131.399127 L208.270112,131.399412 Z M260.933718,98.3678925 C260.933718,98.3488777 257.89986,90.1240728 254.19181,80.0905821 C247.254688,61.3196527 246.866623,60.1902513 246.31853,57.1766937 C246.061517,55.7635822 245.931474,55.7243131 245.778924,57.0137472 C245.669877,57.9354209 245.197058,59.9977894 244.832546,61.1417599 C244.651682,61.7093609 241.527745,70.2834078 237.890458,80.1951946 C234.253179,90.1069825 231.27722,98.2584455 231.27722,98.3095547 C231.27722,98.3606677 237.949936,98.4024849 246.105471,98.4024849 C254.261006,98.4024849 260.933718,98.3869343 260.933718,98.367881 L260.933718,98.3678925 Z M287.765787,129.971958 L287.765787,128.40871 L305.850917,103.547257 L323.936046,78.6858003 L307.561869,78.6314848 L291.187691,78.5771693 L291.159246,74.4220007 L291.1308,70.2668333 L314.813841,70.2668333 L338.496877,70.2668333 L338.496877,71.6702603 L338.496877,73.0736861 L320.409673,98.070722 C310.461711,111.819095 302.322469,123.090887 302.322469,123.119156 C302.322469,123.147409 310.363942,123.17055 320.192407,123.17055 L338.062349,123.17055 L338.062349,127.352874 L338.062349,131.535202 L312.914065,131.535202 L287.765787,131.535202 L287.765787,129.971958 Z M420.47771,131.462776 C420.437875,131.422953 420.405284,117.63757 420.405284,100.828595 L420.405284,70.2668333 L425.348037,70.2668333 L430.290786,70.2668333 L430.290786,76.5674803 C430.290786,80.032837 430.332923,82.8681285 430.384436,82.8681285 C430.435949,82.8681285 430.676514,82.3008854 430.919023,81.6075901 C432.030318,78.4306471 433.957523,75.4621285 436.440424,73.1028357 C438.677152,70.9774615 441.233533,69.7064764 444.249977,69.2200773 C445.097309,69.0834436 445.814276,69.0573579 447.508934,69.1015 C449.637228,69.1569357 450.749931,69.3125072 452.044315,69.735603 L452.451684,69.8687609 L452.451684,74.9992824 L452.451684,80.1298012 L451.283891,79.5452369 C449.221049,78.5126342 447.185636,78.1039997 444.738821,78.2312298 C443.146396,78.3140368 442.101176,78.5185158 440.828074,78.996312 C438.208647,79.9793837 436.083915,81.7145813 434.599255,84.0831698 C432.449984,87.5120673 430.917102,91.9195713 430.464987,95.9704815 C430.383851,96.6974493 430.33601,102.618055 430.316953,114.289894 L430.288815,131.535202 L425.41947,131.535202 C422.741335,131.535202 420.517541,131.5026 420.477717,131.462776 L420.47771,131.462776 Z M-4.03864498e-06,131.248155 C-4.03864498e-06,131.209471 10.8840818,112.315552 24.1868529,89.261653 L48.373706,47.3454764 L76.5606873,23.6909044 C92.0635269,10.6808927 104.789417,0.0204315308 104.840437,0.000455014926 C104.891458,-0.0184488374 104.687522,0.494832839 104.387245,1.14162264 C104.086968,1.78841244 90.3137756,31.3304598 73.7801502,66.7906143 L43.7190204,131.263621 L21.8595082,131.291027 C9.83677915,131.306116 -4.03864498e-06,131.286793 -4.03864498e-06,131.24814 L-4.03864498e-06,131.248155 Z"
+                                fill="#0089D6" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </svg>
+
+                <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500"
+                     viewBox="0 -32 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="currentColor">
+                    <g><title>Digital Ocean integration</title>
+                        <g fill="#0080FF">
+                            <path
+                                d="M127.806368,103.431977 L127.806368,128.137065 C169.680136,128.137065 202.283513,87.6839887 188.5857,43.8050085 C182.599796,24.6296657 167.363082,9.39295184 148.187739,3.40704816 C104.308759,-10.2907649 63.8549575,22.3133371 63.8549575,64.1871048 L88.6166119,64.1871048 C88.620238,64.1871048 88.6231388,64.1805779 88.6231388,64.1805779 C88.6267649,37.901779 114.633609,17.5849518 142.262028,27.610289 C152.497677,31.3248272 160.662119,39.4878187 164.378833,49.7227422 C174.405673,77.3349616 154.119391,103.331553 127.862935,103.368844 L127.862935,78.7435694 C127.862935,78.7435694 127.860759,78.742119 127.858584,78.742119 L103.173076,78.742119 C103.170901,78.742119 103.168725,78.745745 103.168725,78.745745 L103.168725,103.431977 L127.806368,103.431977 Z M103.164374,122.405711 L84.1971671,122.405711 L84.1928159,122.40136 L84.1928159,103.431977 L103.168725,103.431977 L103.168725,122.40136 C103.168725,122.40136 103.16655,122.405711 103.164374,122.405711 Z M84.2058697,103.431977 L68.3055864,103.431977 C68.2990595,103.431977 68.293983,103.427626 68.293983,103.427626 L68.293983,87.5345949 C68.293983,87.5345949 68.2990595,87.5229915 68.3055864,87.5229915 L84.1942663,87.5229915 C84.2007932,87.5229915 84.2058697,87.528068 84.2058697,87.528068 L84.2058697,103.431977 Z"></path>
+                            <path
+                                d="M22.0964986,153.197507 C18.8772805,150.963853 14.8712068,149.831796 10.1899603,149.831796 L0,149.831796 L0,182.161042 L10.1899603,182.161042 C14.8596034,182.161042 18.8671275,180.965892 22.1001246,178.611127 C23.8594901,177.362312 25.241745,175.61745 26.2091785,173.426584 C27.1715354,171.24732 27.6596034,168.676442 27.6596034,165.78647 C27.6596034,162.929858 27.1715354,160.39234 26.2084533,158.243535 C25.241745,156.084578 23.8580397,154.386856 22.0964986,153.197507 Z M5.9518187,155.296272 L9.15000567,155.296272 C12.7086232,155.296272 15.6377564,155.996102 17.8590822,157.379082 C20.3248045,158.865768 21.575796,161.694096 21.575796,165.78647 C21.575796,170.001405 20.3219037,172.957371 17.8503796,174.57532 L17.848204,174.57532 C15.7211558,175.982232 12.8094278,176.695841 9.19424363,176.695841 L5.9518187,176.695841 L5.9518187,155.296272 Z M31.8332011,182.161042 L37.5631048,182.161042 L37.5631048,159.390822 L31.8332011,159.390822 L31.8332011,182.161042 Z M34.7529065,149.433654 C33.7738697,149.433654 32.9297224,149.781031 32.2501983,150.46128 C31.5626969,151.116147 31.2138697,151.946516 31.2138697,152.929178 C31.2138697,153.908215 31.5605212,154.751637 32.245847,155.436238 C32.9297224,156.121564 33.7738697,156.468941 34.7529065,156.468941 C35.7319433,156.468941 36.5753654,156.121564 37.2606912,155.436238 C37.9467422,154.750912 38.2933938,153.90749 38.2933938,152.929178 C38.2933938,151.947966 37.9445666,151.117598 37.2606912,150.465632 C36.5753654,149.781031 35.7319433,149.433654 34.7529065,149.433654 Z M58.3709008,161.293054 C56.6434448,159.756329 54.7143796,158.859966 52.6279433,158.859966 C49.4652918,158.859966 46.8363966,159.954312 44.8152295,162.109643 C42.7686799,164.248295 41.7301756,167.000476 41.7301756,170.289314 C41.7301756,173.503456 42.752,176.24621 44.7717167,178.445779 C46.8073881,180.573552 49.4507875,181.651943 52.6279433,181.651943 C54.8369405,181.651943 56.7355467,181.036963 58.2831501,179.822232 L58.2831501,180.346561 C58.2831501,182.235739 57.7769518,183.705745 56.7797847,184.715241 C55.7833428,185.723286 54.4010878,186.233836 52.6729065,186.233836 C50.0280567,186.233836 48.370221,185.194606 46.3519547,182.467082 L42.4503116,186.215705 L42.5554674,186.363649 C43.3981643,187.54647 44.6890425,188.703909 46.3925666,189.804057 C48.0968159,190.899127 50.2390935,191.456091 52.7606572,191.456091 C56.1626289,191.456091 58.914085,190.407433 60.9403286,188.339853 C62.9781756,186.261394 64.0116034,183.478028 64.0116034,180.070255 L64.0116034,159.390822 L58.3709008,159.390822 L58.3709008,161.293054 Z M56.8682606,174.741394 C55.8667422,175.878527 54.5809405,176.429688 52.9376091,176.429688 C51.2950028,176.429688 50.0164533,175.878527 49.0294391,174.742844 C48.0475014,173.612238 47.5485552,172.113949 47.5485552,170.289314 C47.5485552,168.434946 48.0475014,166.917802 49.0301643,165.779218 C50.0033994,164.652963 51.3182096,164.081496 52.9376091,164.081496 C54.5794901,164.081496 55.866017,164.637008 56.8675354,165.782119 C57.8654278,166.919977 58.3709008,168.436397 58.3709008,170.289314 C58.3709008,172.113224 57.8654278,173.611513 56.8682606,174.741394 Z M68.9154901,182.161042 L74.6453938,182.161042 L74.6453938,159.390822 L68.9154901,159.390822 L68.9154901,182.161042 Z M71.8359207,149.433654 C70.8561586,149.433654 70.0120113,149.781031 69.3324873,150.46128 C68.6449858,151.116147 68.2961586,151.946516 68.2961586,152.929178 C68.2961586,153.908215 68.6428102,154.751637 69.328136,155.436238 C70.0120113,156.121564 70.8561586,156.468941 71.8359207,156.468941 C72.8142323,156.468941 73.6576544,156.121564 74.3437054,155.436238 C75.0290312,154.750912 75.3756827,153.90749 75.3756827,152.929178 C75.3756827,151.947966 75.0268555,151.117598 74.3437054,150.465632 C73.6576544,149.781031 72.8142323,149.433654 71.8359207,149.433654 Z M87.203898,153.238844 L81.5631955,153.238844 L81.5631955,159.390822 L78.2874108,159.390822 L78.2874108,164.613076 L81.5631955,164.613076 L81.5631955,174.071297 C81.5631955,177.03089 82.1542436,179.14851 83.3211105,180.364691 C84.4908782,181.586674 86.5678867,182.206006 89.4948442,182.206006 C90.426017,182.206006 91.3629915,182.174822 92.2789348,182.115354 L92.5371105,182.097949 L92.5371105,176.880045 L90.5725099,176.983025 C89.2083853,176.983025 88.2975184,176.74298 87.8645666,176.271592 C87.425813,175.792227 87.203898,174.77838 87.203898,173.259059 L87.203898,164.613076 L92.5371105,164.613076 L92.5371105,159.390822 L87.203898,159.390822 L87.203898,153.238844 Z M112.201972,161.094346 L112.201246,161.094346 C110.465088,159.612011 108.064635,158.859966 105.068057,158.859966 C103.161473,158.859966 101.378901,159.278414 99.7660283,160.096453 C98.2742663,160.85285 96.8093371,162.106017 95.8781643,163.745722 L95.9361813,163.815343 L99.6050312,167.327547 C101.116374,164.918391 102.796691,164.081496 105.024544,164.081496 C106.22187,164.081496 107.215411,164.402765 107.979059,165.035875 C108.738357,165.664635 109.108215,166.464544 109.108215,167.478391 L109.108215,168.58434 C107.687524,168.152113 106.270459,167.933099 104.89183,167.933099 C102.040295,167.933099 99.7203399,168.603921 97.9965099,169.926708 C96.2509235,171.266176 95.3661643,173.182187 95.3661643,175.622527 C95.3661643,177.761904 96.1124079,179.499513 97.5889405,180.791841 C99.0785269,182.037756 100.939422,182.670867 103.121586,182.670867 C105.303025,182.670867 107.343773,181.791184 109.196691,180.286368 L109.196691,182.161042 L114.838119,182.161042 L114.838119,167.523354 C114.838119,164.751592 113.951184,162.589008 112.201972,161.094346 Z M102.028691,173.459943 C102.678482,173.006686 103.596601,172.778244 104.758391,172.778244 C106.137745,172.778244 107.600499,173.055275 109.108215,173.602085 L109.108215,175.835739 C107.863025,176.993178 106.199388,177.580601 104.162266,177.580601 C103.170176,177.580601 102.399275,177.360136 101.869144,176.924283 C101.349167,176.497858 101.096068,175.955399 101.096068,175.267898 C101.096068,174.486844 101.401382,173.895071 102.028691,173.459943 Z M119.403331,182.161042 L125.133235,182.161042 L125.133235,149.831796 L119.403331,149.831796 L119.403331,182.161042 Z M145.922176,182.648385 C136.732283,182.648385 129.256068,175.17217 129.256068,165.981552 C129.256068,156.79166 136.732283,149.315445 145.922176,149.315445 C155.112068,149.315445 162.588283,156.79166 162.588283,165.981552 C162.588283,175.17217 155.112068,182.648385 145.922176,182.648385 Z M145.922176,155.188941 C139.971082,155.188941 135.129564,160.030459 135.129564,165.981552 C135.129564,171.933371 139.971082,176.774164 145.922176,176.774164 C151.873269,176.774164 156.714788,171.933371 156.714788,165.981552 C156.714788,160.030459 151.873269,155.188941 145.922176,155.188941 Z M183.018969,174.019082 C181.994244,175.167819 180.945586,176.163535 180.1377,176.681337 L180.1377,176.682062 C179.345768,177.190436 178.3457,177.448612 177.166504,177.448612 C175.47821,177.448612 174.120612,176.833632 173.014663,175.567411 C171.915241,174.307717 171.357552,172.689042 171.357552,170.75345 C171.357552,168.818584 171.907989,167.202085 172.993632,165.951819 C174.085076,164.69285 175.435422,164.081496 177.122266,164.081496 C178.967932,164.081496 180.913677,165.228782 182.580941,167.200635 L186.368,163.568771 C183.898652,160.355354 180.749054,158.859966 176.990278,158.859966 C173.843581,158.859966 171.116782,160.005802 168.885303,162.264839 C166.664703,164.507195 165.539173,167.363807 165.539173,170.75345 C165.539173,174.143819 166.663977,177.006958 168.881677,179.264544 C171.101552,181.524306 173.829802,182.670867 176.990278,182.670867 C181.138493,182.670867 184.486799,180.879592 186.744385,177.598731 L183.018969,174.019082 Z M206.535433,162.572329 C205.723195,161.439547 204.616521,160.52868 203.24587,159.86221 C201.878844,159.19719 200.285552,158.859966 198.510958,158.859966 C195.312771,158.859966 192.695479,160.039887 190.730153,162.369269 C188.822844,164.680521 187.856861,167.553088 187.856861,170.908646 C187.856861,174.359207 188.917122,177.215819 191.00936,179.397983 C193.089269,181.569269 195.874085,182.670867 199.285484,182.670867 C203.149416,182.670867 206.320045,181.108034 208.708895,178.025881 L208.837983,177.859807 L205.100238,174.26783 C204.753586,174.685552 204.262618,175.159841 203.814436,175.581915 C203.248771,176.115671 202.71719,176.529042 202.148623,176.811875 C201.292147,177.2383 200.331966,177.448612 199.257201,177.448612 C197.669711,177.448612 196.354901,176.981575 195.349756,176.060555 C194.409881,175.199003 193.86017,174.037212 193.714402,172.602017 L208.89455,172.602017 L208.94604,170.510504 C208.94604,169.030346 208.744431,167.604578 208.347014,166.271637 C207.949598,164.936521 207.339694,163.691331 206.535433,162.572329 Z M194.012465,167.933099 C194.288045,166.84383 194.789892,165.936589 195.508578,165.232408 C196.28528,164.468034 197.295501,164.081496 198.512408,164.081496 C199.90119,164.081496 200.97668,164.476011 201.707694,165.25779 C202.385768,165.980102 202.767955,166.879365 202.847728,167.933099 L194.012465,167.933099 Z M228.53983,161.094346 L228.539105,161.094346 C226.802946,159.612011 224.402493,158.859966 221.405915,158.859966 C219.499331,158.859966 217.716759,159.278414 216.103887,160.096453 C214.611399,160.85285 213.14647,162.106017 212.216023,163.745722 L212.27404,163.815343 L215.94289,167.327547 C217.454232,164.918391 219.13455,164.081496 221.362402,164.081496 C222.559728,164.081496 223.553269,164.402765 224.316918,165.035875 C225.076215,165.664635 225.446074,166.464544 225.446074,167.478391 L225.446074,168.58434 C224.024657,168.152113 222.608317,167.933099 221.228963,167.933099 C218.378153,167.933099 216.057473,168.603921 214.334368,169.926708 C212.588782,171.266176 211.704023,173.182187 211.704023,175.622527 C211.704023,177.761904 212.450266,179.499513 213.926799,180.791841 C215.41566,182.037756 217.27728,182.670867 219.459445,182.670867 C221.640884,182.670867 223.681632,181.791184 225.533824,180.286368 L225.533824,182.161042 L231.175977,182.161042 L231.175977,167.523354 C231.175977,164.751592 230.289042,162.589008 228.53983,161.094346 Z M218.36655,173.459943 C219.01634,173.006686 219.934459,172.778244 221.096249,172.778244 C222.475603,172.778244 223.938357,173.055275 225.446074,173.602085 L225.446074,175.835739 C224.200159,176.993178 222.537246,177.580601 220.499399,177.580601 C219.508034,177.580601 218.737133,177.360136 218.207003,176.924283 C217.687025,176.497858 217.433926,175.955399 217.433926,175.267898 C217.433926,174.486844 217.739241,173.895071 218.36655,173.459943 Z M253.218085,161.541076 C251.621892,159.762856 249.379535,158.859966 246.551207,158.859966 C244.278391,158.859966 242.432,159.512657 241.051195,160.800635 L241.051195,159.390822 L235.432249,159.390822 L235.432249,182.161042 L241.162153,182.161042 L241.162153,169.603263 C241.162153,167.877983 241.572623,166.508057 242.38196,165.53047 C243.189847,164.555785 244.300147,164.081496 245.77668,164.081496 C247.07481,164.081496 248.058198,164.50502 248.784136,165.376 C249.512975,166.251331 249.882108,167.456635 249.882108,168.962176 L249.882108,182.161042 L255.612011,182.161042 L255.612011,168.962176 C255.612011,165.808227 254.807025,163.312045 253.218085,161.541076 Z"></path>
+                        </g>
+                    </g>
+                </svg>
+
+                <svg class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500"
+                     viewBox="0 -172 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="currentColor">
+                    <g><title>Google integrations</title>
+                        <g>
+                            <path
+                                d="M496.052455,102.672055 L510.255737,112.140909 C505.6459,118.931075 494.619668,130.580258 475.557368,130.580258 C451.885231,130.580258 434.255719,112.2655 434.255719,88.967133 C434.255719,64.1736841 452.072116,47.3540078 473.563925,47.3540078 C495.180323,47.3540078 505.77049,64.5474546 509.19672,73.8294242 L511.065574,78.5638516 L455.373756,101.613038 C459.609823,109.960581 466.213103,114.196648 475.557368,114.196648 C484.901633,114.196648 491.380323,109.586811 496.052455,102.672055 L496.052455,102.672055 Z M452.383592,87.6589359 L489.573765,72.2097517 C487.518026,67.0392586 481.413107,63.3638478 474.124581,63.3638478 C464.842612,63.3638478 451.947526,71.5868007 452.383592,87.6589359 L452.383592,87.6589359 Z"
+                                fill="#FF302F"></path>
+                            <path
+                                d="M407.406531,4.93104632 L425.347519,4.93104632 L425.347519,126.780257 L407.406531,126.780257 L407.406531,4.93104632 L407.406531,4.93104632 Z"
+                                fill="#20B15A"></path>
+                            <path
+                                d="M379.124557,50.5933528 L396.442594,50.5933528 L396.442594,124.599929 C396.442594,155.311412 378.314721,167.957316 356.885207,167.957316 C336.701596,167.957316 324.554051,154.376986 320.00651,143.350753 L335.891759,136.747473 C338.757334,143.537639 345.67209,151.573706 356.885207,151.573706 C370.652424,151.573706 379.124557,143.039278 379.124557,127.091732 L379.124557,121.111404 L378.501606,121.111404 C374.39013,126.095011 366.540947,130.580258 356.573731,130.580258 C335.767169,130.580258 316.704869,112.452385 316.704869,89.0917231 C316.704869,65.6064713 335.767169,47.2917126 356.573731,47.2917126 C366.478652,47.2917126 374.39013,51.7146646 378.501606,56.5736822 L379.124557,56.5736822 L379.124557,50.5933528 L379.124557,50.5933528 Z M380.370459,89.0917231 C380.370459,74.3900801 370.590128,63.6753233 358.131109,63.6753233 C345.547499,63.6753233 334.957333,74.3900801 334.957333,89.0917231 C334.957333,103.606481 345.547499,114.134352 358.131109,114.134352 C370.590128,114.196648 380.370459,103.606481 380.370459,89.0917231 L380.370459,89.0917231 Z"
+                                fill="#3686F7"></path>
+                            <path
+                                d="M218.21632,88.7802476 C218.21632,112.763861 199.527791,130.393373 176.603195,130.393373 C153.678599,130.393373 134.990069,112.701565 134.990069,88.7802476 C134.990069,64.6720448 153.678599,47.1048274 176.603195,47.1048274 C199.527791,47.1048274 218.21632,64.6720448 218.21632,88.7802476 L218.21632,88.7802476 Z M200.026151,88.7802476 C200.026151,73.8294242 189.186804,63.5507331 176.603195,63.5507331 C164.019585,63.5507331 153.180238,73.8294242 153.180238,88.7802476 C153.180238,103.606481 164.019585,114.009763 176.603195,114.009763 C189.186804,114.009763 200.026151,103.606481 200.026151,88.7802476 L200.026151,88.7802476 Z"
+                                fill="#FF302F"></path>
+                            <path
+                                d="M309.104867,88.967133 C309.104867,112.950746 290.416338,130.580258 267.491742,130.580258 C244.567146,130.580258 225.878617,112.950746 225.878617,88.967133 C225.878617,64.8589302 244.567146,47.3540078 267.491742,47.3540078 C290.416338,47.3540078 309.104867,64.796635 309.104867,88.967133 L309.104867,88.967133 Z M290.852404,88.967133 C290.852404,74.0163095 280.013057,63.7376184 267.429447,63.7376184 C254.845837,63.7376184 244.00649,74.0163095 244.00649,88.967133 C244.00649,103.793366 254.845837,114.196648 267.429447,114.196648 C280.075352,114.196648 290.852404,103.731071 290.852404,88.967133 L290.852404,88.967133 Z"
+                                fill="#FFBA40"></path>
+                            <path
+                                d="M66.5900525,112.327794 C40.4884066,112.327794 20.0556146,91.2720515 20.0556146,65.1704056 C20.0556146,39.0687598 40.4884066,18.0130168 66.5900525,18.0130168 C80.6687446,18.0130168 90.9474357,23.5572805 98.5474373,30.6589216 L111.068752,18.137607 C100.478585,7.98350613 86.3375984,0.258913997 66.5900525,0.258913997 C30.8326666,0.258913997 0.744134408,29.4130196 0.744134408,65.1704056 C0.744134408,100.927792 30.8326666,130.081897 66.5900525,130.081897 C85.9015328,130.081897 100.478585,123.727797 111.878588,111.891729 C123.590067,100.180251 127.203183,83.7343447 127.203183,70.4031939 C127.203183,66.2294223 126.704822,61.9310606 126.144166,58.7540106 L66.5900525,58.7540106 L66.5900525,76.0720477 L109.013014,76.0720477 C107.767112,86.9113947 104.340882,94.3245113 99.2949785,99.3704142 C93.1900592,105.537629 83.534319,112.327794 66.5900525,112.327794 L66.5900525,112.327794 L66.5900525,112.327794 Z"
+                                fill="#3686F7"></path>
+                        </g>
+                    </g>
+                </svg>
+
+            </div>
         </div>
-        <!-- End Hero -->
     </div>
 
     <div class="max-w-6xl xl:max-w-7xl mx-auto mt-10 lg:mt-20 px-3">
-
         <!--skill-set value proposition-->
         <div id="skills" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 pb-10 lg:pb-20">
-            <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-bold">Digital Positioning is the next frontier. <span class="block pt-2 text-creator-primary">Connect your ideas to the online customers.</span></h2>
+            <div class="md:col-span-2 lg:col-span-3 max-w-2xl">
+                <h2 class="text-xl lg:text-4xl font-bold">
+                    Everything you Need to <span class="ps-2 text-creator-primary italic">Digitize your Business.</span>
+                </h2>
 
-            <div class="p-4 w-full grid bg-creator-secondary rounded-lg text-black hover:bg-white border-2 border-creator-secondary hover:border-creator-primary transition-all ease-in-out duration-300 group">
-                <p class="py-2 text-white group-hover:uppercase group-hover:text-creator-primary transition-all ease-in-out duration-700">Writer</p>
-
-                <x-svgs.write-gold class="h-24 w-24 px-1 justify-self-end rounded-lg md:group-hover:mr-8 transition-all ease-in-out duration-700 bg-white md:group-hover:bg-creator-secondary" />
-
-                <h4 class="py-2 mt-4 font-medium lg:text-lg">I Create <span class="text-creator-primary font-bold" >Compelling Narratives</span> for Landing Page Solutions.</h4>
-
-                <p class="py-1 text-sm xl:text-base">Nurturing the power of storytelling to reach the heart of the customer.</p>
+                <p class="mt-3 py-1">
+                    Gameplane IT specializes in creating bespoke solutions for small businesses. Whether you need a
+                    stunning landing page, an efficient e-commerce platform, or robust inventory management software,
+                    we’ve got you covered.
+                </p>
             </div>
 
-            <div class="p-4 w-full grid bg-creator-light rounded-lg text-black hover:bg-white border-2 border-creator-light hover:border-creator-primary transition-all ease-in-out duration-300 group">
-                <p class="py-2 text-gray-500 group-hover:uppercase group-hover:text-creator-primary transition-all ease-in-out duration-700">Software Engineer</p>
+            <div
+                class="p-4 w-full grid rounded-lg border-2 border-creator-secondary hover:border-creator-primary transition-all ease-in-out duration-300 group">
+                <p class="py-2 text-yellow-600 group-hover:uppercase group-hover:text-creator-primary transition-all ease-in-out duration-700">
+                    Business Applications</p>
 
-                <x-svgs.ideas-img class="h-24 w-24 justify-self-end rounded-lg md:group-hover:mr-8 transition-all ease-in-out duration-700" />
+                <x-svgs.analytics
+                    class="h-24 w-24 px-1 justify-self-end rounded-lg md:group-hover:mr-8 transition-all ease-in-out duration-700"/>
 
-                <h4 class="py-2 mt-4 font-medium lg:text-lg"><span class="text-creator-primary font-bold" >Bridge the Gap</span> ~ with Innovative Software!</h4>
+                <h4 class="py-2 mt-4">
+                    Automating your business with <span class="text-creator-primary font-medium">worldclass apps, crafted using cutting-edge tech</span>
+                    to gain accuracy, increase time efficiency, improve performance and convenience for customers.
+                </h4>
 
-                <p class="py-1 text-sm xl:text-base">Responsive, user-friendly Apps and E-Commerce Solutions for businesses and creators.</p>
+                <p class="py-1 text-xs">Inventory Management Systems, E-commerce platforms, custom websites, Enterprise
+                    Applications, CRM, POS, among other quality, tested and trusted software products.</p>
             </div>
 
-            <div class="p-4 w-full grid bg-creator-tertiary rounded-lg text-black hover:bg-white border-2 border-creator-tertiary hover:border-creator-primary transition-all ease-in-out duration-300 group">
-                <p class="py-2 text-yellow-600 group-hover:uppercase group-hover:text-creator-primary transition-all ease-in-out duration-700">Cloud and ML Expert</p>
+            <div
+                class="p-4 w-full grid rounded-lg border-2 border-creator-light hover:border-creator-primary transition-all ease-in-out duration-300 group">
+                <p class="py-2 text-yellow-600 group-hover:uppercase group-hover:text-creator-primary transition-all ease-in-out duration-700">
+                    IT Services</p>
 
-                <x-svgs.ai-img class="h-24 w-24 justify-self-end rounded-lg md:group-hover:mr-8 transition-all ease-in-out duration-700" />
+                <x-svgs.ideas-img
+                    class="h-24 w-24 justify-self-end rounded-lg md:group-hover:mr-8 transition-all ease-in-out duration-700"/>
 
-                <h4 class="py-2 mt-4 font-medium lg:text-lg">Connecting Products to <span class="text-creator-primary font-bold">The Cloud!</span></h4>
+                <h4 class="py-2 mt-4">Custom IT services to <span class="text-creator-primary font-medium"> integrate with APIs, Upgrade, and Fix Errors on Business applications</span>
+                </h4>
 
-                <p class="py-1 text-sm xl:text-base">Let's ensure you are NOT LEFT BEHIND. The world is changing. Helping small businesses realize the opportunity of Cloud-first software.</p>
+                <p class="py-1 text-xs">Payment APIS, Email/SMS/Calls integrations, Software Upgrades/Upates, Error/Bug
+                    Fixing.</p>
             </div>
 
+            <div
+                class="p-4 w-full grid rounded-lg border-2 border-creator-tertiary hover:border-creator-primary transition-all ease-in-out duration-300 group">
+                <p class="py-2 text-yellow-600 group-hover:uppercase group-hover:text-creator-primary transition-all ease-in-out duration-700">
+                    Cloud and AI Tools</p>
+
+                <x-svgs.ai-img
+                    class="h-24 w-24 justify-self-end rounded-lg md:group-hover:mr-8 transition-all ease-in-out duration-700"/>
+
+                <h4 class="py-2 mt-4">We connect your business with Cutting-edge <span
+                        class="text-creator-primary font-medium">Cloud and AI technologies</span>.</h4>
+
+                <p class="py-1 text-xs">Custom AI for Business, App Deployment and Maintenance on Google Cloud, AWS,
+                    Azure, Oracle, Digital Ocean, Namecheap etc.</p>
+            </div>
+
+        </div>
+
+        <!-- Features -->
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <!-- web dev -->
+            <div class="mt-3 lg:mt-6 mb-4 px-4 py-6 lg:px-6 lg:py-10 md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 border border-zinc-100 dark:border-zinc-800 rounded-xl">
+                <div>
+                    <img class="rounded-xl"
+                         src="https://www.tatvasoft.com/outsourcing/wp-content/uploads/2023/06/Types-of-Web-Development-for-your-Project.jpg"
+                         alt="Features Image">
+                </div>
+                <div class="mt-5 sm:mt-10 lg:mt-0">
+                    <div class="space-y-6 sm:space-y-8">
+                        <!-- Title -->
+                        <div class="space-y-2 md:space-y-4">
+                            <p class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+                                Web Development
+                            </p>
+                            <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200">
+                                Custom Web Solutions to Transform Your Online Presence
+                            </h2>
+                            <p class="text-gray-500 dark:text-neutral-500">
+                                Tailored web development services designed to create stunning, user-friendly websites that engage and convert visitors.
+                            </p>
+                        </div>
+
+                        <!-- List -->
+                        <ul class="space-y-2 sm:space-y-4">
+                            <li class="flex gap-x-3">
+                                <span
+                                    class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                                  <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                       height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline
+                                          points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <div class="grow">
+                                    <span class="text-xs text-gray-500 dark:text-neutral-500">
+                                        <span class="font-medium text-sm">Custom Websites: </span>Unique designs tailored to your brand.
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-x-3">
+                                <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <div class="grow">
+                                    <span class="font-medium text-sm text-gray-500 dark:text-neutral-500">
+                                        E-commerce Platforms - <span class="font-none text-xs">Seamless online shopping experiences.</span>
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-x-3">
+                                <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                </span>
+                                <div class="grow">
+                                    <span class="font-medium text-sm text-gray-500 dark:text-neutral-500">
+                                        Landing Pages - <span class="font-none text-xs">Seamless online shopping experiences.</span>
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-x-3">
+                                <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                </span>
+                                <div class="grow">
+                                    <span class="font-medium text-sm text-gray-500 dark:text-neutral-500">
+                                        Content Management Systems (CMS) - <span class="font-none text-xs">Easy-to-manage platforms for your content.</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile dev -->
+            <div class="mt-3 lg:mt-6 mb-4 px-4 py-6 lg:px-6 lg:py-10 md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 border border-zinc-100 dark:border-zinc-800 rounded-xl">
+                <div class="mt-5 sm:mt-10 lg:mt-0">
+                    <div class="space-y-6 sm:space-y-8">
+                        <!-- Title -->
+                        <div class="space-y-2 md:space-y-4">
+                            <p class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+                                Mobile Development
+                            </p>
+                            <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200">
+                                Reach Your Customers Anytime, Anywhere
+                            </h2>
+                            <p class="text-gray-500 dark:text-neutral-500">
+                                Harness the power of mobile technology with our expert mobile development services, ensuring your business is accessible on all devices.
+                            </p>
+                        </div>
+
+                        <!-- List -->
+                        <ul class="space-y-2 sm:space-y-4">
+                            <li class="flex gap-x-3">
+                                <span
+                                    class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                                  <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                       height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline
+                                          points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <div class="grow">
+                                    <span class="text-xs text-gray-500 dark:text-neutral-500">
+                                        <span class="font-medium text-sm">Cross-Platform Solutions - </span>Efficient apps that work on iOS, Android, and multiple devices.
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-x-3">
+                                <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <div class="grow">
+                                    <span class="font-medium text-sm text-gray-500 dark:text-neutral-500">
+                                        Progressive Web Apps (PWAs) - <span class="font-none text-xs">Fast, reliable web applications that feel like native apps.</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="rounded-xl"
+                         src="https://assets.entrepreneur.com/content/3x2/2000/1656520063-Ent-MondayHero.jpeg"
+                         alt="Features Image">
+                </div>
+            </div>
+
+            <!-- automation -->
+            <div class="mt-3 lg:mt-6 mb-4 px-4 py-6 lg:px-6 lg:py-10 md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 border border-zinc-100 dark:border-zinc-800 rounded-xl">
+                <div>
+                    <img class="rounded-xl"
+                         src="https://github.com/mwanginjuguna/public-image-assets/blob/main/biz-kit/admin-dashboard.png?raw=true"
+                         alt="Features Image">
+                </div>
+                <div class="mt-5 sm:mt-10 lg:mt-0">
+                    <div class="space-y-6 sm:space-y-8">
+                        <!-- Title -->
+                        <div class="space-y-2 md:space-y-4">
+                            <p class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+                                Business Automation Software
+                            </p>
+                            <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200">
+                                Streamline Your Operations for Maximum Efficiency
+                            </h2>
+                            <p class="text-gray-500 dark:text-neutral-500">
+                                Optimize your business processes with our innovative automation solutions that save time and reduce errors, allowing you to focus on what matters most.
+                            </p>
+                        </div>
+
+                        <!-- List -->
+                        <ul class="space-y-2 sm:space-y-4">
+                            <li class="flex gap-x-3">
+                                <span
+                                    class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                                  <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                       height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline
+                                          points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <div class="grow">
+                                    <span class="text-xs text-gray-500 dark:text-neutral-500">
+                                        <span class="font-medium text-sm">Workflow Automation Tools - </span>Simplify repetitive tasks and improve productivity.
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-x-3">
+                                <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <div class="grow">
+                                    <span class="font-medium text-sm text-gray-500 dark:text-neutral-500">
+                                        Reporting & Analytics Dashboard Tools - <span class="font-none text-xs">Gain insights to drive informed decisions.</span>
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="flex gap-x-3">
+                                <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                </span>
+                                <div class="grow">
+                                    <span class="font-medium text-sm text-gray-500 dark:text-neutral-500">
+                                        Email Marketing Automation - <span class="font-none text-xs">Engage customers with personalized campaigns.</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Industry-specific -->
+        <div id="industry-software" class="grid gap-6 lg:gap-10 mt-10 lg:mt-20 pb-10 lg:pb-20">
+            <h2 class="text-xl lg:text-4xl font-semibold">
+                Industry-Specific Software <span
+                    class="block pt-2 text-creator-primary font-bold text-2xl lg:text-5xl"> Tailored Solutions for Your Unique Business Needs!</span>
+            </h2>
+            <!-- Specific software -->
+            <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <!-- Inventory -->
+                    <div>
+                        <svg class="shrink-0 size-12 text-gray-800 dark:text-white" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><g ><defs></defs><path class="a" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M25.47,27.06c0,4-3,6.27-6.79,5.11a10.31,10.31,0,0,1-6.79-9.31h0c0-4,3-6.28,6.79-5.12h0a10.32,10.32,0,0,1,6.79,9.32Zm-2.38-.84a3.45,3.45,0,0,1-2.19,3.4,4.56,4.56,0,0,1-4.37-1,5.92,5.92,0,0,1-2.18-4.41m7.34-.76a.69.69,0,0,1-1,.71h0a1.43,1.43,0,0,1-.95-1.3.7.7,0,0,1,.95-.72A1.46,1.46,0,0,1,21.69,23.44Zm-4.13-1.06a.7.7,0,0,1-.95.72h0a1.45,1.45,0,0,1-.95-1.3.7.7,0,0,1,.95-.72A1.44,1.44,0,0,1,17.56,22.38ZM16.8,8.43,17,13.35M34.25,16l-.47,23.53M4.5,11.59,16.8,8.43l26.7,2.93m-39,.23L6.61,31.37l27.17,8.2,9.13-8,.59-20.25L34.25,16Z"></path></g></svg>
+                        <div class="bg-gradient-to-r from-gray-200 via-gray-50 to-transparent h-0.5 mt-6 dark:from-neutral-700 dark:via-neutral-900">
+                            <div class="bg-gray-400 w-9 h-0.5 dark:bg-neutral-600"></div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Inventory Application.</h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400 text-sm">Track stock levels and manage orders efficiently with Inventory Management Software.</p>
+                        </div>
+                    </div>
+
+                    <!-- CRM -->
+                    <div>
+                        <svg class="shrink-0 size-9 text-gray-800 dark:text-white" fill="currentColor" viewBox="0 0 100 100" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><g><path d="M57.4,38.4A18.1,18.1,0,1,1,39.3,20.2,18.12,18.12,0,0,1,57.4,38.4ZM32.6,30.2c-1.3,0-2.3,1.3-2.3,3.1,0,1.6.9,3.1,2.3,3.1s2.3-1.3,2.3-3.1C34.7,31.6,33.8,30.2,32.6,30.2Zm13.5,0c-1.3,0-2.3,1.3-2.3,3.1,0,1.6.9,3.1,2.3,3.1s2.3-1.3,2.3-3.1S47.5,30.2,46.1,30.2ZM28,40.7c.5,5.7,4.7,10.6,11.2,10.6A11.28,11.28,0,0,0,50.7,40.7Z"></path><path d="M79.6,45.4A1.37,1.37,0,0,0,78.2,44l-14.6-.1a1.29,1.29,0,0,0-1.4,1.3v2.6a1.37,1.37,0,0,0,1.4,1.4l4.5.1a.89.89,0,0,1,.6,1.5l-20,20.1a1,1,0,0,1-.9-.2L37.1,59.8a1.37,1.37,0,0,0-1.8-.1h0l-.1.1h0l-1.9,1.9a.1.1,0,0,1-.1.1L20.6,74.4a1.39,1.39,0,0,0,0,1.9l1.9,1.9a1.39,1.39,0,0,0,1.9,0L34.8,67.9a1.87,1.87,0,0,1,2.6-.1L47.6,78.1a1.17,1.17,0,0,0,1.9,0L72.7,54.7a.88.88,0,0,1,1.5.6l.1,4.5a1.37,1.37,0,0,0,1.4,1.4h2.6a1.29,1.29,0,0,0,1.4-1.3Z"></path></g></svg>
+
+                        <div class="bg-gradient-to-r from-gray-200 via-gray-50 to-transparent h-0.5 mt-6 dark:from-neutral-700 dark:via-neutral-900">
+                            <div class="bg-gray-400 w-9 h-0.5 dark:bg-neutral-600"></div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">CRM System.</h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400 text-sm">Customer Relationship Management software to enhance customer engagement and retention</p>
+                        </div>
+                    </div>
+
+                    <!-- ERP -->
+                    <div>
+                        <x-svgs.ecommerce  class="shrink-0 size-9 text-gray-800 dark:text-white" />
+
+                        <div class="bg-gradient-to-r from-gray-200 via-gray-50 to-transparent h-0.5 mt-6 dark:from-neutral-700 dark:via-neutral-900">
+                            <div class="bg-gray-400 w-9 h-0.5 dark:bg-neutral-600"></div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">ERP system</h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400 text-sm">Enterprise Resource Planning to integrate core business processes into one system.</p>
+                        </div>
+                    </div>
+
+                    <!-- POS -->
+                    <div>
+                        <svg  class="shrink-0 size-9 text-gray-800 dark:text-white"fill="currentColor" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g> <title>POS</title> <path d="M28 31h-24c-1.657 0-3-1.344-3-3v-14c0-1.657 1.343-3 3-3h2l8.493-6.518c-0.038-0.155-0.064-0.315-0.064-0.482 0-1.104 0.896-2 2-2s1.999 0.896 1.999 2c0 0.359-0.102 0.692-0.269 0.984l7.841 6.016h2c1.656 0 3 1.343 3 3v14c0 1.656-1.344 3-3 3zM17.071 24.583h4.031v-0.758h-3.18v-5.688h-0.852v6.446zM11.303 24.583l0.706-1.953h2.708l0.742 1.953h0.972l-2.628-6.445h-0.924l-2.478 6.445h0.902zM5.342 18.894c-0.184 0.284-0.276 0.589-0.276 0.914 0 0.297 0.075 0.564 0.226 0.804s0.38 0.439 0.687 0.602c0.236 0.126 0.649 0.26 1.239 0.402s0.971 0.247 1.144 0.314c0.269 0.104 0.462 0.229 0.581 0.38s0.179 0.326 0.179 0.528c0 0.198-0.061 0.383-0.182 0.552s-0.306 0.302-0.555 0.399c-0.248 0.098-0.534 0.146-0.858 0.146-0.365 0-0.693-0.063-0.985-0.192-0.293-0.127-0.508-0.295-0.646-0.503s-0.228-0.474-0.266-0.797l-0.805 0.070c0.012 0.431 0.13 0.816 0.354 1.157s0.532 0.598 0.925 0.768c0.394 0.17 0.881 0.255 1.463 0.255 0.458 0 0.871-0.084 1.238-0.253 0.367-0.168 0.648-0.402 0.844-0.706s0.294-0.625 0.294-0.968c0-0.345-0.090-0.649-0.269-0.914s-0.456-0.484-0.832-0.656c-0.259-0.117-0.733-0.254-1.423-0.41-0.691-0.157-1.118-0.311-1.281-0.461-0.167-0.148-0.25-0.339-0.25-0.57 0-0.268 0.118-0.495 0.353-0.684s0.609-0.284 1.123-0.284c0.494 0 0.867 0.104 1.119 0.31 0.253 0.207 0.4 0.513 0.444 0.917l0.82-0.062c-0.015-0.378-0.12-0.716-0.315-1.014s-0.476-0.524-0.84-0.678-0.784-0.23-1.261-0.23c-0.433 0-0.826 0.073-1.18 0.22-0.356 0.146-0.625 0.36-0.809 0.644zM17.678 5.55c-0.344 0.277-0.774 0.45-1.249 0.45-0.662 0-1.244-0.325-1.608-0.821l-7.821 5.821h18l-7.322-5.45zM26.936 23.825h-3.953v-2.195h3.562v-0.758h-3.562v-1.977h3.805v-0.758h-4.656v6.445h4.805v-0.757zM13.314 18.81c0.104 0.353 0.256 0.8 0.457 1.343l0.679 1.782h-2.199l0.715-1.887c0.147-0.407 0.263-0.82 0.348-1.238z"></path> </g></svg>
+
+                        <div class="bg-gradient-to-r from-gray-200 via-gray-50 to-transparent h-0.5 mt-6 dark:from-neutral-700 dark:via-neutral-900">
+                            <div class="bg-gray-400 w-9 h-0.5 dark:bg-neutral-600"></div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Point of Sale (POS)</h3>
+                            <p class="mt-1 text-gray-600 dark:text-neutral-400 text-sm">Streamline sales transactions and enhance customer experience with POS software.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--landing page sale proposition-->
         <div id="resources" class="grid md:grid-cols-2 gap-6 lg:gap-10 mt-10 lg:mt-20 pb-10 lg:pb-20">
             <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-semibold">
-                Boost Your Business Visibility <span class="block pt-2 text-creator-primary font-bold text-2xl lg:text-5xl">~ A Landing Page unlocks Online Presence!</span>
+                Boost Your Business Visibility <span
+                    class="block pt-2 text-creator-primary font-bold text-2xl lg:text-5xl">~ A Landing Page unlocks Online Presence!</span>
             </h2>
 
             <div class="mt-4 lg:mt-10 py-3 lg:py-8 place-self-center">
-                <h4 class="py-2 text-lg font-medium text-black">
+                <h4 class="py-2 text-lg font-medium text-zinc-900 dark:text-zinc-100">
                     Reach Your Local Audience - <span class="font-bold text-orange-500">97% of users search online for local businesses.</span>
                 </h4>
 
@@ -242,8 +652,9 @@
                 <x-cta.secondary-btn href="{{route('shop')}}">Browse Landing Page Deals</x-cta.secondary-btn>
             </div>
 
-            <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/creator/online-shop-landing.png?raw=true"
-                 class="rounded-lg place-self-center ring ring-white hover:ring-creator-primary"
+            <img
+                src="https://github.com/mwanginjuguna/public-image-assets/blob/main/creator/online-shop-landing.png?raw=true"
+                class="rounded-lg place-self-center ring ring-white hover:ring-creator-primary"
             >
         </div>
 
@@ -251,16 +662,19 @@
         <div id="products-and-services" class="grid md:grid-cols-2 gap-6 lg:gap-10 mt-6 py-6 pb-10 lg:pb-20 border-t">
 
             <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-semibold mt-2 py1">
-                Transform Your Business with a Website <span class="block pt-2 text-creator-primary font-bold text-2xl lg:text-5xl">~ Elevate the Shop to an Online Hub!</span>
+                Transform Your Business with a Website <span
+                    class="block pt-2 text-creator-primary font-bold text-2xl lg:text-5xl">~ Elevate the Shop to an Online Hub!</span>
             </h2>
 
-            <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/creator/great-biz-needs-a-great-website.png?raw=true"
-                 class="rounded-lg place-self-center ring ring-white hover:ring-creator-primary"
+            <img
+                src="https://github.com/mwanginjuguna/public-image-assets/blob/main/creator/great-biz-needs-a-great-website.png?raw=true"
+                class="rounded-lg place-self-center ring ring-white hover:ring-creator-primary"
             >
 
             <div class="mt-4 lg:mt-10 py-3 lg:py-8 place-self-center">
-                <h4 class="py-2 text-lg font-medium text-black">
-                    Join the Majority - <span class="font-bold text-orange-500"> 71% of businesses now have a website.</span>
+                <h4 class="py-2 text-lg font-medium">
+                    Join the Majority - <span
+                        class="font-bold text-orange-500 dark:text-orange-600"> 71% of businesses now have a website.</span>
                 </h4>
 
                 <ul class="grid gap-y-2 pl-3 pb-3 lg:pb-8 mt-3 text-sm xl:text-base">
@@ -293,7 +707,9 @@
         <div id="portfolio" class="mt-10 lg:mt-20 py-3 lg:py-8">
             <div class="flex flex-col gap-y-4 pb-3 lg:pb-8">
                 <h2 class="text-xl lg:text-4xl font-bold">Portfolio</h2>
-                <p>Explore my work. More projects are available on my <a class="text-creator-primary hover:text-orange-500 font-semibold hover:underline" href="https://github.com/mwanginjuguna">GitHub Profile</a> .</p>
+                <p>Explore my work. More projects are available on my <a
+                        class="text-creator-primary hover:text-orange-500 font-semibold hover:underline"
+                        href="https://github.com/mwanginjuguna">GitHub Profile</a> .</p>
             </div>
 
             @livewire('project-preview')
@@ -304,32 +720,25 @@
             <h3 class="py-3 lg:pb-6 text-xl lg:text-4xl font-bold">Writing / Blog</h3>
 
             <p class="text-sm xl:text-base space-y-1 py-2 max-w-3xl">
-                Written words are powerful. The primary goal of my writing is to break-down complexity into practicality.
+                Written words are powerful. The primary goal of our blog is to simplify technology concepts, so it can be accessible & applicable to businesses like yours.
                 <br>
-                Writing is a tool to teach, inspire, guide, and tell a story.  <span class="italic font-semibold">The Unread Story is NOT A Story.</span>
+                Writing is a tool to teach, inspire, guide, and tell a story. <span class="italic font-semibold">The Unread Story is NOT A Story.</span>
             </p>
-
-            <div class="flex flex-col md:flex-row gap-6 mt-4 lg:mt-7">
-                <p class="mt-1 py-2 text-base lg:text-lg text-orange-500">Let's tell the story of your products.</p>
-
-                <x-cta.cta-btn href="{{route('contact')}}" class="font-heading">Tell my story</x-cta.cta-btn>
-            </div>
 
             @livewire('blog-inline')
         </div>
-
-        <!--About-->
-        @livewire('about-me')
     </div>
 
     <!--contact-->
-    <div id="contact" class="w-full lg:min-h-[75%] mt-6 md:mt-10 lg:mt-20 p-6 py-10 lg:py-20 bg-creator-primary text-white">
+    <div id="contact"
+         class="w-full lg:min-h-[75%] mt-6 md:mt-10 lg:mt-20 p-6 py-10 lg:py-20 bg-creator-primary dark:bg-violet-950 text-white dark:text-zinc-300">
         <div class="max-w-6xl mx-auto grid lg:grid-cols-3">
             <div class="col-span-1 grid items-center">
                 <div>
                     <h3 class="py-2 font-bold text-xl lg:text-3xl">Build your Online Presence.</h3>
                     <p class="py-1 mt-2">
-                        With the rising number of customers and users using the internet and online tools, your brand will succeed by following them there.
+                        With the rising number of customers and users using the internet and online tools, your brand
+                        will succeed by following them there.
                     </p>
                     <p class="mt-2 text-creator-tertiary text-lg font-semibold">
                         Put your money where your mouth is. Your Customers are Online.

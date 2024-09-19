@@ -2,7 +2,7 @@
     <div class="max-w-5xl mx-auto p-3">
         <div class="grid lg:grid-cols-3">
             <!--socials-->
-            <div class="md:mt-5 text-creator-dark text-sm xl:text-base">
+            <div class="md:mt-5 text-creator-dark dark:text-zinc-300 text-sm">
                 <p class="py-4 font-medium text-base italic text-lime-500">Connect on Social Media</p>
                 <!--gmail-->
                 <div class="flex flex-row space-x-3 place-items-center max-w-sm py-1">
@@ -83,7 +83,8 @@
         </div>
 
         <p class="mt-6 lg:mt-8 mx-auto text-center text-sm lg:text-base">
-            <x-text-link href="https://github.com/mwanginjuguna">Francis Mwangi Kanothe</x-text-link>&copy;. {{now()->year}}. All Rights Reserved.
+            <x-text-link href="https://github.com/mwanginjuguna">
+                Francis Mwangi Kanothe</x-text-link>&copy;. {{now()->year}}. All Rights Reserved.
         </p>
     </div>
 </footer>

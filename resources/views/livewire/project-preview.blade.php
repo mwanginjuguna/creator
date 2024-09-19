@@ -4,29 +4,29 @@
     </h4>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 pb-8 lg:pb-14">
-        <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
-            <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/order%20management%20system/admin-dashboard.png?raw=true"
-                 alt="Order Management System"
-                 class="rounded-md"
-                 title="Order Management Application"
+        <div class="w-full rounded-md bg-white dark:bg-zinc-800 shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
+            <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/biz-kit/admin-dashboard.png?raw=true"
+                 alt="Ecommerce Application"
+                 class="rounded-t-md"
+                 title="E-commerce Application"
             >
             <div class="py-4 px-2">
                 <h3 class="py-2 text-lg font-semibold">
-                    Order Management CRM
+                    E-commerce Web Dashboard
                 </h3>
 
-                <p class="mt-1 pb-3 text-sm xl:text-base">
-                    A professional responsive web application for managing and tracking orders. Integrates secure payments through Paypal and Stripe APIs. Built with PHP-Laravel and Vue.js frameworks.
+                <p class="mt-1 pb-3 text-sm">
+                    The web application is business kit with Vendor/Admin dashboard, customer dashboard, blog functionality, reusable components, Paypal, Stripe, & Mpesa Integration, and many more out of the box functionality (everything a business needs to sell online).
                 </p>
 
-                <x-text-link href="https://ordersystem.mwangikanothe.com/">View Demo.</x-text-link>
+                <x-text-link href="https://mwanginjuguna.github.io/portfolio/pages/e-commerce.html">View Demo.</x-text-link>
             </div>
         </div>
 
-        <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
+        <div class="w-full rounded-md bg-white dark:bg-zinc-800 shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
             <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/safari/safari-restaurant-landing-page.png?raw=true"
                  alt="Restaurant Application"
-                 class="rounded-md"
+                 class="rounded-t-md"
                  title="Restaurant Website"
             >
             <div class="py-4 px-2">
@@ -34,7 +34,7 @@
                     Restaurant Website
                 </h3>
 
-                <p class="mt-1 pb-3 text-sm xl:text-base">
+                <p class="mt-1 pb-3 text-sm">
                     A responsive website for restaurants. Includes Landing page, Menus, About, Contact-us and Location(Map) pages. Built with Laravel-livewire framework.
                 </p>
 
@@ -44,22 +44,22 @@
             </div>
         </div>
 
-        <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
-            <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/veggie-detector/veggie-detector-hf.png?raw=true"
+        <div class="w-full rounded-md bg-white dark:bg-zinc-800 shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
+            <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/fitness/fitness-landing-about-dark.png?raw=true"
                  alt="Veggie detector"
-                 class="rounded-md"
+                 class="rounded-t-md"
                  title="Veggie Detector"
             >
             <div class="py-4 px-2">
                 <h3 class="py-2 text-lg font-semibold">
-                    Veggie Detector
+                    Fitness Web
                 </h3>
 
-                <p class="mt-1 pb-3 text-sm xl:text-base">
-                    A machine learning Image Classifier that is trained to automatically classify images of select vegetables. Built with Pytorch, fast.ai, and deployed on huggingface.co spaces.
+                <p class="mt-1 pb-3 text-sm">
+                    Built with Laravel-PHP, the website is packed with features such as a gallely to display videos and images from the trainer, a marketplace for fitness products, tracking orders, online payments and many more.
                 </p>
 
-                <x-text-link href="https://huggingface.co/spaces/kanothe/veggie-detector">
+                <x-text-link href="https://mwanginjuguna.github.io/portfolio/pages/fitness-website.html">
                     View Demo.
                 </x-text-link>
             </div>

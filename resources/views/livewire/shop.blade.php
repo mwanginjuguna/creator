@@ -9,7 +9,7 @@
         </p>
 
         <div class="mt-6 py-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
-            <div class="grid gap-y-3 p-4 bg-orange-500 hover:bg-white text-black border-2 border-orange-500 hover:border-creator-primary rounded-lg group transition-all ease-in-out duration-300">
+            <div class="grid gap-y-3 p-4 border-2 border-orange-500 hover:border-creator-primary rounded-lg group transition-all ease-in-out duration-300">
                 <h2 class="py-2 font-semibold text-lg xl:text-xl">Advanced Landing Page - FUNNEL</h2>
                 <p class="text-sm xl:text-lg">Suitable for Ad traffic.</p>
                 <p class="font-medium italic">Key features:</p>
@@ -34,7 +34,7 @@
 
             </div>
 
-            <div class="grid gap-y-3 p-4 bg-creator-secondary hover:bg-white hover:text-black border-2 border-creator-secondary hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
+            <div class="grid gap-y-3 p-4 border-2 border-creator-secondary hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
                 <h2 class="py-2 font-semibold text-lg xl:text-xl">Advanced E-Commerce Website</h2>
                 <p class="font-medium italic">Key features:</p>
                 <ul class="pl-3 text-sm xl:text-lg space-y-1">
@@ -59,7 +59,7 @@
                 </div>
             </div>
 
-            <div class="grid gap-y-3 p-4 bg-creator-tertiary hover:bg-white hover:text-black border-2 border-creator-tertiary hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
+            <div class="grid gap-y-3 p-4 border-2 border-creator-tertiary hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
                 <h2 class="py-2 font-semibold text-lg xl:text-xl">Cloud Deployment Assistance</h2>
                 <p class="font-medium italic">Key features:</p>
                 <ul class="pl-3 text-sm xl:text-lg space-y-2">
@@ -77,5 +77,9 @@
                 </div>
             </div>
         </div>
+
+        <p class="mt-2 py-1 text-xs text-zinc-500 dark:text-zinc-400 italic">
+            Terms and Conditions apply.
+        </p>
     </div>
 </div>
