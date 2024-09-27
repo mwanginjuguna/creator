@@ -9,7 +9,7 @@ class WaitingList extends Component
     public string $email = '';
     public string $uri = '';
 
-    public bool $saved = true;
+    public bool $saved = false;
 
     public function save()
     {
