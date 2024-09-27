@@ -3,7 +3,7 @@
         <div class="grid lg:grid-cols-3">
             <!--socials-->
             <div class="md:mt-5 text-creator-dark dark:text-zinc-300 text-sm">
-                <p class="py-4 font-medium text-base italic text-lime-500">Connect on Social Media</p>
+                <p class="py-4 font-medium text-base italic text-lime-500">Connect w/Francis on Socials</p>
                 <!--gmail-->
                 <div class="flex flex-row space-x-3 place-items-center max-w-sm py-1">
                     <svg width="24px" height="24px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,20 +18,13 @@
                     </svg>
                     <p>
                         Email:
-                        <a href="mailto::francis.kanothe@gmail.com" class="underline underline-offset-4 hover:text-creator-primary">
-                            francis.kanothe@gmail.com</a>
+                        <a href="mailto::francis.kanothe@gmail.com" class="underline underline-offset-4 hover:text-creator-primary" target="_blank">
+                            info@gameplanlabs.org</a>
                     </p>
                 </div>
-
                 <!--Twitter-->
                 <div class="flex flex-row space-x-3 place-items-center max-w-sm py-1">
                     <svg width="24px" height="24px" viewBox="0 -4 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                        <title>Twitter-color</title>
-                        <desc>Created with Sketch.</desc>
-                        <defs>
-
-                        </defs>
                         <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="Color-" transform="translate(-300.000000, -164.000000)" fill="#00AAEC">
                                 <path d="M348,168.735283 C346.236309,169.538462 344.337383,170.081618 342.345483,170.324305 C344.379644,169.076201 345.940482,167.097147 346.675823,164.739617 C344.771263,165.895269 342.666667,166.736006 340.418384,167.18671 C338.626519,165.224991 336.065504,164 333.231203,164 C327.796443,164 323.387216,168.521488 323.387216,174.097508 C323.387216,174.88913 323.471738,175.657638 323.640782,176.397255 C315.456242,175.975442 308.201444,171.959552 303.341433,165.843265 C302.493397,167.339834 302.008804,169.076201 302.008804,170.925244 C302.008804,174.426869 303.747139,177.518238 306.389857,179.329722 C304.778306,179.280607 303.256911,178.821235 301.9271,178.070061 L301.9271,178.194294 C301.9271,183.08848 305.322064,187.17082 309.8299,188.095341 C309.004402,188.33225 308.133826,188.450704 307.235077,188.450704 C306.601162,188.450704 305.981335,188.390033 305.381229,188.271578 C306.634971,192.28169 310.269414,195.2026 314.580032,195.280607 C311.210424,197.99061 306.961789,199.605634 302.349709,199.605634 C301.555203,199.605634 300.769149,199.559408 300,199.466956 C304.358514,202.327194 309.53689,204 315.095615,204 C333.211481,204 343.114633,188.615385 343.114633,175.270495 C343.114633,174.831347 343.106181,174.392199 343.089276,173.961719 C345.013559,172.537378 346.684275,170.760563 348,168.735283" id="Twitter">
@@ -42,17 +35,16 @@
                     </svg>
                     <p class="">
                         Twitter:
-                        <a href="https://twitter.com/mwangikanothe" class="underline underline-offset-4 hover:text-creator-primary">Kanothe (@mwangikanothe)</a>
+                        <a href="https://twitter.com/mwangikanothe" class="underline underline-offset-4 hover:text-creator-primary" target="_blank">Francis, CEO (@mwangikanothe)</a>
                     </p>
                 </div>
-
                 <!--Linkedin-->
                 <div class="flex flex-row space-x-3 place-items-center max-w-sm py-1">
                     <svg width="24px" height="24px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"></path></g>
                     </svg>
                     <p class="">
                         Linkedin:
-                        <a href="https://www.linkedin.com/in/francis-m-njuguna/" class="underline underline-offset-4 hover:text-creator-primary">Francis Njuguna</a>
+                        <a href="#" class="underline underline-offset-4 hover:text-creator-primary" target="_blank">Gameplan Labs</a>
                     </p>
                 </div>
                 <!--Github-->
@@ -63,7 +55,7 @@
                     <p class="">
                         Github:
                         <a class="underline underline-offset-4 hover:text-creator-primary" href="https://github.com/mwanginjuguna">
-                            Kanothe
+                            Francis, (Chief Blacksmith).
                         </a>
                     </p>
                 </div>
@@ -72,7 +64,7 @@
                     <svg width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <path id="a" d="M1023.941 765.153c0 5.606-.171 17.766-.508 27.159-.824 22.982-2.646 52.639-5.401 66.151-4.141 20.306-10.392 39.472-18.542 55.425-9.643 18.871-21.943 35.775-36.559 50.364-14.584 14.56-31.472 26.812-50.315 36.416-16.036 8.172-35.322 14.426-55.744 18.549-13.378 2.701-42.812 4.488-65.648 5.3-9.402.336-21.564.505-27.15.505l-504.226-.081c-5.607 0-17.765-.172-27.158-.509-22.983-.824-52.639-2.646-66.152-5.4-20.306-4.142-39.473-10.392-55.425-18.542-18.872-9.644-35.775-21.944-50.364-36.56-14.56-14.584-26.812-31.471-36.415-50.314-8.174-16.037-14.428-35.323-18.551-55.744-2.7-13.378-4.487-42.812-5.3-65.649-.334-9.401-.503-21.563-.503-27.148l.08-504.228c0-5.607.171-17.766.508-27.159.825-22.983 2.646-52.639 5.401-66.151 4.141-20.306 10.391-39.473 18.542-55.426C34.154 93.24 46.455 76.336 61.07 61.747c14.584-14.559 31.472-26.812 50.315-36.416 16.037-8.172 35.324-14.426 55.745-18.549 13.377-2.701 42.812-4.488 65.648-5.3 9.402-.335 21.565-.504 27.149-.504l504.227.081c5.608 0 17.766.171 27.159.508 22.983.825 52.638 2.646 66.152 5.401 20.305 4.141 39.472 10.391 55.425 18.542 18.871 9.643 35.774 21.944 50.363 36.559 14.559 14.584 26.812 31.471 36.415 50.315 8.174 16.037 14.428 35.323 18.551 55.744 2.7 13.378 4.486 42.812 5.3 65.649.335 9.402.504 21.564.504 27.15l-.082 504.226z"></path> </defs> <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="512.001" y1=".978" x2="512.001" y2="1025.023"> <stop offset="0" stop-color="#61fd7d"></stop> <stop offset="1" stop-color="#2bb826"></stop> </linearGradient> <use xlink:href="#a" overflow="visible" fill="url(#b)"></use> <g> <path fill="#FFF" d="M783.302 243.246c-69.329-69.387-161.529-107.619-259.763-107.658-202.402 0-367.133 164.668-367.214 367.072-.026 64.699 16.883 127.854 49.017 183.522l-52.096 190.229 194.665-51.047c53.636 29.244 114.022 44.656 175.482 44.682h.151c202.382 0 367.128-164.688 367.21-367.094.039-98.087-38.121-190.319-107.452-259.706zM523.544 808.047h-.125c-54.767-.021-108.483-14.729-155.344-42.529l-11.146-6.612-115.517 30.293 30.834-112.592-7.259-11.544c-30.552-48.579-46.688-104.729-46.664-162.379.066-168.229 136.985-305.096 305.339-305.096 81.521.031 158.154 31.811 215.779 89.482s89.342 134.332 89.312 215.859c-.066 168.243-136.984 305.118-305.209 305.118zm167.415-228.515c-9.177-4.591-54.286-26.782-62.697-29.843-8.41-3.062-14.526-4.592-20.645 4.592-6.115 9.182-23.699 29.843-29.053 35.964-5.352 6.122-10.704 6.888-19.879 2.296-9.176-4.591-38.74-14.277-73.786-45.526-27.275-24.319-45.691-54.359-51.043-63.543-5.352-9.183-.569-14.146 4.024-18.72 4.127-4.109 9.175-10.713 13.763-16.069 4.587-5.355 6.117-9.183 9.175-15.304 3.059-6.122 1.529-11.479-.765-16.07-2.293-4.591-20.644-49.739-28.29-68.104-7.447-17.886-15.013-15.466-20.645-15.747-5.346-.266-11.469-.322-17.585-.322s-16.057 2.295-24.467 11.478-32.113 31.374-32.113 76.521c0 45.147 32.877 88.764 37.465 94.885 4.588 6.122 64.699 98.771 156.741 138.502 21.892 9.45 38.982 15.094 52.308 19.322 21.98 6.979 41.982 5.995 57.793 3.634 17.628-2.633 54.284-22.189 61.932-43.615 7.646-21.427 7.646-39.791 5.352-43.617-2.294-3.826-8.41-6.122-17.585-10.714z"></path> </g> </g>
                     </svg>
                     <p class="">
-                        WhatsApp: <a href="https://api.whatsapp.com/message/LDZPA35DBGTTI1" class="underline underline-offset-4 hover:text-creator-primary">Direct Chat</a>
+                        WhatsApp: <a href="https://api.whatsapp.com/message/LDZPA35DBGTTI1" class="underline underline-offset-4 hover:text-creator-primary" target="_blank">Direct Chat</a>
                     </p>
                 </div>
             </div>
@@ -83,8 +75,8 @@
         </div>
 
         <p class="mt-6 lg:mt-8 mx-auto text-center text-sm lg:text-base">
-            <x-text-link href="https://github.com/mwanginjuguna">
-                Francis Mwangi Kanothe</x-text-link>&copy;. {{now()->year}}. All Rights Reserved.
+            <x-text-link href="/">
+                Gameplan Labs</x-text-link>&copy;. {{now()->year}}. All Rights Reserved.
         </p>
     </div>
 </footer>

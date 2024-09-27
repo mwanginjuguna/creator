@@ -11,7 +11,7 @@
           content="{{ $meta ?? 'Equipping small businesses with digital tools. We build, deploy, and manage websites, ecommerce platforms, landing pages, Inventory, POS, and ERP software.' }}"
     >
 
-    <link href="{{ asset('mk-digital-logo.png') }}" rel="MK Digital Logo" type="image/icon">
+    <link href="{{ asset('gp-labs-logo.png') }}" rel="MK Digital Logo" type="image/icon">
 
     <meta content="{{ $title ?? config('app.name', 'Small Business, Big Game.') }}"
           property="og:title">
@@ -19,7 +19,7 @@
         content="{{ $meta ?? 'Equipping small businesses with digital tools. We build, deploy, and manage websites, ecommerce platforms, landing pages, Inventory, POS, and ERP software.' }}"
         property="og:description">
 
-    <meta href="{{ $ftImg ?? asset('mk-digital-logo.png') }}" property="og:image">
+    <meta href="{{ $ftImg ?? asset('gp-labs-logo.png') }}" property="og:image">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,7 @@
             "name": "{{ 'Gameplan' }}",
             "headline": "{{ 'Small Business, Big Game.' }}",
             "description": "{{ $meta ?? 'Equipping small businesses with digital tools. We build, deploy, and manage websites, ecommerce platforms, landing pages, Inventory, POS, and ERP software.' }}",
-            "logo": "{{ asset('mk-digital-logo.png') }}",
+            "logo": "{{ asset('gp-labs-logo.png') }}",
             "sameAs": [
                 "https://twitter.com/mwangikanothe",
                 "https://www.linkedin.com/in/francis-m-njuguna/",

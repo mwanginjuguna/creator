@@ -1,4 +1,4 @@
-<div x-data="{ open: false }" class="sm:sticky top-0 px-6 py-1 z-10 bg-orange-100 dark:bg-orange-900 dark:text-zinc-3-- bg-opacity-95 w-full border-b border-gray-200 dark:border-gray-800">
+<div x-data="{ open: false }" class="sm:sticky top-0 px-6 py-1 z-10 bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-300 bg-opacity-95 w-full border-b border-gray-200 dark:border-gray-800">
     <div class="max-w-6xl xl:max-w-7xl mx-auto flex flex-row justify-between">
         <div class="flex">
             <!-- Logo -->

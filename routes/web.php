@@ -5,6 +5,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\Mpesa\C2BController;
 use App\Http\Controllers\Mpesa\StkPushController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\QuoteRequestController;
 use App\Http\Controllers\VisitorController;
 use App\Livewire\Pages\About;
 use App\Livewire\Pages\Blog;
@@ -13,6 +14,7 @@ use App\Livewire\Pages\Portfolio;
 use App\Livewire\Pages\Posts\CategoryTag;
 use App\Livewire\Pages\Posts\PostCreate;
 use App\Livewire\Pages\Shop;
+use App\Livewire\QuoteRequest;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
@@ -28,13 +30,19 @@ use Livewire\Volt\Volt;
 */
 
 Route::view('/', 'welcome')->name('home');
-Route::view('/#writing', 'welcome')->name('writing');
-Route::view('/letter', 'letters')->name('letter');
-Route::get('/about', About::class)->name('about');
+Route::view('/products', 'coming-soon')->name('products');
+Route::view('/about', 'coming-soon')->name('about');
+//Route::get('/about', About::class)->name('about');
 Volt::route('/blog', Blog::class)->name('blog');
-Volt::route('/shop', Shop::class)->name('shop');
+Route::view('/shop', 'coming-soon')->name('shop');
+Route::view('/services', 'coming-soon')->name('services');
+//Volt::route('/shop', Shop::class)->name('shop');
+//Volt::route('/services', Shop::class)->name('services');
 Volt::route('/portfolio', Portfolio::class)->name('portfolio');
 Volt::route('/contact', Contact::class)->name('contact');
+Route::view('/coming-soon', 'coming-soon')->name('coming-soon');
+
+Route::post('/quote-request', [QuoteRequestController::class, 'store'])->name('quote-request');
 
 Route::middleware('auth')->group(function () {
     Route::post('/orders/pay/mpesa/stk-push', [StkPushController::class, 'stkInit'])->name('mpesa.stk-push');

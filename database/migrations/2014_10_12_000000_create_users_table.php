@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('role')->default('U'); // U -> User, A -> Admin
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->unsignedBigInteger('userable_id')->nullable();
+            $table->string('userable_type')->nullable();
             $table->rememberToken();
             $table->softDeletes();
             $table->timestamps();

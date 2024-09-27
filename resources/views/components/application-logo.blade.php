@@ -1,5 +1,5 @@
 <img
-    src="{{ $url ?? asset('mk-digital-logo.png') }}"
-     alt="Mk Digital Logo"
+    src="{{ $url ?? asset('gl-labs-transparent.png') }}"
+     alt="Gameplan Labs Logo"
     {{ $attributes }}
 >
