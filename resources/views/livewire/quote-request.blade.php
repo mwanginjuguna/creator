@@ -3,7 +3,7 @@
     <form wire:submit="save">
         <div class="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
             <!-- Card -->
-            <div class="p-4 sm:p-7 flex flex-col bg-zinc-50 rounded-2xl shadow-lg dark:bg-zinc-800">
+            <div class="p-4 sm:p-7 flex flex-col bg-zinc-50 shadow-lg dark:bg-zinc-800">
                 <div class="text-center">
                     <h3 class="block text-2xl font-bold text-gray-800 dark:text-white">Get A
                         Quote</h3>

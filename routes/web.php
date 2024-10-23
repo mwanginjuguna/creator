@@ -31,15 +31,16 @@ use Livewire\Volt\Volt;
 
 Route::view('/', 'welcome')->name('home');
 Route::view('/products', 'coming-soon')->name('products');
-Route::view('/about', 'coming-soon')->name('about');
-//Route::get('/about', About::class)->name('about');
+//Route::view('/about', 'coming-soon')->name('about');
+Route::get('/about', About::class)->name('about');
 Volt::route('/blog', Blog::class)->name('blog');
 Route::view('/shop', 'coming-soon')->name('shop');
-Route::view('/services', 'coming-soon')->name('services');
-//Volt::route('/shop', Shop::class)->name('shop');
-//Volt::route('/services', Shop::class)->name('services');
+Route::view('/quote-request', 'quote-request')->name('quote');
+//Route::view('/services', 'coming-soon')->name('services');
+Volt::route('/shop', Shop::class)->name('shop');
+Volt::route('/services', Shop::class)->name('services');
 Volt::route('/portfolio', Portfolio::class)->name('portfolio');
-Volt::route('/contact', Contact::class)->name('contact');
+Route::view('/contact', 'quote-request')->name('contact');
 Route::view('/coming-soon', 'coming-soon')->name('coming-soon');
 
 Route::post('/quote-request', [QuoteRequestController::class, 'store'])->name('quote-request');

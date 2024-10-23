@@ -48,7 +48,7 @@
                 </li>
             </ul>
             <p class="mt-3 py-2">
-                <x-text-link href="{{ route('writing') }}" class="inline-flex">I write</x-text-link> technical essays, documentations and guides for software & APIs.
+                <x-text-link href="{{ route('blog') }}" class="inline-flex">I write</x-text-link> technical essays, documentations and guides for software & APIs.
                 I also <x-text-link href="{{ route('blog') }}" class="inline-flex">write blogs</x-text-link> for business-technologies, agriculture, technologies, and the African tech/heritage landscape.
             </p>
         </div>

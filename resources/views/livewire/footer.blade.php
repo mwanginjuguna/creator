@@ -1,4 +1,4 @@
-<footer class="w-full mt-2 md:mt-6 py-6 lg:py-10 border-t">
+<footer class="w-full py-6 lg:py-10 border-t">
     <div class="max-w-5xl mx-auto p-3">
         <div class="grid lg:grid-cols-3">
             <!--socials-->

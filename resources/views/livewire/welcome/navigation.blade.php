@@ -13,7 +13,7 @@
                 <x-nav-link :href="route('home')" :active="request()->routeIs('home')" wire:navigate>
                     {{ __('Home') }}
                 </x-nav-link>
-                <x-nav-link :href="route('shop')" :active="request()->routeIs('shop')" wire:navigate>
+                <x-nav-link :href="route('services')" :active="request()->routeIs('services')" wire:navigate>
                     {{ __('Services') }}
                 </x-nav-link>
                 <x-nav-link :href="route('blog')" :active="request()->routeIs('blog')" wire:navigate>

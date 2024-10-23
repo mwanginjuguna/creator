@@ -1,6 +1,24 @@
-<div>
+<div
+    x-data="{showForm:false}"
+    class="py-3"
+>
     @auth()
-        <div class="bg-white p-3 text-sm xl:text-base">
+        <div class="flex flex-row justify-between items-center max-w-2xl mx-auto mt-5 p-3 bg-zinc-100 dark:bg-zinc-800 rounded-lg shadow-sm"
+             @click="showForm=!showForm"
+        >
+            <div>
+                <h4 class="font-medium text-lg">Add New Product</h4>
+            </div>
+            <button>
+                <svg x-show="!showForm" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 10 4 4 4-4"/>
+                </svg>
+                <svg x-show="showForm" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+                </svg>
+            </button>
+        </div>
+        <div x-show="showForm" class="mt-5 max-w-4xl mx-auto bg-zinc-100 dark:bg-zinc-800 px-4 py-8 lg:py-14 text-sm">
             <form wire:submit="save">
                 <div class="py-2">
                     <label for="name" class="block font-medium text-gray-900">Product Name</label>
@@ -61,10 +79,10 @@
         </div>
     @endauth
 
-    <div class="mt-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="py-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         @foreach($allProducts as $item)
             @if(count($item) > 1)
-                <div class="grid gap-y-3 p-4 bg-orange-100 hover:bg-white text-black border-2 border-orange-100 hover:border-orange-500 rounded-lg group motion-safe:hover:scale-[1.01] transition-all ease-in-out duration-300">
+                <div class="grid gap-y-3 p-4 bg-zinc-100 hover:bg-orange-100 dark:bg-zinc-900 dark:hover:bg-orange-950 text-black dark:text-zinc-50 border-2 border-orange-100 dark:border-orange-800 hover:border-orange-500 dark:hover:border-orange-900 rounded-lg group motion-safe:hover:scale-[1.01] transition-all ease-in-out duration-300">
                     <h2 class="py-2 font-semibold text-lg xl:text-xl">{{ $item['name'] }}</h2>
                     <p class="font-medium italic">Key features:</p>
                     <ul class="pl-3 text-sm xl:text-lg space-y-2">
@@ -74,13 +92,13 @@
                     </ul>
                     <div class="flex justify-between place-items-center">
                         <p class="text-base xl:text-lg group-hover:text-creator-primary font-medium font-heading">
-                            <span class="block text-xs xl:text-sm text-gray-400 line-through">
+                            <span class="block text-xs xl:text-sm text-gray-400 darK:text-gray-600 line-through">
                                 Ksh. {{ number_format($item['price'] + ($item['price'] * 0.75), 2) }}
                             </span>
-                            Ksh. {{ number_format($item['price'], 2) }}
+                            Ksh. {{ number_format($item['price'], 2) }} <span class="text-xs text-zinc-500 dark:text-zinc-600">($ {{ number_format($item['price'] * 0.01, 2) }})</span>
                         </p>
 
-                        <button type="submit" class="w-fit mt-1 p-2 px-3 lg:px-4 flex flex-col group font-heading font-semibold bg-white text-orange-500 rounded-md border-2 border-orange-200 hover:border-orange-600 transition-all ease-in-out duration-300">
+                        <button type="submit" class="w-fit mt-1 p-2 px-3 lg:px-4 flex flex-col group font-heading font-semibold bg-white dark:bg-zinc-950 text-orange-500 rounded-md border-2 border-orange-200 hover:border-orange-600 transition-all ease-in-out duration-300">
                             Order Now
                             <span class="h-0.5 bg-orange-500 w-0 md:group-hover:w-full transition-all ease-in-out duration-700"></span>
                         </button>

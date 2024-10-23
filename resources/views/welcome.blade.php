@@ -29,15 +29,15 @@
                     <!-- Stats -->
                     <div class="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5 text-sm">
                         <div class="grid font-semibold">
-                            <p class="text-zinc-600 dark:text-zinc-400">Trusted by:</p>
-                            <p class="text-xl lg:text-3xl">37+</p>
-                            <p class="text-base lg:text-lg">Businesses and Partnerships</p>
+                            <p class="text-zinc-600 dark:text-zinc-400">Deployed:</p>
+                            <p class="text-xl lg:text-3xl">7</p>
+                            <p class="text-base lg:text-lg">Enterprise Applications & E-commerce projects</p>
                         </div>
 
                         <div class="grid font-semibold">
                             <p class="text-zinc-600 dark:text-zinc-400">Delivered:</p>
-                            <p class="text-xl lg:text-3xl">75+</p>
-                            <p class="text-base lg:text-lg">Websites and Business Software</p>
+                            <p class="text-xl lg:text-3xl">40+</p>
+                            <p class="text-base lg:text-lg">API Integrations, Websites, and Landing pages.</p>
                         </div>
                     </div>
                 </div>
@@ -54,8 +54,7 @@
                 class="mt-6 md:mt-12 py-3 flex items-center text-sm text-gray-800 gap-x-1.5 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-white dark:after:border-zinc-700">
                 <span
                     class="font-semibold bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
-                    100+ Business Integrations and Deployments</span>
-                (Integrate your business tools with Leading Business Apps)
+                    Integrate your business applications with Industry-wide Services (Maps, CMS, E-Commerce, Deployments)</span>
             </div>
 
             <!-- Integrations -->
@@ -215,9 +214,9 @@
         </div>
 
         <!-- Features -->
-        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
             <!-- web dev -->
-            <div class="mt-3 lg:mt-6 mb-4 px-4 py-6 lg:px-6 lg:py-10 md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 border border-zinc-100 dark:border-zinc-800 rounded-xl">
+            <div id="gameplan-features-web-and-software-development" class="mt-3 lg:mt-6 mb-4 px-4 py-6 lg:px-6 lg:py-10 md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 border border-zinc-100 dark:border-zinc-800 rounded-xl">
                 <div>
                     <img class="rounded-xl"
                          src="https://www.tatvasoft.com/outsourcing/wp-content/uploads/2023/06/Types-of-Web-Development-for-your-Project.jpg"
@@ -297,7 +296,7 @@
             </div>
 
             <!-- mobile dev -->
-            <div class="mt-3 lg:mt-6 mb-4 px-4 py-6 lg:px-6 lg:py-10 md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 border border-zinc-100 dark:border-zinc-800 rounded-xl">
+            <div id="gameplan-features-mobile-development" class="mt-3 lg:mt-6 mb-4 px-4 py-6 lg:px-6 lg:py-10 md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 border border-zinc-100 dark:border-zinc-800 rounded-xl">
                 <div class="mt-5 sm:mt-10 lg:mt-0">
                     <div class="space-y-6 sm:space-y-8">
                         <!-- Title -->
@@ -354,7 +353,7 @@
             </div>
 
             <!-- automation -->
-            <div class="mt-3 lg:mt-6 mb-4 px-4 py-6 lg:px-6 lg:py-10 md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 border border-zinc-100 dark:border-zinc-800 rounded-xl">
+            <div id="gameplan-features-automation-and-server-administration" class="mt-3 lg:mt-6 mb-4 px-4 py-6 lg:px-6 lg:py-10 md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 border border-zinc-100 dark:border-zinc-800 rounded-xl">
                 <div>
                     <img class="rounded-xl"
                          src="https://github.com/mwanginjuguna/public-image-assets/blob/main/biz-kit/admin-dashboard.png?raw=true"
@@ -525,8 +524,8 @@
             >
         </div>
 
-        <!--landing page sale proposition-->
-        <div id="products-and-services" class="grid md:grid-cols-2 gap-6 lg:gap-10 mt-6 py-6 pb-10 lg:pb-20 border-t">
+        <!--business website proposition-->
+        <div id="get-business-website-from-gameplan-labs" class="grid md:grid-cols-2 gap-6 lg:gap-10 mt-6 py-6 pb-10 lg:pb-20 border-t">
 
             <h2 class="md:col-span-2 lg:col-span-3 text-xl lg:text-4xl font-semibold mt-2 py1">
                 Transform Your Business with a Website <span
@@ -567,11 +566,8 @@
             </div>
         </div>
 
-        <!--Shop-->
-        @livewire('shop')
-
         <!--portfolio-->
-        <div id="portfolio" class="mt-10 lg:mt-20 py-3 lg:py-8">
+        <div id="gameplan-labs-portfolio" class="mt-10 lg:mt-20 py-3 lg:py-8">
             <div class="flex flex-col gap-y-4 pb-3 lg:pb-8">
                 <h2 class="text-xl lg:text-4xl font-bold">Portfolio</h2>
                 <p>Explore my work. More projects are available on my <a
@@ -583,7 +579,7 @@
         </div>
 
         <!--blog samples-->
-        <div id="blog" class="mt-4 pb-3 lg:pb-8">
+        <div id="gameplan-labs-blog" class="mt-4 pb-3 lg:pb-8">
             <h3 class="py-3 lg:pb-6 text-xl lg:text-4xl font-bold">Writing / Blog</h3>
 
             <p class="text-sm xl:text-base space-y-1 py-2 max-w-3xl">
