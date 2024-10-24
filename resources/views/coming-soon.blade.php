@@ -62,7 +62,7 @@
     <!--Javascript-->
     <script>
         // count-down timer
-        let dest = new Date("oct 4, 2024 23:59:59").getTime();
+        let dest = new Date("nov 10, 2024 23:59:59").getTime();
         let x = setInterval(function () {
             let now = new Date().getTime();
             let diff = dest - now;
