@@ -5,7 +5,7 @@
             Let's connect and build digital products.
         </h3>
         <p class="py-1 italic">
-            Send a message, and Francis (CEO) will get back to you in no time.
+            Send a message, and we'll get back to you in no time.
         </p>
 
         @if($sent === true)
@@ -17,7 +17,7 @@
                     </svg>
 
                 <p class="pl-3">
-                    Thank you for your message. I will give feedback to you soon. I sincerely appreciate your valuable time. <span class="italic text-xs uppercase">~ Francis.</span>
+                    Thank you for your message. We will give feedback to you soon. I sincerely appreciate your valuable time. <span class="italic text-xs uppercase">~ Gameplan Labs bot.</span>
                 </p>
             </div>
         @endif
@@ -60,7 +60,7 @@
             </div>
 
             <button type="submit" class="my-3 px-3 py-2 bg-orange-500 hover:bg-orange-600 hover:underline text-slate-100 text-center font-semibold rounded-md shadow-sm shadow-emerald-600">
-                Leave Me Message
+                Leave A Message
             </button>
         </form>
     </div>

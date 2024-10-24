@@ -1,5 +1,4 @@
 <div>
-    {{-- The whole world belongs to you. --}}
     <form wire:submit="save">
         <div class="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
             <!-- Card -->

@@ -49,6 +49,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/orders/pay/mpesa/stk-push', [StkPushController::class, 'stkInit'])->name('mpesa.stk-push');
     Route::post('/mpesa/c2b/register-urls', [C2BController::class, 'registerURLS'])->name('c2b.registerUrls');
 
+    Volt::route('/admin/orders', \App\Livewire\Admin\Orders\Index::class)->name('admin-orders');
+
     Volt::route('/admin/posts/new', PostCreate::class)->name('post-create');
     Volt::route('/admin/posts/category-tag', CategoryTag::class)->name('category-tag');
     Route::get('/admin/sitemap', [BlogController::class, 'sitemaps'])->name('sitemaps');

@@ -3,10 +3,10 @@
     <div id="shop" class="flex flex-col gap-y-4 mt-6 pt-10">
         <div class="mb-4">
             <h2 class="text-xl lg:text-4xl font-bold">
-                Products and Services
+                GP-SHOP: SAAS, Ecommerce, Enterprise Products, Tools, and Services
             </h2>
-            <p>
-                World-class services and products <span class="text-creator-primary">- One Click Away</span>.
+            <p class="mb-2">
+                World-class and professional services and products for your business, brand, company, or service. <span class="text-creator-primary">All One Click Away!</span>.
             </p>
         </div>
 
@@ -167,10 +167,10 @@
         <!--portfolio-->
         <div id="gameplan-labs-portfolio" class="mt-10 lg:mt-20 py-3 lg:py-8">
             <div class="flex flex-col gap-y-4 pb-3 lg:pb-8">
-                <h2 class="text-xl lg:text-4xl font-bold">Portfolio</h2>
-                <p>Explore more projects on <a
+                <h2 class="text-xl lg:text-4xl font-bold">Our Case Studies</h2>
+                <p>Browse our list of past project to get a taste of our excellent services. <a
                         class="text-creator-primary hover:text-orange-500 font-semibold hover:underline"
-                        href="https://github.com/mwanginjuguna">GitHub</a> .</p>
+                        href="https://mwanginjuguna.github.io/portfolio">Case Studies & Samples</a> .</p>
             </div>
 
             @livewire('project-preview')

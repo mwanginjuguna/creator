@@ -1,14 +1,14 @@
 <div>
     <h4 class="mt-4 xl:text-lg font-medium italic text-creator-tertiary underline underline-offset-8 decoration-dashed decoration-creator-orange">
-        Sample Coding and ML/AI Projects
+        Sample case studies from a small collection of our past Projects
     </h4>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 pb-8 lg:pb-14">
         <div class="w-full rounded-md bg-white dark:bg-zinc-800 shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
             <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/biz-kit/admin-dashboard.png?raw=true"
-                 alt="Ecommerce Application"
+                 alt="Gameplan labs Ecommerce Application Demo"
                  class="rounded-t-md"
-                 title="E-commerce Application"
+                 title="E-commerce Application Demo"
             >
             <div class="py-4 px-2">
                 <h3 class="py-2 text-lg font-semibold">
@@ -16,7 +16,7 @@
                 </h3>
 
                 <p class="mt-1 pb-3 text-sm">
-                    The web application is business kit with Vendor/Admin dashboard, customer dashboard, blog functionality, reusable components, Paypal, Stripe, & Mpesa Integration, and many more out of the box functionality (everything a business needs to sell online).
+                    The web application is business kit with Vendor/Admin dashboard, Sales module, POS module, customer dashboard, blog & CMS, reusable components, Paypal, Stripe, & Mpesa Integration, and many more features and benefits out-of-the box (everything a business needs to sell online).
                 </p>
 
                 <x-text-link href="https://mwanginjuguna.github.io/portfolio/pages/e-commerce.html">View Demo.</x-text-link>
@@ -25,9 +25,9 @@
 
         <div class="w-full rounded-md bg-white dark:bg-zinc-800 shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
             <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/safari/safari-restaurant-landing-page.png?raw=true"
-                 alt="Restaurant Application"
+                 alt="Gameplan labs Restaurant Application Demo"
                  class="rounded-t-md"
-                 title="Restaurant Website"
+                 title="Restaurant Website Demo"
             >
             <div class="py-4 px-2">
                 <h3 class="py-2 text-lg font-semibold">
@@ -46,9 +46,9 @@
 
         <div class="w-full rounded-md bg-white dark:bg-zinc-800 shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
             <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/fitness/fitness-landing-about-dark.png?raw=true"
-                 alt="Veggie detector"
+                 alt="Gameplan labs Fitness Website - Demo"
                  class="rounded-t-md"
-                 title="Veggie Detector"
+                 title="Fitness Website - Demo"
             >
             <div class="py-4 px-2">
                 <h3 class="py-2 text-lg font-semibold">
@@ -66,8 +66,8 @@
         </div>
     </div>
 
-    <a href="{{ route('shop') }}" class="mt-3 flex flex-col w-fit font-bold text-creator-primary hover:text-orange-500 text-lg xl:text-xl group">
-        Browse More Projects
+    <a href="https://mwanginjuguna.github.io/portfolio" class="mt-3 flex flex-col w-fit font-bold text-creator-primary hover:text-orange-500 text-lg xl:text-xl group">
+        Browse More Case Studies
         <span class="w-0 group-hover:w-full h-0.5 bg-orange-500 transition-all ease-in-out duration-500"></span>
     </a>
 </div>

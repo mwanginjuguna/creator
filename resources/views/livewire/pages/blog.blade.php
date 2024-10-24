@@ -1,4 +1,4 @@
-<div class="container mx-auto">
+<div class="max-w-5xl mx-auto">
     <div id="blog" class="mt-4 pb-3 lg:pb-8">
         <h3 class="py-3 lg:pb-6 text-xl lg:text-4xl font-bold">Blog</h3>
 
@@ -15,8 +15,8 @@
         </div>
 
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 md:mt-10 py-6 lg:pb-10 border-b">
-            @foreach($posts as $post)
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 md:mt-10 py-6 lg:pb-10">
+            @forelse($posts as $post)
                 <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
                     <div class="py-4 px-2">
                         <h3 class="py-2 font-semibold text-creator-green-light">
@@ -38,13 +38,21 @@
                         </x-text-link>
                     </div>
                 </div>
-            @endforeach
+                @empty
+                <x-parts.data-empty-state>
+                    <div class="grid gap-3">
+                        <p class="py-2 mb-2 text-lg font-medium">No blog posts found. Please check back later.</p>
+                        <x-text-link href="{{ route('home') }}" class="block">Go to Homepage</x-text-link>
+                    </div>
+                </x-parts.data-empty-state>
+            @endforelse
         </div>
         <div>
             {{ $posts->links() }}
         </div>
     </div>
-    <div class="w-max mt-6 p-3 border-2 border-white hover:border-creator-primary rounded-lg transition-all ease-in-out duration-300">
-        @livewire('contact-me')
+    <div class="max-w-2xl mx-auto mt-6 p-3">
+        <!-- Form -->
+        @livewire('quote-request')
     </div>
 </div>

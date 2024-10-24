@@ -2,6 +2,8 @@
 
 namespace App\Livewire\Shop;
 
+use App\Livewire\Forms\OrderRequestForm;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 
@@ -9,7 +11,9 @@ class Product extends Component
 {
     public \App\Livewire\Forms\Product $form;
 
-    public string $product;
+    public OrderRequestForm $orderRequestForm;
+
+    public mixed $product = null;
 
     public array $allProducts = [];
     public array $allFeatures = [];
@@ -17,6 +21,8 @@ class Product extends Component
 
     public string $features = '';
     public string $extras = '';
+
+    public bool $orderSaved = false;
 
     public function convertFeatures()
     {
@@ -56,6 +62,23 @@ class Product extends Component
     public function getProduct(): array|string
     {
         return $this->allProducts[$this->product];
+    }
+
+    public function openModal($productId)
+    {
+        $this->product = Arr::first($this->allProducts, fn ($pr) => $pr['productId'] === $productId);
+        $this->orderRequestForm->message = "Hi, Just ordered: `{$this->product['name']}`. I need to customize my order with specific features. How does that work? I need a solid feedback on this in 3 hours. Thanks.";
+        $this->orderRequestForm->product = $this->product;
+        $this->dispatch('open-modal', 'product-order-form');
+    }
+
+    public function placeOrder()
+    {
+        // Place order logic
+        $this->orderRequestForm->saveOrder();
+
+        $this->dispatch('order-saved');
+        $this->dispatch('close');
     }
 
     public function render()

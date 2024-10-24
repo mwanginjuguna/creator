@@ -594,7 +594,7 @@
 
     <!--contact-->
     <div id="contact"
-         class="w-full lg:min-h-[75%] mt-6 md:mt-10 lg:mt-20 p-6 py-10 lg:py-20 bg-creator-primary dark:bg-violet-950 text-white dark:text-zinc-300">
+         class="w-full lg:min-h-[75%] mt-6 md:mt-10 lg:mt-20 p-6 py-10 lg:py-20 bg-zinc-100 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200">
         <div class="max-w-6xl mx-auto grid lg:grid-cols-3">
             <div class="col-span-1 grid items-center">
                 <div>

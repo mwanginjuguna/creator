@@ -8,6 +8,9 @@ use Livewire\Attributes\Validate;
 use Livewire\Form;
 use function Pest\Laravel\json;
 
+/**
+ * This form allows logged in admin to Create a product and add it to shop.
+ */
 class Product extends Form
 {
     public string $name = '';
@@ -16,6 +19,7 @@ class Product extends Form
     public float $price = 1.50;
     public array $extras = [];
     public string $comments = '';
+    public string $hours = '';
     public int $productId = 1;
     protected int $idCounter = 1;
 
