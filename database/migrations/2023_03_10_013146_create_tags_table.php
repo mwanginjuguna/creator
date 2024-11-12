@@ -19,6 +19,14 @@ return new class extends Migration
             $table->softDeletes('deleted_at');
             $table->timestamps();
         });
+
+        // create many-to-many polymorphic relationship
+        Schema::create('taggables', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('tag_id');
+            $table->morphs('taggable');
+            $table->timestamps();
+        });
     }
 
     /**

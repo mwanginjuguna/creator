@@ -7,14 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 class Post extends Model
 {
     use HasFactory;
+    protected $with = ['user', 'category'];
 
     protected $fillable = [
         'title', 'excerpt', 'slug', 'body', 'status', 'is_public',
-        'category', 'tag', 'user_id', 'category_id', 'tag_id', 'author'
+        'user_id', 'category_id', 'tag_id', 'author'
     ];
 
     public function user(): BelongsTo
@@ -26,15 +28,17 @@ class Post extends Model
     {
         return $this->belongsTo(Category::class);
     }
-
-    public function tags(): HasMany
+    /**
+     * Get all of the tags for the post.
+     */
+    public function tags(): MorphToMany
     {
-        return $this->hasMany(Tag::class);
+        return $this->morphToMany(Tag::class, 'taggable');
     }
 
     public function relatedPosts(): HasMany
     {
-        return $this->hasMany(Post::class, 'category', 'category')
+        return $this->hasMany(Post::class, 'category_id', 'category_id')
             ->where('id', '!=', $this->id)
             ->where('status', '=', 'Published')
             ->limit(3)

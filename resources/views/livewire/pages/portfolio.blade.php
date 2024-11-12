@@ -4,5 +4,12 @@
         <p>Explore my work. More projects are available on my <a class="text-creator-primary hover:text-orange-500 font-semibold hover:underline" href="https://github.com/mwanginjuguna">GitHub Profile</a> .</p>
     </div>
 
-    @livewire('project-preview')
+    @forelse($items as $item)
+        <div class="flex flex-col gap-y-4 pb-3 lg:pb-8">
+            <h3 class="mb-1 text-lg font-semibold uppercase">{{ $it =\Illuminate\Support\Str::before(str_replace('portfolio/', '',$item), '.') }}</h3>
+            <a wire:navigate href="{{route('portfolio-item', $it)}}" class="text-creator-primary hover:text-orange-500 font-semibold hover:underline">View Project</a>
+        </div>
+    @empty
+        <p class="text-center">No portfolio items found.</p>
+    @endforelse
 </div>

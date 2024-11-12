@@ -6,10 +6,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Comment extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = [
         'user_id', 'post_id', 'message', 'status', 'is_public'
@@ -17,12 +18,12 @@ class Comment extends Model
 
     public function post(): BelongsTo
     {
-        $this->belongsTo(Post::class);
+        return $this->belongsTo(Post::class);
     }
 
     public function user(): BelongsTo
     {
-        $this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function replies(): HasMany

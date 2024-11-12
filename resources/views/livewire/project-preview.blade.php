@@ -1,8 +1,4 @@
 <div>
-    <h4 class="mt-4 xl:text-lg font-medium italic text-creator-tertiary underline underline-offset-8 decoration-dashed decoration-creator-orange">
-        Sample Coding and ML/AI Projects
-    </h4>
-
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 pb-8 lg:pb-14">
         <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
             <img src="https://github.com/mwanginjuguna/public-image-assets/blob/main/order%20management%20system/admin-dashboard.png?raw=true"

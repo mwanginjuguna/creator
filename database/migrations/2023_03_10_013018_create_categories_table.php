@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->text('body')->nullable();
             $table->string('slug');
-            $table->softDeletes('deleted_at');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

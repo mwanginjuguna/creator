@@ -125,7 +125,18 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
+
+    /*
+     | SEO Tools
+     */
+    'site' => [
+        'title' => env('SITE_TITLE'),
+        'description' => env('SITE_DESCRIPTION'),
+        'keywords' => env('SITE_KEYWORDS'),
+    ],
     'google_site_verification' => env('GOOGLE_SITE_VERIFICATION'),
+    'google_analytics_id' => env('GOOGLE_ANALYTICS_ID'),
+
 
     /*
     |--------------------------------------------------------------------------
@@ -186,5 +197,11 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
+
+    'admin' => [
+        'name' => env('ADMIN_USERNAME'),
+        'password' => env('ADMIN_PASSWORD'),
+        'email' => env('ADMIN_EMAIL'),
+    ]
 
 ];

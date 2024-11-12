@@ -27,13 +27,14 @@ use Livewire\Volt\Volt;
 |
 */
 
-Route::view('/', 'welcome')->name('home');
+Route::view('/', 'home')->name('home');
 Route::view('/#writing', 'welcome')->name('writing');
 Route::view('/letter', 'letters')->name('letter');
 Route::get('/about', About::class)->name('about');
 Volt::route('/blog', Blog::class)->name('blog');
 Volt::route('/shop', Shop::class)->name('shop');
 Volt::route('/portfolio', Portfolio::class)->name('portfolio');
+Volt::route('/portfolio/{item}', \App\Livewire\Pages\PortfolioItem::class)->name('portfolio-item');
 Volt::route('/contact', Contact::class)->name('contact');
 
 Route::middleware('auth')->group(function () {
