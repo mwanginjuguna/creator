@@ -48,12 +48,32 @@
 </script>
 </head>
 <body class="font-sans text-gray-900 dark:text-gray-300 bg-zinc-50 dark:bg-zinc-900 antialiased font-body">
-<div class="min-h-screen ">
+<div class="min-h-screen relative">
     @livewire('welcome.navigation')
 
     <div>
         {{ $slot }}
     </div>
+
+    @if (session()->has('success'))
+        <div
+            x-data="{showScs: true}"
+            x-init="setTimeout(() => showScs = false, 5000)"
+            x-show="showScs"
+            class="fixed bottom-0 right-0 mb-4 mr-4 bg-green-500 text-white p-3 rounded shadow-lg"
+        >
+            {{ session('success') }}
+        </div>
+    @elseif(session()->has('message'))
+        <div
+            x-data="{showMsg: true}"
+            x-init="setTimeout(() => showMsg = false, 5000)"
+            x-show="showMsg"
+            class="fixed bottom-0 right-0 mb-4 mr-4 bg-sky-500 text-white p-3 rounded shadow-lg"
+        >
+            {{ session('message') }}
+        </div>
+    @endif
 
     <!--footer-->
     @livewire('footer')
