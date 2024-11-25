@@ -67,11 +67,19 @@
     @forelse ($portfolioItem['body']['key-features'] as $keyFeature )
         <div class="overflow-hidden mt-6 py-10 bg-slate-50 dark:bg-slate-800">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                @if(isset($keyFeature['description']))
                 <h2 class="text-sm/7 font-semibold text-violet-600">{{ $keyFeature['title'] }}</h2>
                 <p
                     class="mt-2 text-pretty text-2xl font-medium tracking-tight text-gray-900 dark:text-gray-200 sm:text-3xl">
                     {{ $keyFeature['description'] }}
                 </p>
+                @else
+                    <h2 class="text-sm/7 font-semibold text-violet-600">Core functionality</h2>
+                    <p
+                        class="mt-2 text-pretty text-2xl font-medium tracking-tight text-gray-900 dark:text-gray-200 sm:text-3xl">
+                        {{ $keyFeature['title'] }}
+                    </p>
+                @endif
 
                 <div class="">
                     <dl
