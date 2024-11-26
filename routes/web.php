@@ -40,6 +40,7 @@ Route::view('/quote-request', 'quote-request')->name('quote');
 Volt::route('/shop', Shop::class)->name('shop');
 Volt::route('/services', Shop::class)->name('services');
 Volt::route('/portfolio', Portfolio::class)->name('portfolio');
+Volt::route('/portfolio/{item}', \App\Livewire\Pages\PortfolioItem::class)->name('portfolio-item');
 Route::view('/contact', 'quote-request')->name('contact');
 Route::view('/coming-soon', 'coming-soon')->name('coming-soon');
 

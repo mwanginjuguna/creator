@@ -66,7 +66,7 @@
         </div>
     </div>
 
-    <a href="https://mwanginjuguna.github.io/portfolio" class="mt-3 flex flex-col w-fit font-bold text-creator-primary hover:text-orange-500 text-lg xl:text-xl group">
+    <a href="{{ route('portfolio')}}" class="mt-3 flex flex-col w-fit font-bold text-creator-primary hover:text-orange-500 text-lg xl:text-xl group">
         Browse More Case Studies
         <span class="w-0 group-hover:w-full h-0.5 bg-orange-500 transition-all ease-in-out duration-500"></span>
     </a>

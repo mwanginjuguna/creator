@@ -67,7 +67,7 @@ class Product extends Component
     public function openModal($productId)
     {
         $this->product = Arr::first($this->allProducts, fn ($pr) => $pr['productId'] === $productId);
-        $this->orderRequestForm->message = "Hi, Just ordered: `{$this->product['name']}`. I need to customize my order with specific features. How does that work? I need a solid feedback on this in 3 hours. Thanks.";
+        $this->orderRequestForm->message = "Hi, I am placing an order for: `{$this->product['name']}`. More details: ";
         $this->orderRequestForm->product = $this->product;
         $this->dispatch('open-modal', 'product-order-form');
     }
