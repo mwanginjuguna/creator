@@ -17,6 +17,13 @@ export default {
                 sans: ['Public Sans', ...defaultTheme.fontFamily.sans]
             },
             colors: {
+                'primary': '#007BFF',
+                'secondary': '#F2E300',
+                'accent': '#38828f',
+                'text-dark': '#fbf4f4',
+                'text-light': '#0b0404',
+                'bg-dark': '#0f0f0f',
+                'bg-light': '#f0f0f0',
                 'creator-primary': '#5c59c3',
                 'creator-secondary': '#9ad3cc',
                 'creator-tertiary': '#e8caa2',
