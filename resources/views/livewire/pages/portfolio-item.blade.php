@@ -98,8 +98,7 @@
                             </div>
                         @empty
                             <div class="flex justify-center items-center h-full">
-                                <p class="text-center text-sm text-gray-600 dark:text-gray-400">We are still adding
-                                    information. Come back soon.</p>
+                                <p class="text-center text-sm text-gray-600 dark:text-gray-400">We are still adding information. Come back soon.</p>
                             </div>
                         @endforelse
                     </dl>

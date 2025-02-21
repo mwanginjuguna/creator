@@ -26,7 +26,7 @@
         @endif
 
         <p class="py-2 md:col-span-2">
-            Every Two Weeks on Saturday, I send <span class="font-bold">a special letter to 50+ users</span>. BY joining them, you'll learn a little about business, agriculture, Africa, and Digital tools.
+            Every now and then <em>(2-5 weeks)</em>, I send <span class="font-bold">a special letter to 50+ people</span>. Join to learn a little about technology, business, agriculture, Africa, and Digital tools.
         </p>
 
         <input name="newsletter-email" type="text"

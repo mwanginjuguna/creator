@@ -74,6 +74,12 @@
                 </div>
             </div>
 
+            <x-alert type="success" />
+            <x-alert type="danger" />
+            <x-alert type="warning" />
+            <x-alert type="info" />
+            <x-alert />
+
             <div>
                 {{ $slot }}
             </div>
