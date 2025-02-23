@@ -60,6 +60,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/posts', [AdminController::class, 'posts'])->name('admin-posts');
     Route::view('/dev', 'welcome')->name('dev');
     Route::get('/admin/shop', [ProductController::class, 'shop'])->name('admin-shop');
+
+    //marketing
+    Volt::route('/admin/leads', 'admin.marketing.leads')->name('admin.marketing.leads');
+    Volt::route('/admin/campaigns', 'admin.marketing.campaigns')->name('admin.marketing.campaigns');
+
     Route::get('/admin/uploads', [AdminController::class, 'uploads'])->name('admin-uploads');
     Route::get('/admin/posts/{post}/edit', [BlogController::class, 'edit'])->name('post-edit');
     Route::get('/admin/visitors', [VisitorController::class, 'index'])->name('admin-visitors');

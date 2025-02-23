@@ -15,6 +15,7 @@ class ContactMe extends Component
     {
         $this->form->store();
         $this->sent = true;
+        session()->flash('success', 'Your message has been received. Expect to hear from me very soon.');
     }
 
     public function render()
