@@ -17,12 +17,12 @@ class Comment extends Model
 
     public function post(): BelongsTo
     {
-        $this->belongsTo(Post::class);
+        return $this->belongsTo(Post::class);
     }
 
     public function user(): BelongsTo
     {
-        $this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function replies(): HasMany

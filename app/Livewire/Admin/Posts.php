@@ -9,6 +9,7 @@ class Posts extends Component
 {
     public function updatePost($id)
     {
+        sleep(1);
         $post = Post::where('id', $id)->first();
         $post->is_public = true;
         $post->status = 'Published';

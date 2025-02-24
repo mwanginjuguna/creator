@@ -10,4 +10,9 @@ class Tag extends Model
     use HasFactory;
 
     protected $fillable = [ 'title', 'description', 'slug'];
+
+    public function posts()
+    {
+        return $this->morphedByMany(Post::class, 'taggable');
+    }
 }

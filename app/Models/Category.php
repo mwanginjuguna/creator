@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Category extends Model
 {
@@ -11,8 +12,8 @@ class Category extends Model
 
     protected $fillable = ['title', 'description', 'slug', 'body'];
 
-    public function posts()
+    public function posts(): HasMany
     {
-        $this->hasMany(Post::class, 'category', 'title');
+        return $this->hasMany(Post::class, 'category', 'title');
     }
 }

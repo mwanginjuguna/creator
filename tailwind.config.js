@@ -20,15 +20,15 @@ export default {
                 'primary': '#007BFF',
                 'secondary': '#F2E300',
                 'accent': '#38828f',
-                'text-dark': '#fbf4f4',
-                'text-light': '#0b0404',
                 'bg-dark': '#0f0f0f',
+                'dark': '#0f0f0f',
                 'bg-light': '#f0f0f0',
-                'creator-primary': '#5c59c3',
-                'creator-secondary': '#9ad3cc',
-                'creator-tertiary': '#e8caa2',
-                'creator-dark': '#222222',
-                'creator-light': '#EEEDEA'
+                'light': '#f0f0f0',
+                'creator-primary': '#007BFF',
+                'creator-secondary': '#F2E300',
+                'creator-tertiary': '#38828f',
+                'creator-dark': '#0f0f0f',
+                'creator-light': '#f0f0f0'
             },
             screens: {
                 lg: '1050px',

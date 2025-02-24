@@ -3,8 +3,11 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Post;
 use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Arr;
+use function Pest\Laravel\call;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,8 +16,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
 
+        \Laravel\Prompts\info('Seeding admin user');
         // seed admin
         $admin = User::factory()->create([
             'name' => config('app.admin.username'),
@@ -25,5 +28,12 @@ class DatabaseSeeder extends Seeder
         // update admin role
         $admin->role = 'A';
         $admin->save();
+
+        \Laravel\Prompts\info('Seeding Users...');
+        User::factory(1)->create();
+
+        \Laravel\Prompts\info('Seeding Blog Posts...');
+        $this->call(BlogSeeder::class,false, ['admin' => $admin]);
+        \Laravel\Prompts\info('Database Seeding Complete.');
     }
 }

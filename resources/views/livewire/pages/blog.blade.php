@@ -1,36 +1,47 @@
-<div class="max-w-5xl mx-auto">
+<div class="max-w-5xl mx-auto p-4">
     <div id="blog" class="mt-4 pb-3 lg:pb-8">
-        <h3 class="py-3 lg:pb-6 text-xl lg:text-4xl font-bold">Blog</h3>
+        <h3 class="py-3 lg:pb-6 text-2xl sm:text-5xl font-bold">Insights to Grow, Automate, and Succeed ~ The GamePlan Blog</h3>
 
-        <p class="text-sm xl:text-base space-y-1 py-2 max-w-3xl">
-            Written words are powerful. The goal of these articles is to break-down complex topics into practical and actionable knowledge for the reader.
-            <br>
-            Writing is a tool to teach, inspire, guide, and tell a story.  <span class="italic font-semibold">The Unread Story is NOT A Story.</span>
+        <p class="text-sm sm:text-base xl:text-lg space-y-1 py-2 mb-6">
+            Practical & Actionable tips, expert advice, and proven strategies for digital success.
         </p>
 
-        <div class="flex flex-col md:flex-row gap-6 mt-4 lg:mt-7">
-            <p class="mt-1 py-2 text-base lg:text-lg text-orange-500">Let's tell the story of your products.</p>
+        <div class="flex gap-3 flex-col sm:flex-row bg-accent/20 dark:bg-accent/70 rounded-md">
+            <div class="sm:w-1/3">
+                <img
+                    src="https://github.com/mwanginjuguna/public-image-assets/blob/95fa0103cb2c8d20d0635117e1444382e7dbdb7d/blog/fitness-automation/gameplan-labs-business-automation-blogging-on-your-website.png?raw=true"
+                    alt="A GamePlan Web Agency Poster Image On How Website Blogging and Content Writing Establishes Brand Authority for a business through knowledge and expertise sharing and user engagement."
+                    class="rounded-t-md sm:rounded-r-0 sm:rounded-l-md flex object-fit h-full"
+                />
+            </div>
 
-            <x-cta.cta-btn href="{{route('contact')}}" class="font-heading">Write my Story</x-cta.cta-btn>
+
+            <div class="flex flex-col mt-4 sm:w-2/3 px-2 text-dark">
+                <h3 class="py-2 font-bold md:font-semibold text-xl sm:text-3xl lg:text-4xl">Do You Need Help Updating Your Website Content To Convert Visitors and Optimize for SEO?</h3>
+                <p class="py-1.5 mb-5 lg:text-lg">You’ve got the insights. Now let’s make them work for your business. Our Experts will Deliver Content That Engages and Converts – Guaranteed!.</p>
+
+                <x-cta.secondary-btn href="{{route('quote-request')}}" class="mb-2 max-w-xs text-center motion-safe:hover:scale-[1.01]">Get Expert Website Content Writing Services Now!</x-cta.secondary-btn>
+            </div>
         </div>
 
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10 mt-6 md:mt-10 py-6 lg:pb-10">
+
+        <div class="grid lg:grid-cols-2 gap-10 mt-6 md:mt-10 py-6 lg:pb-10">
             @forelse($posts as $post)
-                <div class="w-full rounded-md bg-white shadow-sm hover:shadow-creator-primary hover:scale-[1.01] rounded-md transition-all ease-in-out duration-300">
+                <div class="w-full rounded-md bg-light dark:bg-dark shadow-sm hover:shadow-primary motion-safe:hover:scale-[1.01] rounded-md transition-all ease-in-out duration-500">
                     <div class="py-4 px-2">
-                        <h3 class="py-2 font-semibold text-creator-green-light">
-                            <a href="{{ route('post-view', $post->slug) }}" class="hover:text-creator-primary hover:underline">
+                        <h3 class="py-2 font-semibold text-xl sm:text-2xl lg:text-3xl text-creator-green-light">
+                            <a href="{{ route('post-view', $post->slug) }}" class="hover:text-primary hover:underline">
                                 {{ $post->title }}
                             </a>
                         </h3>
 
-                        <p class="py-1 text-sm xl:text-base">
+                        <p class="py-1 text-sm md:text-base">
                             {{ $post->excerpt }}
                         </p>
 
                         <p class="mt-1 pb-3 text-xs text-gray-500">
-                            {{ $post->created_at->format('F j, Y') }}
+                            {{ $post->updated_at->format('F j, Y') }}
                         </p>
 
                         <x-text-link href="{{ route('post-view', $post->slug) }}">

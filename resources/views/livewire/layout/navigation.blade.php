@@ -16,20 +16,20 @@ new class extends Component
     }
 }; ?>
 
-<nav x-data="{ open: false }" class="bg-white dark:bg-zinc-950 border-b border-gray-100 dark:border-gray-900 text-zinc-700 dark:text-zinc-300">
+<nav x-data="{ open: false }" class="sticky top-0 z-10 bg-white dark:bg-zinc-950 border-b border-gray-100 dark:border-gray-900 text-zinc-700 dark:text-zinc-300">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 lg:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
+                <div class="shrink-0 flex items-center lg:hidden">
                     <a href="{{ route('home') }}" wire:navigate>
                         <x-application-logo class="block h-9 w-auto fill-zinc-500 dark:bg-zinc-900 text-gray-800" />
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 lg:-my-px lg:ms-10 lg:flex">
                     <x-nav-link :href="route('home')" wire:navigate>
                         {{ __('Homes') }}
                     </x-nav-link>

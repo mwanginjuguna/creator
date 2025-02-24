@@ -15,24 +15,24 @@ class Reply extends Model
         'user_id', 'post_id', 'comment_id', 'reply_id', 'message'
     ];
 
-    public function post(): BelongsTo
-    {
-        $this->belongsTo(Post::class);
-    }
-
     public function user(): BelongsTo
     {
-        $this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function comment(): BelongsTo
     {
-        $this->belongsTo(Comment::class);
+        return $this->belongsTo(Comment::class);
+    }
+
+    public function reply(): BelongsTo
+    {
+        return $this->belongsTo(Reply::class);
     }
 
     public function replies(): HasMany
     {
-        $this->hasMany(Reply::class);
+        return $this->hasMany(Reply::class);
     }
 
 }

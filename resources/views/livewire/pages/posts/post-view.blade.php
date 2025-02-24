@@ -44,7 +44,7 @@
                     <p class="py-2 font-medium sm:text-lg">{{ $post->excerpt }}</p>
 
                     <p class="py-2 mt-3 text-sm text-gray-600">
-                        By {{ $post->author }}{{ " | ".$post->created_at->format('F j, Y') }}
+                        By {{ $post->author }}{{ " | ".$post->updated_at->format('F j, Y') }}
                     </p>
 
                 </div>

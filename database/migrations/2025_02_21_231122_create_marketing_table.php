@@ -240,8 +240,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id')->nullable()->after('customer_id');
             $table->unsignedBigInteger('campaign_id')->nullable()->after('user_id');
             $table->string('payment_method')->nullable()->after('campaign_id');
-            $table->string('status')->nullable()->after('payment_method');
-            $table->string('shipping_address')->nullable()->after('status');
+            $table->string('shipping_address')->nullable()->after('payment_method');
             $table->string('billing_address')->nullable()->after('shipping_address');
             $table->string('shipping_method')->nullable()->after('billing_address');
             $table->string('payment_gateway')->nullable()->after('shipping_method');

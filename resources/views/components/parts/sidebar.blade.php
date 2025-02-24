@@ -1,7 +1,7 @@
 <div id="cta-button-sidebar"
      {{ $attributes }}
      aria-label="Sidebar">
-    <div class="min-h-screen px-3 py-8 overflow-y-auto bg-accent/20 dark:bg-accent/40 text-slate-900 dark:text-slate-100">
+    <div class="h-screen px-3 py-8 overflow-y-auto bg-accent/20 dark:bg-accent/40 text-slate-900 dark:text-slate-100">
         <div class="mt-4 py-4">
             <a href="/" class="flex-1 items-center ps-2.5 mb-6" wire:navigate>
                 <x-application-logo />
