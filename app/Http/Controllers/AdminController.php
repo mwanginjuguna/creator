@@ -5,30 +5,42 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Emails;
 use App\Models\Letter;
+use App\Models\Order;
 use App\Models\Post;
+use App\Models\User;
 use App\Models\Visitor;
 use Illuminate\Contracts\View\Factory;
-use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class AdminController extends Controller
 {
-    public function posts(): Factory|View
+    public function posts(): View
     {
         return view('admin.posts-index');
     }
 
-    public function dashboard(): Factory|View
+    public function dashboard(): View
     {
-        $posts = Post::query()->where('status', '=', 'Published')->latest()->limit(5)->get();
+        $postsQuery = Post::query();
+        $postsCount = $postsQuery->count();
+        $postsQuery->where('status', '=', 'Published')->latest();
         $contacts = Emails::query()->count('*');
         $subCount = Letter::query()->count('*');
-        $published = $posts->count();
+        $published = $postsQuery->count();
 
         return view('dashboard', [
-            'posts' => $posts,
+            'posts' => $postsQuery->limit(5)->get(),
             'subsCount' => $subCount,
+            'customersCount' => 20,
+            'leadsCount' => $subCount,
+            'productsCount' => 88,
+            'ordersCount' => Order::count(),
+            'sales' => 3625060,
+            'expenses' => 2786400.5,
+            'usersCount' => User::count(),
+            'postsCount' => $postsCount,
             'contacts' => $contacts,
             'publishedCount' => $published,
             'visitors' => count(Visitor::query()->select('ip_address')->distinct()->get())
