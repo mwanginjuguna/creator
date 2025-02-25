@@ -72,7 +72,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/admin/visitors/{visitor}', [VisitorController::class, 'destroy'])->name('admin-visitors.delete');
 });
 
-Route::get('/posts/{post}', [BlogController::class, 'show'])->name('post-view');
+Route::get('/posts/{post}', [BlogController::class, 'show'])
+    ->middleware(['track-page-view:post'])
+    ->name('post-view');
 
 Route::get('dashboard', [AdminController::class, 'dashboard'])
     ->middleware(['auth', 'verified'])

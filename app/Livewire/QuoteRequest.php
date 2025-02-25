@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use App\Livewire\Forms\QuoteRequestForm;
+use Illuminate\Support\Facades\Session;
 use Livewire\Component;
 
 class QuoteRequest extends Component
@@ -14,6 +15,7 @@ class QuoteRequest extends Component
     public function save()
     {
         $this->form->saveQuote();
+        Session::flash('success', 'We have received your quote!');
         $this->quoteSaved = true;
     }
 

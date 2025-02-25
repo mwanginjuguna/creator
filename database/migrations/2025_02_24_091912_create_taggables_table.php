@@ -52,7 +52,11 @@ return new class extends Migration
             $table->string('session_id')->nullable(); // Track session for anonymous users
             $table->string('ip_address')->nullable();
             $table->string('user_agent')->nullable();
-            $table->timestamp('viewed_at'); // Timestamp of the view event
+            $table->timestamp('viewed_at');
+            $table->string('url')->nullable();
+            $table->string('viewable_route_name')->nullable();
+            $table->unsignedBigInteger('views')->nullable();
+            $table->timestamps();
 
             $table->index(['viewable_id', 'viewable_type', 'viewed_at']); // Index for efficient queries
         });

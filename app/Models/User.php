@@ -60,4 +60,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Reply::class);
     }
+
+    public function getIsAdminAttribute()
+    {
+        return $this->role === 'A' || $this->userable_type === Admin::class;
+    }
 }

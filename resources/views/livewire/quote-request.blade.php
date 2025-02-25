@@ -1,6 +1,6 @@
 <div>
     <form wire:submit="save">
-        <div class="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
+        <div class="lg:max-w-lg lg:mx-auto">
             <!-- Card -->
             <div class="p-4 sm:p-7 flex flex-col bg-zinc-50 shadow-lg dark:bg-zinc-800">
                 <div class="text-center">
@@ -9,7 +9,7 @@
                 </div>
 
                 <div class="mt-5">
-                    <button type="button"
+                    <a href="https://api.whatsapp.com/message/LDZPA35DBGTTI1" target="_blank"
                         class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 hover:border-[#67C15E] hover:text-[#67C15E] dark:bg-zinc-900 dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-800 dark:hover:border-[#67C15E] dark:hover:text-[#67C15E]">
                         <svg class="w-6 h-6" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
@@ -25,7 +25,7 @@
                             </g>
                         </svg>
                         Chat on WhatsApp
-                    </button>
+                    </a>
 
                     <div
                         class="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-neutral-500 dark:before:border-neutral-700 dark:after:border-neutral-700">
