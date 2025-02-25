@@ -19,6 +19,8 @@ class PostCreate extends Component
     {
         $this->form->save();
 
+        session()->flash('message', 'Post created successfully');
+
         $this->redirectRoute('admin-posts');
     }
 

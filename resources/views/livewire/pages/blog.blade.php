@@ -65,10 +65,7 @@
         </div>
     </div>
     <x-modal name="quote-request-modal">
-        <div class="">
-            <!-- Form -->
-            @livewire('quote-request')
-        </div>
+        @livewire('quote-request')
     </x-modal>
 
 </div>

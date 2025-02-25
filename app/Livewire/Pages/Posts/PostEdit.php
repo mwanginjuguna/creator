@@ -4,6 +4,7 @@ namespace App\Livewire\Pages\Posts;
 
 use App\Livewire\Forms\PostCreateForm;
 use App\Models\Post;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
 use Livewire\Attributes\Rule;
 use Livewire\Component;
@@ -31,6 +32,7 @@ class PostEdit extends Component
             'body' => $this->body
         ]);
 
+        Session::flash('success', 'Post updated successfully!');
         $this->redirectRoute('admin-posts');
     }
 

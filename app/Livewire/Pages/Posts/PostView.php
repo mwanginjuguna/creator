@@ -4,6 +4,7 @@ namespace App\Livewire\Pages\Posts;
 
 use App\Models\Post;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Livewire\Component;
 
 class PostView extends Component
@@ -12,9 +13,7 @@ class PostView extends Component
 
     public function render()
     {
-        // update views metrics
-//        if (Auth::user()->isAdmin)
-        $this->post->increment('views');
+        Log::channel('analytics')->info('Post View: ' . $this->post->title, ['post' => $this->post]);
         return view('livewire.pages.posts.post-view');
     }
 }

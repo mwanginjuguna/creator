@@ -59,19 +59,26 @@
                     </div>
                 </div>
 
-                <div class="mt-6">
-                    <div id="cta" class="mt-3">
-                        <h4 class="font-semibold pb-3">
-                            Let's innovate, design, build, and grow together.
-                        </h4>
+                <div class="flex gap-3 flex-col sm:flex-row sm:items-center bg-accent/20 dark:bg-accent/70 rounded-md">
+                    <div class="sm:w-1/3">
+                        <img
+                            src="https://github.com/mwanginjuguna/public-image-assets/blob/main/blog/gameplan-lead-generation/gameplanlabs-turn-website-visitors-into-paying-customers.png?raw=true"
+                            alt="An illustration of a shop owner happily selling from their phone with GamePlan web agency services"
+                            class="rounded-t-md sm:rounded-r-0 sm:rounded-l-md sm:h-full"
+                        />
+                    </div>
 
-                        <x-cta.cta-btn href="{{ route('shop') }}">Browse Products</x-cta.cta-btn>
+                    <div class="flex flex-col mt-4 sm:w-2/3 px-2 text-dark">
+                        <h3 class="py-2 font-bold md:font-semibold text-xl sm:text-3xl lg:text-4xl">Do You Want To Improve Your Website To Attract more Traffic, Convert Visitors to  Paying Customers, and Optimize for SEO performance?</h3>
+                        <p class="py-1.5 mb-5 lg:text-lg">Let's innovate, design, build, and grow together. – Guaranteed!.</p>
+
+                        <x-cta.secondary-btn role="button" @click="$dispatch('open-modal', 'quote-request-modal')" class="mb-2 text-center motion-safe:hover:scale-[1.01]">Get Expert Website Content Writing Services Now!</x-cta.secondary-btn>
                     </div>
                 </div>
             </div>
 
             <aside class="lg:sticky lg:top-20 h-max lg:px-2 pt-10 lg:py-0">
-                @if(!empty($post->relatedPosts))
+                @if(isset($post->relatedPosts))
                     <h3 class="py-2 font-bold text-creator-primary">
                         Related Posts
                     </h3>
@@ -91,5 +98,8 @@
             </aside>
         </div>
 
+        <x-modal name="quote-request-modal">
+            @livewire('quote-request')
+        </x-modal>
     </section>
 </x-guest-layout>
