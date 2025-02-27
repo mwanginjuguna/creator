@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
@@ -43,8 +44,18 @@ class BlogController extends Controller
      */
     public function show(Post $post): View
     {
+        Log::channel('analytics')->info('Post View: ' . $post->title, ['post' => $post]);
+
+        $relatedPosts = null;
+        if (count($post->relatedPosts) < 5) {
+            $relatedPosts= Post::query()->latest()
+                ->limit(5)
+                ->get(['title', 'id', 'slug']);
+        }
+
         return view('livewire.pages.posts.post-view', [
-            'post' => $post
+            'post' => $post,
+            'relatedPosts' => $relatedPosts
         ]);
     }
 

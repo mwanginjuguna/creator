@@ -1,6 +1,6 @@
 <a
-    {{ $attributes->merge(['class' => 'w-fit mt-1 p-2 px-3 lg:px-4 flex flex-col group font-heading font-semibold bg-light dark:bg-dark/70 text-orange-500 rounded-md border-2 border-orange-100 hover:border-orange-500 transition-all ease-in-out duration-300']) }}
+    {{ $attributes->merge(['class' => 'w-fit mt-1 p-2 px-3 lg:px-4 flex flex-col group font-heading font-semibold text-secondary/80 hover:text-secondary rounded-md border-2 border-secondary/30 hover:border-secondary transition-all ease-in-out duration-700']) }}
 >
     {{ $slot }}
-    <span class="h-0.5 bg-orange-500 w-0 md:group-hover:w-full transition-all ease-in-out duration-700"></span>
+    <span class="h-0.5 bg-secondary w-0 group-hover:w-full transition-all ease-in-out duration-700"></span>
 </a>

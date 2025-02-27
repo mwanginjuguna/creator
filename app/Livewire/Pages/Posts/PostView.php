@@ -10,10 +10,10 @@ use Livewire\Component;
 class PostView extends Component
 {
     public Post $post;
+    public mixed $relatedPosts;
 
     public function render()
     {
-        Log::channel('analytics')->info('Post View: ' . $this->post->title, ['post' => $this->post]);
         return view('livewire.pages.posts.post-view');
     }
 }

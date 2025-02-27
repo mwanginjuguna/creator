@@ -1,5 +1,5 @@
-<div x-data="{ open: false }" class="sm:sticky top-0 px-6 py-3 z-10 bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-300 bg-opacity-95 w-full border-b border-gray-200 dark:border-gray-800">
-    <div class="max-w-6xl xl:max-w-7xl mx-auto flex flex-row justify-between">
+<div x-data="{ open: false }" class="sticky top-0 px-6 py-3 z-10 bg-light dark:bg-dark dark:text-light bg-opacity-95 w-full border-b border-dark/10 dark:border-light/10">
+    <div class="container mx-auto flex flex-row justify-between">
         <div class="flex">
             <!-- Logo -->
             <div class="shrink-0 flex items-center">

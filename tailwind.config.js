@@ -18,14 +18,14 @@ export default {
             },
             colors: {
                 'primary': '#007BFF',
-                'secondary': '#F2E300',
+                'secondary': '#ea580c',
                 'accent': '#38828f',
                 'bg-dark': '#0f0f0f',
                 'dark': '#0f0f0f',
                 'bg-light': '#f0f0f0',
                 'light': '#f0f0f0',
                 'creator-primary': '#007BFF',
-                'creator-secondary': '#F2E300',
+                'creator-secondary': '#ea580c',
                 'creator-tertiary': '#38828f',
                 'creator-dark': '#0f0f0f',
                 'creator-light': '#f0f0f0'

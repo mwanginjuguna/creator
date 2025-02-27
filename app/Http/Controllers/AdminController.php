@@ -9,10 +9,8 @@ use App\Models\Order;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\Visitor;
-use Illuminate\Contracts\View\Factory;
-use Illuminate\Foundation\Application;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
-use Illuminate\View\View;
 
 class AdminController extends Controller
 {
