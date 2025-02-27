@@ -21,9 +21,11 @@
                                 <p class="text-sm text-gray-500 dark:text-neutral-500">
                                     Published <span class="font-semibold text-gray-800 dark:text-neutral-200">{{ $publishedCount }}</span>
                                 </p>
+                                @if($publishedCount > 0 && $postsCount > 0)
                                 <span class="ms-1 inline-flex items-center gap-1.5 py-1 px-2 rounded-md text-xs font-medium bg-gray-200 text-gray-800 dark:bg-dark/80 dark:text-light/80">
                                     <span class="inline-block">{{ number_format(($publishedCount/$postsCount) * 100, 1) }}%</span>
                                 </span>
+                                @endif
                             </div>
                         </x-slot:footer>
                     </x-parts.dashboard.main-stats-card>
@@ -38,9 +40,11 @@
                                 <p class="text-sm">
                                     Profits <span class="font-semibold text-green-500 dark:text-green-600">Ksh {{ number_format($pr = $sales - $expenses, 2) }}</span>
                                 </p>
-                                <span class="ms-1 inline-flex items-center gap-1.5 py-1 px-2 rounded-md text-xs font-medium bg-gray-200 text-gray-800 dark:bg-dark/80 dark:text-light/80">
-                                    <span class="inline-block">{{ number_format(($pr/$sales) * 100, 1) }}%</span>
-                                </span>
+                                @if($pr > 0 && $sales > 0)
+                                    <span class="ms-1 inline-flex items-center gap-1.5 py-1 px-2 rounded-md text-xs font-medium bg-gray-200 text-gray-800 dark:bg-dark/80 dark:text-light/80">
+                                        <span class="inline-block">{{ number_format(($pr/$sales) * 100, 1) }}%</span>
+                                    </span>
+                                @endif
                             </div>
                         </x-slot:footer>
                     </x-parts.dashboard.main-stats-card>
@@ -107,7 +111,7 @@
                     </h2>
 
                     <div class="grid space-y-1">
-                        @foreach($posts as $post)
+                        @forelse($posts as $post)
                             <div class="md:flex md:flex-row md:justify-between py-2 border-t items-center">
                                 <div>
                                     <p class="font-medium">
@@ -130,6 +134,16 @@
                                 <p class="py-1 text-start">
                                     <x-text-link href="{{ route('post-view', $post->slug) }}" class="dark:text-primary">View</x-text-link>
                                 </p>
+                            </div>
+                        @empty
+                            <div class="lg:col-span-2 max-w-2xl mx-auto">
+                                <x-parts.data-empty-state>
+                                    <div class="grid gap-3">
+                                        <h3 class="py-2 mb-5 text-2xl font-bold">This Corner is All Quiet Right Now!</h3>
+                                        <p class="py-2 mb-2">Our blog is always buzzing with new ideas and strategies! We're making this available soon.</p>
+                                        <x-text-link href="{{ route('home') }}" class="block">Go to Homepage</x-text-link>
+                                    </div>
+                                </x-parts.data-empty-state>
                             </div>
                         @endforeach
                     </div>
