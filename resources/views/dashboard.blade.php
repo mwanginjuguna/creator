@@ -145,7 +145,7 @@
                                     </div>
                                 </x-parts.data-empty-state>
                             </div>
-                        @endforeach
+                        @endforelse
                     </div>
                 </div>
             </div>
