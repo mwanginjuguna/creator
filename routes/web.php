@@ -44,6 +44,8 @@ Volt::route('/offers/website', FitnessWebsite::class)->name('offers.website');
 Volt::route('/portfolio', Portfolio::class)->name('portfolio');
 Volt::route('/portfolio/{item}', \App\Livewire\Pages\PortfolioItem::class)->name('portfolio-item');
 Route::view('/contact', 'quote-request')->name('contact');
+Route::view('/privacy-policy', 'coming-soon')->name('privacy-policy');
+Route::view('/terms-and-conditions', 'coming-soon')->name('terms-and-conditions');
 Route::view('/coming-soon', 'coming-soon')->name('coming-soon');
 
 Route::post('/quote-request', [QuoteRequestController::class, 'store'])->name('quote-request');

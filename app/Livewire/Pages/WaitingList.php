@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Pages;
 
+use Illuminate\Support\Facades\Session;
 use Livewire\Component;
 
 class WaitingList extends Component
@@ -18,6 +19,8 @@ class WaitingList extends Component
             'uri' => $this->uri,
         ]);
         $this->saved = true;
+
+        Session::flash('success', 'We have successfully received your email. We will keep you updated. Thank you!');
     }
 
     public function render()

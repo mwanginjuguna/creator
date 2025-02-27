@@ -63,9 +63,9 @@
     <x-parts.alert />
 
     <!--footer-->
-    @livewire('footer')
+    <x-parts.footer />
 
-    @if(config('app.env') === 'production')
+    @if(\Illuminate\Support\Facades\App::isProduction())
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

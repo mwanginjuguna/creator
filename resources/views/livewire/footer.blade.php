@@ -1,5 +1,5 @@
 <footer class="w-full py-6 lg:py-10">
-    <div class="max-w-5xl mx-auto p-3">
+    <div class="container mx-auto p-3">
         <div class="grid lg:grid-cols-3">
             <!--socials-->
             <div class="md:mt-5 text-creator-dark dark:text-zinc-300 text-sm">
@@ -69,13 +69,13 @@
                 </div>
             </div>
 
-            <div class="lg:col-span-2 grid items-center">
+            <div class="lg:col-span-2 grid items-center max-w-2xl">
                 @livewire('newsletter')
             </div>
         </div>
 
         <p class="mt-6 lg:mt-8 mx-auto text-center text-sm lg:text-base">
-            <x-text-link href="/">
+            <x-text-link href="https://gameplanlabs.org">
                 Gameplan Labs</x-text-link>&copy;. {{now()->year}}. All Rights Reserved.
         </p>
     </div>

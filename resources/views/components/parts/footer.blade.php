@@ -1,11 +1,13 @@
 <footer class="bg-white dark:bg-gray-900">
-    <div class="mx-auto w-full max-w-6xl p-4 py-6 lg:py-8">
-        <div class="md:flex md:justify-between">
+    <div class="container mx-auto w-full p-4 py-6 lg:py-8">
+        <div class="md:grid md:grid-cols-2 items-center gap-6 ">
             <div class="mb-6 md:mb-0">
-                <a href="{{ config('app.url') }}" class="flex items-center">
+                <a href="{{ config('app.url') }}" class="flex items-center mb-3 py-2 gap-x-3">
                     <x-application-logo class="h-8" />
                     <span class="pl-1 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">{{ config('app.name') }}</span>
                 </a>
+
+                @livewire('newsletter')
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
@@ -34,10 +36,10 @@
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                     <ul class="text-gray-500 dark:text-gray-400 font-medium">
                         <li class="mb-4">
-                            <a href="/privacy-policy" class="hover:underline">Privacy Policy</a>
+                            <a href="{{route('privacy-policy')}}" class="hover:underline">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="/terms-and-conditions" class="hover:underline">Terms &amp; Conditions</a>
+                            <a href="{{route('terms-and-conditions')}}" class="hover:underline">Terms &amp; Conditions</a>
                         </li>
                     </ul>
                 </div>

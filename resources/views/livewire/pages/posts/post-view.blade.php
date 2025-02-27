@@ -7,7 +7,7 @@
     </x-slot:meta>
 
     <section class="relative container mx-auto py-10 px-4 text-dark/80 dark:text-light/80">
-        <div class="grid lg:grid-cols-3">
+        <div class="grid lg:grid-cols-3 gap-6">
             <div class="lg:col-span-2">
                 <nav class="flex mb-4" aria-label="Breadcrumb">
                     <ol class="inline-flex items-center space-x-1 md:space-x-3 rtl:space-x-reverse md:font-medium text-xs">
@@ -63,7 +63,7 @@
                     </div>
                 </div>
 
-                <div href="#" class="grid sm:grid-cols-3 items-center bg-accent/20 dark:bg-accent/70 hover:bg-accent/30 dark:hover:bg-accent-90 border border-accent/40 dark:border-accent/70 rounded-lg shadow-sm">
+                <div class="grid sm:grid-cols-3 items-center bg-accent/20 dark:bg-accent/70 bg-opacity-90 hover:bg-accent/30 dark:hover:bg-accent-90 border border-accent/40 dark:border-accent/70 rounded-lg shadow-sm">
                     <img class="w-fit h-full object-fit object-center rounded-t-lg md:rounded-none md:rounded-s-lg" src="https://github.com/mwanginjuguna/public-image-assets/blob/main/blog/gameplan-lead-generation/gameplanlabs-turn-website-visitors-into-paying-customers.png?raw=true" alt="">
                     <div class="sm:col-span-2 flex flex-col justify-between p-4 leading-normal">
                         <h3 class="py-2 font-bold md:font-semibold text-xl sm:text-3xl lg:text-4xl">Do You Want To Improve Your Website Performance?</h3>
@@ -74,35 +74,35 @@
                         </ul>
                         <p class="py-1.5 mb-5 lg:text-lg">Attract more Traffic, Convert Visitors to  Paying Customers, and Optimize for SEO performance.</p>
 
-                        <x-cta.secondary-btn role="button" @click="$dispatch('open-modal', 'quote-request-modal')" class="mb-2 text-center motion-safe:hover:scale-[1.01]">Get Expert Website Content Writing Services Now!</x-cta.secondary-btn>
+                        <x-cta.primary-cta-btn role="button" @click="$dispatch('open-modal', 'quote-request-modal')" class="mb-2 text-center motion-safe:hover:scale-[1.01]">Order Web Development Services Now!</x-cta.primary-cta-btn>
                     </div>
                 </div>
 
             </div>
 
-            <aside class="lg:sticky lg:top-20 h-max lg:px-2 pt-10 lg:py-0 grid items-center">
-                <h3 class="py-2 font-bold text-creator-primary/70 dark:text-primary/90">
+            <aside class="lg:sticky lg:top-20 h-max lg:px-2 pt-10 lg:py-0 grid items-center place-content-center">
+
+                <h3 class="py-2 font-bold text-xl lg:text-3xl">
                     Related Posts
                 </h3>
-                @if(isset($post->relatedPosts))
-                    <div class="flex flex-col space-y-5">
-                        @foreach($post->relatedPosts as $rpost)
-                            <x-text-link class="block" href="{{ route('post-view', $rpost->slug) }}">
-                                    {{ $rpost->title }}
-                            </x-text-link>
-                        @endforeach
-                    </div>
-                @endif
 
-                @if(isset($relatedPosts))
-                    <div class="flex flex-col space-y-5">
-                        @foreach($relatedPosts as $rp)
-                            <x-text-link class="block" href="{{ route('post-view', $rp->slug) }}">
-                                    {{ $rp->title }}
-                            </x-text-link>
+                <div class="flex flex-col space-y-3.5 divide-y dark:divide-slate-800">
+                    @if(isset($post->relatedPosts))
+                        @foreach($post->relatedPosts as $rpost)
+                            <a class="block underline hover:text-primary pt-3" href="{{ route('post-view', $rpost->slug) }}">
+                                {{ $rpost->title }}
+                            </a>
                         @endforeach
-                    </div>
-                @endif
+                    @endif
+
+                    @if(isset($relatedPosts))
+                        @foreach($relatedPosts as $rp)
+                            <a class="block underline hover:text-primary pt-3" href="{{ route('post-view', $rp->slug) }}">
+                                {{ $rp->title }}
+                            </a>
+                        @endforeach
+                    @endif
+                </div>
 
                 <div class="mt-6">
                     <x-cta.secondary-btn href="{{route('blog')}}">
