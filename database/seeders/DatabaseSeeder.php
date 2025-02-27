@@ -7,6 +7,7 @@ use App\Models\Post;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\App;
 use function Pest\Laravel\call;
 
 class DatabaseSeeder extends Seeder
@@ -29,11 +30,14 @@ class DatabaseSeeder extends Seeder
         $admin->role = 'A';
         $admin->save();
 
-        \Laravel\Prompts\info('Seeding Users...');
-        User::factory(1)->create();
+        when(!App::isProduction(), function () use ($admin) {
+            \Laravel\Prompts\info('Seeding Users...');
+            User::factory(1)->create();
 
-        \Laravel\Prompts\info('Seeding Blog Posts...');
-        $this->call(BlogSeeder::class,false, ['admin' => $admin]);
+            \Laravel\Prompts\info('Seeding Blog Posts...');
+            $this->call(BlogSeeder::class,false, ['admin' => $admin]);
+        });
+
         \Laravel\Prompts\info('Database Seeding Complete.');
     }
 }
