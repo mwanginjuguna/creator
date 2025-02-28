@@ -44,7 +44,10 @@ class BlogController extends Controller
      */
     public function show(Post $post): View
     {
-        Log::channel('analytics')->info('Post View: ' . $post->title, ['post' => $post]);
+        Log::channel('analytics')
+            ->info('Post View: ' . $post->title, [
+                'post' => $post->withoutRelations()->only(['title', 'slug', 'excerpt'])
+            ]);
 
         $relatedPosts = null;
         if (count($post->relatedPosts) < 5) {

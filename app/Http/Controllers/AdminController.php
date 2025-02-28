@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Emails;
 use App\Models\Letter;
 use App\Models\Order;
+use App\Models\PageView;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\Visitor;
@@ -41,7 +42,7 @@ class AdminController extends Controller
             'postsCount' => $postsCount,
             'contacts' => $contacts,
             'publishedCount' => $published,
-            'visitors' => count(Visitor::query()->select('ip_address')->distinct()->get())
+            'visitors' => PageView::query()->select('ip_address')->distinct()->count()
         ]);
     }
 

@@ -9,10 +9,10 @@ class CreatePageViewAction
     public function execute(array $data): PageView
     {
         $entry = PageView::create([
-            'url' => $data['url'] ?? null,
-            'session_id' => $data['sessionId'] ?? null,
-            'ip_address' => $data['ipAddress'] ?? null,
-            'user_agent' => $data['userAgent'] ?? null,
+            'url' => $data['url'],
+            'session_id' => $data['sessionId'],
+            'ip_address' => $data['ipAddress'],
+            'user_agent' => $data['userAgent'],
             'viewed_at' => now(),
         ]);
 

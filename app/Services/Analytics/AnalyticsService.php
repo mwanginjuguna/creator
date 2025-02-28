@@ -2,6 +2,7 @@
 
 namespace App\Services\Analytics;
 
+use App\Jobs\RecordInteraction;
 use App\Jobs\RecordPageView;
 use App\Models\Interaction;
 use App\Models\PageView;
@@ -16,16 +17,16 @@ class AnalyticsService
     public function trackPageView(Model $viewable, Request $request = null): void
     {
         $data = [
-            'viewable_id' => $viewable->id,
-            'viewable_type' => get_class($viewable),
-            'user_id' => auth()->id(),
-            'session_id' => Session::getId(),
+            'viewableId' => $viewable->id,
+            'viewableType' => get_class($viewable),
+            'userId' => auth()->id(),
+            'sessionId' => Session::getId(),
             'ipAddress' => $request ? $request->ip() : request()->ip(),
             'userAgent' => $request ? $request->userAgent() : request()->userAgent(),
             'url' => $request ? $request->url() : null,
         ];
 
-        RecordPageView::dispatch($data); // Dispatch job with data array
+        RecordPageView::dispatch($data);
 
         if ($viewable instanceof Post) {
             $viewable->increment('views');
@@ -43,7 +44,7 @@ class AnalyticsService
             'url' => $request ? $request->url() : $routeName,
         ];
 
-        RecordPageView::dispatch($data); // Dispatch job with data array
+        RecordPageView::dispatch($data);
     }
 
 
@@ -59,7 +60,7 @@ class AnalyticsService
             'userAgent' => $request ? $request->userAgent() : request()->userAgent(),
         ];
 
-        RecordInteraction::dispatch($data); // Dispatch job with data array
+        RecordInteraction::dispatch($data);
 
         if (method_exists($interactable, 'increment') && in_array($type, ['like', 'useful_vote'])) {
             $interactable->increment($type . 's');
