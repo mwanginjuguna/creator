@@ -36,9 +36,9 @@ class AnalyticsService
     public function trackRouteVisit(string $routeName, Request $request = null): void
     {
         $data = [
-            'viewable_route_name' => $routeName,
-            'user_id' => auth()->id(),
-            'session_id' => Session::getId(),
+            'viewableRouteName' => $routeName,
+            'userId' => auth()->id(),
+            'sessionId' => Session::getId(),
             'ipAddress' => $request ? $request->ip() : request()->ip(),
             'userAgent' => $request ? $request->userAgent() : request()->userAgent(),
             'url' => $request ? $request->url() : $routeName,
