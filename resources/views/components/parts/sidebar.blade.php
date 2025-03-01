@@ -1,16 +1,16 @@
 <div id="cta-button-sidebar"
      {{ $attributes }}
      aria-label="Sidebar">
-    <div class="h-screen px-3 py-8 overflow-y-auto bg-accent/20 dark:bg-accent/40 text-slate-900 dark:text-slate-100">
-        <div class="mt-4 py-4">
+    <div class="h-screen px-2 py-8 overflow-y-auto bg-accent/10 dark:bg-accent/10 text-slate-900 dark:text-slate-100">
+        <div class="py-4">
             <a href="/" class="flex-1 items-center ps-2.5 mb-6" wire:navigate>
                 <x-application-logo />
-                <span class="pl-3 self-center font-semibold text-amber-500 dark:text-amber-500">{{ config('app.name') }}</span>
+                <span class="mt-2 font-medium text-sm text-amber-500 dark:text-amber-500">{{ config('app.name') }}</span>
             </a>
         </div>
 
         <!-- main pages -->
-        <div class="mt-6 lg:mt-8 mb-4 p-2 space-y-3 font-medium">
+        <div class="mt-6 mb-4 p-2 space-y-3 font-medium">
             <x-side-link
                 :href="route('dashboard')"
                 :active="request()->routeIs('dashboard')"
@@ -30,7 +30,7 @@
         >
             <button
                 x-on:click="expanded = ! expanded"
-                class="w-full flex justify-between items-center px-2.5 py-2 text-sm rounded-lg text-slate-600 dark:text-slate-400 group-hover:text-emerald-500 dark:group-hover:text-emerald-600 group-hover:bg-secondary dark:group-hover:bg-secondary/30 transition-all ease-in-out duration-500"
+                class="w-full flex justify-between items-center px-2.5 py-2 text-sm rounded-lg text-slate-600 dark:text-slate-400 group-hover:text-dark dark:group-hover:text-dark group-hover:bg-secondary/20 dark:group-hover:bg-secondary/10 transition-all ease-in-out duration-500"
             >
                 <span class="inline-flex items-center"><svg class="shrink-0 size-4 me-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></svg> {{__('Blog')}}</span>
 
@@ -57,7 +57,7 @@
                 </x-side-link>
 
                 <x-side-link :href="route('sitemaps')" :active="request()->routeIs('sitemaps')" wire:navigate>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 me-2.5"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg> {{ __('Brands') }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 me-2.5"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg> {{ __('Sitemaps') }}
                 </x-side-link>
 
                 <x-side-link :href="route('admin-uploads')" :active="request()->routeIs('admin-uploads')" wire:navigate>
@@ -75,7 +75,7 @@
         >
             <button
                 x-on:click="expanded = ! expanded"
-                class="w-full flex justify-between items-center px-2.5 py-2 text-sm rounded-lg text-slate-600 dark:text-slate-400 group-hover:text-emerald-500 dark:group-hover:text-emerald-600 group-hover:bg-secondary dark:group-hover:bg-secondary/30 transition-all ease-in-out duration-500"
+                class="w-full flex justify-between items-center px-2.5 py-2 text-sm rounded-lg text-slate-600 dark:text-slate-400 group-hover:text-dark dark:group-hover:text-dark group-hover:bg-secondary/20 dark:group-hover:bg-secondary/10 transition-all ease-in-out duration-500"
             >
                 <span class="inline-flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></svg> {{__('My Shop')}}</span>
 
@@ -112,31 +112,33 @@
 
         </div>
 
-        <!-- inventory -->
+        <!-- Settings -->
         <div
             x-data="{expanded: false}"
-            class="mt-6 space-y-1 font-medium text-sm xl:text-base shadow-sm shadow-emerald-900 dark:shadow-emerald-700 rounded-lg group"
+            class="mt-6 space-y-1 font-medium group"
         >
             <button
                 x-on:click="expanded = ! expanded"
-                class="w-full inline-flex items-center justify-between px-3 py-2 text-slate-600 dark:text-slate-400 group-hover:text-emerald-500 dark:group-hover:text-emerald-600"
+                class="w-full flex justify-between items-center px-2.5 py-2 text-sm rounded-lg text-slate-600 dark:text-slate-400 group-hover:text-dark dark:group-hover:text-dark group-hover:bg-secondary/20 dark:group-hover:bg-secondary/10 transition-all ease-in-out duration-500"
             >
-                <span class="inline-flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 me-2.5"><path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z"/><path d="M6 18h12"/><path d="M6 14h12"/><rect width="12" height="12" x="6" y="10"/></svg> {{__('Inventory')}}</span>
+                <span class="inline-flex items-center"><svg class="w-5 h-5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></svg>{{__('Settings')}}</span>
 
                 <svg x-show="expanded" class="w-5 h-5 ms-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
                 <svg x-show="!expanded" class="w-5 h-5 ms-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
             </button>
 
             <div x-show="expanded" class="w-full flex flex-col gap-3 lg:gap-6 p-2 lg:px-4 bg-slate-100 dark:bg-slate-900 rounded-b">
-                <x-side-link :href="route('admin-shop')" :active="request()->routeIs('admin-shop')" wire:navigate>
-                    <svg class="w-6 h-6" fill="currentColor" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 230" xml:space="preserve"><g> <path d="M61.2,106h37.4v31.2H61.2V106z M61.2,178.7h37.4v-31.2H61.2V178.7z M61.2,220.1h37.4v-31.2H61.2V220.1z M109.7,178.7H147 v-31.2h-37.4V178.7z M109.7,220.1H147v-31.2h-37.4V220.1z M158.2,188.9v31.2h37.4v-31.2H158.2z M255,67.2L128.3,7.6L1.7,67.4 l7.9,16.5l16.1-7.7v144h18.2V75.6h169v144.8h18.2v-144l16.1,7.5L255,67.2z"></path> </g></svg>
-
-                    <span class="ms-3">{{ __('Store') }}</span>
-                </x-side-link>
 
                 <x-side-link :href="route('admin-visitors')" :active="request()->routeIs('admin-visitors')" wire:navigate>
                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
-                    <span class="ms-3">{{ __('Customers') }}</span>
+                    <span class="ms-3">{{ __('Visitors') }}</span>
+                </x-side-link>
+
+                <x-side-link :href="route('logs.index')" :active="request()->routeIs('logs.index')" wire:navigate>
+                     <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3v4a1 1 0 0 1-1 1H5m4 10v-2m3 2v-6m3 6v-3m4-11v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Z"/>
+                    </svg>
+                    <span class="ms-3">{{ __('Logs') }}</span>
                 </x-side-link>
             </div>
         </div>
