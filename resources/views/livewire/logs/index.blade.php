@@ -1,5 +1,8 @@
 <?php
 
+use App\Actions\Logs\ListLogFiles;
+use App\Actions\Logs\ReadLogFile;
+use App\Services\LogService;
 use Illuminate\Support\Facades\File;
 use Livewire\Volt\Component;
 
@@ -11,33 +14,31 @@ class extends Component {
     public array|string|null $logContent = null;
     public string $errorMessage = '';
 
-    public function mount()
+    public function mount(
+        ListLogFiles $listLogFilesAction, ReadLogFile $readLogFileAction, LogService $logService
+    ): void
     {
-        $this->loadLogFiles();
-    }
+        $this->logFiles = $listLogFilesAction->execute();
+        $defaultLogFile = $logService->getDefaultLogFile();
 
-    public function loadLogFiles(): void
-    {
-        $logDirectory = storage_path('logs');
-        $files = glob($logDirectory . '/*.log'); // Get all .log files
-
-        $this->logFiles = array_map(function ($file) {
-            return basename($file); // Get just the filename
-        }, $files);
-
-        if (!empty($this->logFiles)) {
+        if (in_array($defaultLogFile, $this->logFiles)) {
+            $this->selectedLogFile = $defaultLogFile;
+        } elseif (!empty($this->logFiles)) {
             $this->selectedLogFile = $this->logFiles[0];
-
-            $this->loadLogContent();
+        } else {
+            $this->errorMessage = 'No log files found in storage/logs directory.';
+            return; // Exit early if no log files are found
         }
+
+        $this->loadLogContent($readLogFileAction);
     }
 
-    public function updatedSelectedLogFile(): void
+    public function updatedSelectedLogFile(ReadLogFile $readLogFileAction): void
     {
-        $this->loadLogContent();
+        $this->loadLogContent($readLogFileAction);
     }
 
-    public function loadLogContent(): void
+    public function loadLogContent(ReadLogFile $readLogFileAction): void
     {
         $this->logContent = '';
         $this->errorMessage = '';
@@ -46,17 +47,12 @@ class extends Component {
             return;
         }
 
-        $logFilePath = storage_path('logs/' . $this->selectedLogFile);
+        $logContent = $readLogFileAction->execute($this->selectedLogFile);
 
-        if (!File::exists($logFilePath)) { // Use Storage facade
+        if ($logContent === null) {
             $this->errorMessage = 'Log file not found.';
-            return;
-        }
-
-        try {
-            $this->logContent = File::lines($logFilePath)->toArray();
-        } catch (\Exception $e) {
-            $this->errorMessage = 'Error reading log file: ' . $e->getMessage();
+        } else {
+            $this->logContent = $logContent;
         }
     }
 
@@ -68,9 +64,9 @@ class extends Component {
         <p class="mb-4 text-sm text-gray-500">Monitor and view log files in real-time.</p>
 
         <div class="py-4">
-            <label for="logFile" class="block text-sm font-medium text-gray-700">Select Log File:</label>
+            <label for="logFile" class="block text-sm font-medium">Select Log File:</label>
             <select wire:model.live="selectedLogFile" id="logFile"
-                    class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                    class="mt-1 block w-full pl-3 pr-10 py-2 text-base text-dark dark:text-light bg-light dark:bg-dark/30 border-gray-300 dark:border-light/20 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
                 @foreach ($logFiles as $file)
                     <option value="{{ $file }}">{{ $file }}</option>
                 @endforeach
@@ -81,15 +77,16 @@ class extends Component {
             <div class="text-red-500 mb-4">{{ $errorMessage }}</div>
         @endif
 
-        <div class="mt-4 py-3 bg-gray-100 rounded-md shadow-sm max-h-screen overflow-auto">
+        <div class="mt-4 p-4 bg-light/70 dark:bg-dark/70 rounded-md shadow-md shadow-accent/20 dark:shadow-accent/20 max-h-[60vh] overflow-auto">
+            <p wire:loading class="mt-2 py-2 font-medium text-primary/70">Fetching Logs ...</p>
             @if(is_array($logContent))
-                <div class="p-4 text-xs text-gray-800">
+                <div wire:loading.class="opacity-20" class="text-xs ">
                     @foreach ($logContent as $line)
                         <p class="pb-2">{{ $line }}</p>
                     @endforeach
                 </div>
             @else
-                <p>{{ $logContent }}</p>
+                <p wire:loading.class="opacity-20">{{ $logContent }}</p>
             @endif
         </div>
     </div>
