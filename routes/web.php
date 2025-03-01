@@ -72,6 +72,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/visitors', [VisitorController::class, 'index'])->name('admin-visitors');
     Route::get('/admin/visitors/{visitor}', [VisitorController::class, 'show'])->name('admin-visitors.show');
     Route::delete('/admin/visitors/{visitor}', [VisitorController::class, 'destroy'])->name('admin-visitors.delete');
+
+    // logging
+    Volt::route('/logs', 'logs.index')->name('logs.index');
 });
 
 Route::get('/posts/{post}', [BlogController::class, 'show'])
